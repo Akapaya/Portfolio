@@ -1,0 +1,151 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	box-sizing: content-box;
+	margin: 0px;
+	display: inline-block;
+}
+
+.pages{
+	background-color: #261e2d;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	position: relative;
+	overflow: hidden;
+}
+
+#logo{
+	    width: 70%;
+    height: 30%;
+    transform-origin: right;
+    position: relative;
+    left: -1475px;
+    z-index: 10;
+    top: 20%;
+    box-sizing: border-box;
+}
+
+
+#roullete{
+	display: inline-block;
+	position: absolute;
+	right: -70%;
+	bottom: -40%;
+}
+
+.miniRoullete{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+}
+
+#leftLine1{
+	width: 10px;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+}
+
+#backMonokuma{
+	width: 35%;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#leftLine2{
+	    width: 42%;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: -19px;
+    z-index: 2;
+}
+
+#leftLine3{
+	    width: 25px;
+    height: 115%;
+    transform: rotateZ(-45deg);
+    background-color: black;
+    position: absolute;
+    right: 27%;
+    bottom: 4%;
+    z-index: 2;
+}
+
+#leftLine4{
+	    width: 25px;
+    height: 23%;
+    background-color: black;
+    position: absolute;
+    right: -17px;
+    bottom: 0;
+    z-index: 2;
+}
+
+#monokuma{
+	position: absolute;
+	left: -15%;
+	bottom: -10%;
+	width: 97%;
+	height: 100%;
+	transform-origin: bottom;
+}
+
+#menuLine1{
+	width: 100%;
+	height: 10px;
+}
+
+#menuLine2{
+	width: 60%;
+	height: 90px;
+	position: absolute;
+	right: 0;
+	z-index: 2;
+	display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#menuLine3{
+	width: 5%;
+	height: 150px;
+	position: absolute;
+	right: 58.5%;
+	top: -70px;
+	transform: rotateZ(-45deg);
+}
+
+.menu{
+	background-color: black;
+	position: absolute;
+}
+
+#listMenu{
+	color: white;
+	list-style: none;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+
+.listMenuLI{
+	font-size: 50px;
+	margin: 0 50px;
+	font-family: platform_eight;
+}
+
+@font-face {
+  font-family: platform_eight;
+  src: url(../fonts/platform_eight.ttf)
+}
