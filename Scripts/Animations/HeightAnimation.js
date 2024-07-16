@@ -1,14 +1,12 @@
 document.addEventListener('DOMContentLoaded', function() {
-    animateBreathing('#NakLogo');
+    // Chame a função animateBreathing para diferentes elementos
+    animateBreathing('#NakLogo', 1, 0.6, 1, 0.01, 500);
+    animateBreathing('#LovePetMainVideo', 1, 0.9, 1, 0.002, 10);
 });
 
-function animateBreathing(element) {
-    var scaleValue = 1;
+function animateBreathing(element, initialScale, minScale, maxScale, step, pauseTime) {
+    var scaleValue = initialScale;
     var isIncreasing = false;
-    var step = 0.01; // Taxa de variação da escala
-    var minScale = 0.6; // Valor mínimo da escala
-    var maxScale = 1;   // Valor máximo da escala
-    var pauseTime = 500; // Tempo de pausa em milissegundos (0.5 segundos)
 
     function breath() {
         if (isIncreasing && scaleValue >= maxScale) {

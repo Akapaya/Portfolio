@@ -58,10 +58,35 @@
 		</div>
 		<div class="dashed-line"></div>
 	</div>
+
+	<div id="thirdPage" class="pages">
+		<div id="MainVideoContainer">
+			<img id="PlayMainVideo" class="PlayVideoIcon" src="imgs/Logo/Play.svg">
+			<video id="mainVideo" class="animated-border" width="1280" height="680" controls>			
+				<source src="vids/3kJ-4DXuG56_576.mp4" type="video/mp4">
+			  Your browser does not support the video tag.
+			  </video>
+			  <img id="LovePetMainVideo" src="imgs/Mascote/Emotes(twitch instagram whatsapp)/Amor/whatsapp instagram/amor whatsapp completo.png">
+		</div>
+		
+	</div>
+
+	<div id="fourthPage" class="pages">
+		<img id="HeaderFourthPage" src="imgs/Cloud/CloudReverse.png">
+	</div>
 </body>
 
 <script>
-	
+	const video = document.querySelector('#mainVideo');
+	const playIcon = document.querySelector('#PlayMainVideo');
+
+video.addEventListener('play', () => {
+    playIcon.style.display = 'none';
+});
+
+video.addEventListener('pause', () => {
+    playIcon.style.display = 'block';
+});
 </script>
 	
 </html>
