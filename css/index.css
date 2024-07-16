@@ -4,10 +4,17 @@ html,body{
 	box-sizing: content-box;
 	margin: 0px;
 	display: inline-block;
+    font-family: "Poetsen One", sans-serif;
 }
 
+@font-face {
+    font-family: platform_eight;
+    src: url(../fonts/platform_eight.ttf)
+  }
+
 .pages{
-	background-color: #261e2d;
+	background-image: url(../imgs/Background/Background3840x2880.png);
+	background-size: contain;
 	width: 100%;
 	height: 100%;
 	display: flex;
@@ -15,137 +22,238 @@ html,body{
 	overflow: hidden;
 }
 
-#logo{
-	    width: 70%;
-    height: 30%;
-    transform-origin: right;
-    position: relative;
-    left: -1475px;
-    z-index: 10;
-    top: 20%;
-    box-sizing: border-box;
-}
-
-
-#roullete{
-	display: inline-block;
-	position: absolute;
-	right: -70%;
-	bottom: -40%;
-}
-
-.miniRoullete{
-	width: 100px;
-	height: 100px;
-	position: absolute;
-}
-
-#leftLine1{
-	width: 10px;
-	height: 100%;
-	background-color: black;
-	position: absolute;
-	left: 0;
-	top: 0;
-	z-index: 2;
-}
-
-#backMonokuma{
-	width: 35%;
-    height: 50%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-}
-
-#leftLine2{
-	    width: 42%;
-    height: 25px;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    top: -19px;
-    z-index: 2;
-}
-
-#leftLine3{
-	    width: 25px;
-    height: 115%;
-    transform: rotateZ(-45deg);
-    background-color: black;
-    position: absolute;
-    right: 27%;
-    bottom: 4%;
-    z-index: 2;
-}
-
-#leftLine4{
-	    width: 25px;
-    height: 23%;
-    background-color: black;
-    position: absolute;
-    right: -17px;
-    bottom: 0;
-    z-index: 2;
-}
-
-#monokuma{
-	position: absolute;
-	left: -15%;
-	bottom: -10%;
-	width: 97%;
-	height: 100%;
-	transform-origin: bottom;
-}
-
-#menuLine1{
-	width: 100%;
-	height: 10px;
-}
-
-#menuLine2{
-	width: 60%;
-	height: 90px;
-	position: absolute;
-	right: 0;
-	z-index: 2;
-	display: flex;
+#MenuSelector {
+    display: flex;
+    width: 150px;
+    height: auto;
+    z-index: 1;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
     align-items: center;
     align-content: center;
-    justify-content: center;
-}
-
-#menuLine3{
-	width: 5%;
-	height: 150px;
-	position: absolute;
-	right: 58.5%;
-	top: -70px;
-	transform: rotateZ(-45deg);
-}
-
-.menu{
-	background-color: black;
-	position: absolute;
+	position: fixed;
+	right: 10px;
+	top: 50%;
+    transform: translateY(-50%);
 }
 
 #listMenu{
-	color: white;
-	list-style: none;
-	width: 90%;
-	display: flex;
-	align-items: center;
-	align-content: center;
-	justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .listMenuLI{
-	font-size: 50px;
+	font-size: 20px;
 	margin: 0 50px;
-	font-family: platform_eight;
+	font-family: "Poetsen One", sans-serif;
+ 	font-weight: 400;
+  	font-style: normal;
+	color: white;
 }
 
-@font-face {
-  font-family: platform_eight;
-  src: url(../fonts/platform_eight.ttf)
+#firstPage{
+	background-image: url(../imgs/Cloud/thumb.png);
+	background-size: cover;
+	top: -100px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+
+    @media screen and (max-width: 500px) {
+        background-position: top;
+    }
+}
+
+#HeaderFirstPage {
+    top: 40px;
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+#firstPageLogoEnter {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+#LogoPanel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+}
+
+#NakLogo {
+	transform-origin: bottom;
+	transition: transform 0.3s ease-in-out;
+}
+
+#AkapayaLogo {
+    width: 150%;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#SubTitleLogo {
+    font-family: "Poetsen One", sans-serif;
+    color: #FFE354;
+    margin: 0;
+    padding: 0;
+    top: -40px;
+    position: relative;
+    font-size: xx-large;
+
+    @media screen and (max-width: 500px) {
+        font-size: x-large;
+    }
+}
+
+#SocialMedia{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.SocialLogos {
+    width: 90px;
+    transition: width 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.SocialLogos:hover {
+    width: 110px;
+}
+
+#secondPage {
+    background-color: white;
+    background-image: none;
+    height: 440px;
+    width: 100vw;
+    overflow: visible;
+
+    @media screen and (max-width: 1024px) {
+            height: 500px;
+            top: -60px;
+    }
+
+    @media screen and (max-width: 768px) {
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            height: 700px;
+            top: -60px;
+    }
+
+    @media screen and (max-width: 425px) {
+            height: 850px;
+            top: -160px;
+    }
+}
+
+#ContainerGreg {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+#MiniGreg{
+    width: 500px;
+    height: 500px;
+    top: 6px;
+    left: 100px;
+    position: relative;
+    z-index: 1;
+
+    @media screen and (max-width: 768px) {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        left: 0;
+    }
+}
+
+#ContainerAboutMe {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 90px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding-left: 0%;
+        padding-bottom: 0%;
+        margin: auto;
+        align-items: center;
+    }
+}
+
+.AboutMeTexts{
+    font-size: x-large;
+    width: 70%;
+    margin-bottom: 0px;
+
+    @media screen and (max-width: 768px) {
+        width: 80%;
+    }
+}
+
+#AboutMeList{
+    list-style-type: none;
+    width: 80%;
+    font-size: x-large;
+    font-weight: 100;
+}
+
+.dashed-line {
+    border-top: 5px dashed #25231C;
+    width: 100px;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 768px) {
+    #ContainerGreg {
+        order: 2;
+    }
+    #ContainerAboutMe {
+        order: 1;
+    }
 }

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #ffe354;
+        stroke-width: 32.63px;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <path id="Forma_5" data-name="Forma 5" class="cls-1" d="M87,102l5,295,80,1-1,59,73-60,76-1,89-85,1-210Z"/>
+  <path id="Forma_6" data-name="Forma 6" class="cls-2" d="M222,188V294"/>
+  <path id="Forma_6_copiar" data-name="Forma 6 copiar" class="cls-2" d="M301,188V294"/>
+</svg>
