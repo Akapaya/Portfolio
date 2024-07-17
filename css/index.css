@@ -371,20 +371,43 @@ html,body{
 }
 
 #HeaderFourthPage {
+    top: 0px;
     width: 100%;
-    max-height: 200px;
     position: relative;
     min-width: 1000px;
 }
 
 #fourthPage{
-    height: 400px;
-    width: 100%;
+    background-size: cover;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.dashed-line-vertical {
+    border-left: 5px dashed white;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 9fr; /* Primeira coluna com 1 parte e segunda coluna com 2 partes */
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
 }
 
 
-
-
+.item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
 
 
 
