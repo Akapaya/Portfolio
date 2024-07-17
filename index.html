@@ -10,6 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 	<title>Akapaya</title>
 
 </head>
@@ -76,13 +77,110 @@
 		<h1 style="color: #FFE354;">Background</h1>
 		<div class="dashed-line-vertical"></div>
 		<div class="grid-container">
-			<div class="item">Item 1</div>
-			<div class="item">Item 2</div>
-			<div class="item">Item 1</div>
-			<div class="item">Item 2</div>
-			<!-- ... mais conteúdo ... -->
+			<div style="height: 20px; position: relative;"></div>
+			<div style="height: 20px;position: relative;margin: auto;right: 5px;"><img style="width: 20px; height: 20px;" src="imgs/Logo/Point.svg"></div>
+			<div style="height: 20px; position: relative;"></div>
+			
+			<div id="TitleItem" class="item">2024 - Today</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">I am developing SDG educational games that emerged from a course focused on SDGs, with the main board game “Mission 2030 Desafios das ODS”.
+					</p>
+				</div>	
+				
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">Generating content for Estudio Akapaya's YouTube channel, forming a community engaged with games, along with indie game events.
+					</p>
+				</div>	
+				
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">Planning the studio and projects under development together with mentoring from Sebrae with ABStartups with “Crie Games”.
+					</p>
+				</div>	
+
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">Re-released games from old gamejams with system improvements and optimization.
+					</p>
+				</div>
+			</div>
+				
+			<div id="TitleItem" class="item">2023</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+			
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Plundervolt'), this)"></button>
+					<p id="Plundervolt" class="collapsed">As a Unity game developer at Plundervolt from May 2023 to December 2023, I conducted systems analysis and gameplay improvements. I implemented front-end features in collaboration with artists and developed complex systems such as skill trees, Breadth First Search movement, and battle systems for a Turn-based RPG. Applying optimization practices like SOLID, I ensured gaming performance and scalability. Working in multidisciplinary teams, I resolved technical and creative challenges to deliver the final product.
+					</p>
+				</div>
+			
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">Graduated in Digital Games, I learned more about designing systems, implementing design patterns, applying AI concepts to games and integrating with external tools, such as API and database.
+					</p>
+				</div>	
+			</div>
+
+			<div id="TitleItem" class="item">2020 - 2022</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+				
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Zoyd'), this)"></button>
+					<p id="Zoyd" class="collapsed">As a software developer at Zoyd Software from September 2022 to January 2023, focusing on enhancing system functionalities and creating game projects. I developed virtual and augmented reality experiences, integrated NFTs via APIs into augmented reality apps, and designed collision systems for isometric combat games. Using APIs, databases, and Firebase Analytics, I optimized projects. I also prioritized documentation, code refactoring, and coding standards.
+					</p>
+				</div>
+
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('IDSingular'), this)"></button>
+					<p id="IDSingular" class="collapsed">As a web developer at IDSingular from September 2020 to January 2022, I focused on front-end implementation in collaboration with UX designers to create web interfaces for gamers. I developed and optimized games for web browsers, using JavaScript, Node.js, Socket.IO, and Firebase for API and database connections. I implemented data encryption for security, developed multiplayer systems with evaluators creating rooms, and designed ranking, evaluation, and trial systems. Additionally, I managed file uploads and database integration for exams, actively participating in testing and debugging for game quality assurance.
+					</p>
+				</div>
+				
+			</div>
+				
+			<div id="TitleItem" class="item">2020 - 2021</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+				
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">I developed the game "When are you coming?" In a 14-day gamejam, I designed and developed the entire game alone, the idea was to represent a couple separated by the pandemic trying to keep their relationship alive.
+					</p>
+				</div>
+
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">I developed the game "Hope" in a 14-day gamejam "Game JAAJ 5", I designed and developed the entire game alone, this game was made at a time when I was depressed, so the idea was to represent the loop of a person who feels that things never get better.
+					</p>
+				</div>
+			</div>
+
+			<div id="TitleItem" class="item">2019 - 2020</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">As an instructor at Magic Star - School from August 2019 to March 2020, I managed programming and game design courses for children and teenagers. I coordinated workshops, developed gamification for student assessment, and provided individualized support. Collaborating with the pedagogical team, I contributed to educational strategies and simplified the creation of gamification questionnaires for teachers.
+					</p>
+				</div>
+			</div>
+				
+			<div id="TitleItem" class="item">2018</div>
+			<div class="dashed-line-vertical"></div>
+			<div class="item">
+				<div class="TextWithArrowExpand">
+					<button class="ArrowToRightNoExpanded"></button>
+					<p class="expanded">I completed a Technical Course in Digital Games Programming at ETECAF - Etec Aristóteles Ferreira in 2018. I specialized as a digital game developer and was recognized as a finalist for best TCCs (Final Course Projects) at the institute.
+					</p>
+				</div>
+			</div>
 		</div>
-		
 	</div>
 </body>
 
