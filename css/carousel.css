@@ -44,6 +44,12 @@
   left: 15%;
   opacity: 0.4;
   font-size: large;
+
+  @media screen and (max-width: 1024px) {
+    font-size: normal;
+    max-width: 150px;
+    opacity: 0.2;
+  }
 }
 
 .carousel-item-3 {
@@ -52,12 +58,23 @@
   left: 50%;
   width: calc(var(--carousel-item-width) * 2);
   z-index: 2;
+
+  @media screen and (max-width: 425px) {
+    font-size: 30px;
+    max-width: 270px;
+}
 }
 
 .carousel-item-4 {
   left: 85%;
   opacity: 0.4;
   font-size: large;
+  
+  @media screen and (max-width: 1024px) {
+    font-size: normal;
+    max-width: 150px;
+    opacity: 0.2;
+  }
 }
 
 .carousel-controls {
