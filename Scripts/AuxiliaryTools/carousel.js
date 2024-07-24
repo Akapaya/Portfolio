@@ -135,4 +135,4 @@ const el = document.querySelector('.carousel');
 const exampleCarousel = new Carousel(el);
 exampleCarousel.mounted();
 
-//exampleCarousel.play();
+exampleCarousel.play();
