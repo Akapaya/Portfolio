@@ -5,9 +5,16 @@ document.addEventListener('DOMContentLoaded', function() {
     animateBreathing('#HappyNak', 1, 0.9, 1, 0.002, 10);
     animateBreathing('#HappyNakContact', 1, 0.9, 1, 0.002, 10);
     animateBreathing('#SadNakBadContact', 1, 0.9, 1, 0.002, 10);
+    animateBreathing('#SadNak404', 1, 0.9, 1, 0.002, 10);
 });
 
 function animateBreathing(element, initialScale, minScale, maxScale, step, pauseTime) {
+    var elementNode = document.querySelector(element);
+    if (!elementNode) {
+        console.warn(`Elemento ${element} não encontrado no DOM.`);
+        return;
+    }
+
     var scaleValue = initialScale;
     var isIncreasing = false;
 
@@ -23,7 +30,7 @@ function animateBreathing(element, initialScale, minScale, maxScale, step, pause
         // Atualiza a escala com base na direção
         scaleValue += isIncreasing ? step : -step;
         var transformValue = 'scaleY(' + scaleValue + ')';
-        document.querySelector(element).style.transform = transformValue;
+        elementNode.style.transform = transformValue;
 
         requestAnimationFrame(breath);
     }
