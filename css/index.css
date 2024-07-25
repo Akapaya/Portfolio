@@ -1017,6 +1017,206 @@ input[type="email"],
   background-color: #D9D9D9;
 }
 
+#sevenPage{
+    height: 28vh;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    color: #25231C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding-bottom: 20px;
+
+    @media screen and (max-width: 1440px) {
+        height: 33vh;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: 35vh;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    color: #25231C;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: 35vh;
+        position: relative;
+        background-color: white;
+        background-image: none;
+        color: #25231C;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 425px) {
+        height: 70vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+#FooterIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+#LeftFooterDiv{
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 22%;
+
+    @media screen and (max-width: 1440px) {
+        width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 15%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 4%;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 380px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#RightFooterDiv{
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 280px;
+
+    @media screen and (max-width: 1440px) {
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 0px;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+    }
+}
+
+.FooterItems{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.FooterIcons{
+    width: 35px;
+    margin-right: 20px;
+}
+
+#NakLogoFooter{
+    width: 50px;
+}
+
+#AkapayaLogoFooter{
+    width: 200px;
+    margin-left: -25px;
+}
+
 /*Miscs*/
 
 .TextWithArrowExpand {

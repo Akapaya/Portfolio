@@ -17,7 +17,7 @@
 
 </head>
 <body>
-	<div id="MenuSelector">
+	<!--<div id="MenuSelector">
 			<ul id="listMenu">
 				<li class="listMenuLI">Home</li>
 				<li class="listMenuLI">About Me</li>
@@ -26,7 +26,7 @@
 				<li class="listMenuLI">Games</li>
 				<li class="listMenuLI">Contact</li>
 			</ul>
-	</div>
+	</div>-->
 
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
@@ -209,11 +209,11 @@
 		<p id="SliderShowCopyright">Copyright: Akapaya</p>
 	</div>
 
-	<!--<div id="sixPage" class="pages">
+	<div id="sixPage" class="pages">
 		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
 		<div class="ContactMeContainer">
 			<h2 id="ContactMeTitle">Contact Me</h2>
-			<form id="contactForm" onsubmit="return validateForm()">
+			<form id="contactForm" onsubmit="/*return validateForm()*/alert('Not Found')">
 			  <input type="text" id="name" name="name" placeholder="Name:" required>
 		
 			  <input type="email" id="email" name="email" placeholder="Email:" required>
@@ -226,9 +226,54 @@
 			</form>
 		  </div>
 		  <img id="FooterFourthPage" src="imgs/Cloud/CloudNormal.png">
-	</div>-->
+	</div>
+
+	<div id="sevenPage" class="pages">
+		<div id="LeftFooterDiv">
+			<div id="FooterIcon">
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.png" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.png" >
+			</div>
+			<p >@ 2024 Akapaya. Todos os direitos reservados. 
+				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
+			</p>
+			<p >Arte desenvolvida por Thamires Dantas. <br>
+				Design do site desenvolvido por Gregory Valentim.<br>
+				Site desenvolvido por Gregory Valentim.
+			</p>
+		</div>
+
+		<div id="RightFooterDiv">
+			<div class="FooterItems" onclick="">
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons" src="imgs/Logo/EmailBlack.png.svg"></a>
+				<p>Gregory_valentim@hotmail.com</p>
+			</div>
+
+			<div class="FooterItems">
+				<a href="https://www.instagram.com/akapaya_studios/"><img class="FooterIcons" src="imgs/Logo/InstagramBlack.svg"></a>
+				<p>@Akapaya_Studios</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.youtube.com/@Akapaya"><img class="FooterIcons" src="imgs/Logo/YoutubeBlack.svg"></a>
+				<p>Youtube.com/@Akapaya</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons" src="imgs/Logo/TwitchBlack.svg"></a>
+				<p>Akapaya.itch.io</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://akapaya.itch.io"><img class="FooterIcons" src="imgs/Logo/ItchBlack.svg"></a>
+				<p>Twitch.tv/akapaya</p>
+			</div>
+		</div>
+	</div>
 </body>
 
+				
+				
 <script>
 	const video = document.querySelector('#mainVideo');
 	const playIcon = document.querySelector('#PlayMainVideo');

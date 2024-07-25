@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #25231c;
+        stroke: #25231c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 9.56px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Forma_10" data-name="Forma 10" class="cls-1" d="M45,142L252,263,468,150l1,241L44,390Z"/>
+  <path id="Forma_11" data-name="Forma 11" class="cls-1" d="M253,247L51,122l408,2Z"/>
+</svg>

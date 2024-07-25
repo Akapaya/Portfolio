@@ -1,0 +1,24 @@
+<svg id="Youtube" xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke-width: 26.22px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #25231c;
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #25231c;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 12.76px;
+      }
+    </style>
+  </defs>
+  <path id="Forma_4" data-name="Forma 4" class="cls-1" d="M32.4,87.02C8.528,98.26,13.58,399.928,34.11,423.112S452.952,436.86,478.908,420s-6.511-297.684-19.3-321.57S56.276,75.779,32.4,87.02Z"/>
+  <path id="Forma_3" data-name="Forma 3" class="cls-2" d="M184,175l-1,136,174-65Z"/>
+</svg>
