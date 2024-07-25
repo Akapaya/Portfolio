@@ -31,3 +31,51 @@ function replaceClassesIfNeeded() {
 replaceClassesIfNeeded();
 
 window.addEventListener('resize', replaceClassesIfNeeded);
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("SlideItems");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+
+  for (i = 0; i < x.length; i++) {
+    x[i].classList.remove("active");
+  }
+
+  switch(slideIndex-1) {
+    case 0:
+      updateContent("Hope", "Solo Dev", "Akapaya", "Test");
+      break;
+    case 1:
+      updateContent("When are you coming?", "Solo Dev", "Akapaya", "Test");
+      break;
+  }
+
+  x[slideIndex-1].classList.add("active");
+}
+
+
+
+function updateContent(title, occupation, copyright, buttonUrl) {
+  // Update the title
+  document.getElementById('TitleTitleBox').textContent = title;
+  
+  // Update the occupation
+  document.getElementById('OccupationBox').textContent = occupation;
+  
+  // Update the copyright
+  document.getElementById('SliderShowCopyright').textContent = 'Copyright: ' + copyright;
+  
+  // Update the button onclick URL
+  document.getElementById('SeeMoreSliderShow').onclick = function() {
+    alert("Page not found");
+    //window.location.href = buttonUrl;
+  };
+}
