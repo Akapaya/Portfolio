@@ -887,7 +887,119 @@ html,body{
     }        
 }
 
+#sixPage{
+    background-size: cover;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    position: relative;
 
+    @media screen and (max-width: 1440px) {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    @media screen and (max-width: 425px) {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+#HeaderSixPage{
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+.ContactMeContainer
+{
+    width: 30%;
+    height: 500px;
+    background-color: #FEFFFD;
+    border-radius: 20px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#ContactMeTitle{
+    color: #25231C;
+    font-size: xx-large;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #25231C;
+  border: none;
+    color: #FFE354;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
+    padding: 13px;
+  }
+  
+  input[type="text"],
+input[type="email"],
+  textarea::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  input::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+button {
+    width: 125px;
+    height: 50px;
+    padding: 10px;
+    background-color: #25231C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Poetsen One", sans-serif;
+}
+
+button:hover {
+  background-color: #D9D9D9;
+}
 
 /*Miscs*/
 
