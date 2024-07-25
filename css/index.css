@@ -807,6 +807,7 @@ html,body{
     padding: 20px;
     box-shadow: none;
     border: none;
+    text-decoration: none;
 }
 
 #ToLeftSliderShow{

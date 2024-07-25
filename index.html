@@ -205,7 +205,7 @@
 		<div class="SlideItems" > <img src="imgs/Games/PHK2HF.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/h1ohXj.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/PHK2HF.png" alt=""></div>
-		<button id="SeeMoreSliderShow" class="SeeMoreButton" onclick="alert('Not Found')">See More</button>
+		<a href="akapaya.github.io/Portfolio/Hope.html" id="SeeMoreSliderShow" class="SeeMoreButton">See More</a>
 		<p id="SliderShowCopyright">Copyright: Akapaya</p>
 	</div>
 
@@ -296,6 +296,13 @@ video.addEventListener('play', () => {
 video.addEventListener('pause', () => {
     playIcon.style.display = 'block';
 });
+</script>
+
+<script type="text/javascript">
+    const path = location.search.substr(1);
+    if (path) {
+        history.replaceState(null, '', '/' + path);
+    }
 </script>
 	
 </html>
