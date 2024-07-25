@@ -938,6 +938,22 @@ html,body{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: 1440px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 768px) {
+        width: 70%;
+    }
+
+    @media screen and (max-width: 425px) {
+        width: 85%;
+    }
 }
 
 #ContactMeTitle{
@@ -984,7 +1000,7 @@ input[type="email"],
     font-family: "Poetsen One", sans-serif;
   }
 
-button {
+.SubmitButtom {
     width: 125px;
     height: 50px;
     padding: 10px;
@@ -997,7 +1013,7 @@ button {
     font-family: "Poetsen One", sans-serif;
 }
 
-button:hover {
+.SubmitButtom:hover {
   background-color: #D9D9D9;
 }
 
