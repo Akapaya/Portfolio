@@ -80,19 +80,22 @@ function updateContent(title, occupation, copyright, buttonUrl) {
   };
 }
 
-function validateForm() {
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var subject = document.getElementById('subject').value;
-  var message = document.getElementById('message').value;
 
-  if (!name || !email || !subject || !message) {
-    alert('Please fill out all fields.');
-    return false;
-  }
-
-  // Additional validation can be added here
-
-  alert('Form submitted successfully!');
-  return true;
-}
+$(document).ready(function() {
+  $('#contactForm').on('submit', function(event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+      $.ajax({
+          url: 'https://api.staticforms.xyz/submit',
+          method: 'POST',
+          data: $(this).serialize(),
+          success: function(response) {
+            $('#ContactMeContainer').css('display', 'none');
+            $('#PositiveResultContact').css('display', 'flex');
+        },
+        error: function() {
+            $('#ContactMeContainer').css('display', 'none');
+            $('#NegativeResultContact').css('display', 'flex');
+        }
+      });
+  });
+});

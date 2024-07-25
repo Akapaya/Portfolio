@@ -211,20 +211,31 @@
 
 	<div id="sixPage" class="pages">
 		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
-		<div class="ContactMeContainer">
+		<div id="ContactMeContainer" class="ContactMeContainer">
 			<h2 id="ContactMeTitle">Contact Me</h2>
-			<form id="contactForm" onsubmit="/*return validateForm()*/alert('Not Found')">
-			  <input type="text" id="name" name="name" placeholder="Name:" required>
-		
-			  <input type="email" id="email" name="email" placeholder="Email:" required>
-		
-			  <input type="text" id="subject" name="subject" placeholder="Subject:" required>
-		
-			  <textarea id="message" name="message" rows="5" placeholder="Message:" required></textarea>
-		
-			  <button class="SubmitButtom" type="submit">Submit</button>
+			<form id="contactForm">
+				<input type="hidden" name="accessKey" value="c29b7c2a-d29f-4b83-b86e-ccf7f7f12328">
+				<input type="text" id="name" name="name" placeholder="Name:" required>
+				<input type="email" id="email" name="email" placeholder="Email:" required>
+				<input type="text" id="subject" name="subject" placeholder="Subject:" required>
+				<textarea id="message" name="message" rows="5" placeholder="Message:" required></textarea>
+				<button class="SubmitButtom" type="submit">Submit</button>
 			</form>
-		  </div>
+		</div>
+		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
+			<p>Thank you, your contact has been sent!</p>
+			<div id="IconNakHappyContact">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.png">
+			</div>
+		</div>
+		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
+			<p>Sorry! Something happened and your email was not sent.</p>
+			<div id="IconNakHappyBadContact">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.png">
+			</div>
+		</div>
 		  <img id="FooterFourthPage" src="imgs/Cloud/CloudNormal.png">
 	</div>
 

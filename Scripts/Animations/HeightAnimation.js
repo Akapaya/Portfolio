@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     animateBreathing('#NakLogo', 1, 0.6, 1, 0.01, 500);
     animateBreathing('#LovePetMainVideo', 1, 0.9, 1, 0.002, 10);
     animateBreathing('#HappyNak', 1, 0.9, 1, 0.002, 10);
+    animateBreathing('#HappyNakContact', 1, 0.9, 1, 0.002, 10);
+    animateBreathing('#SadNakBadContact', 1, 0.9, 1, 0.002, 10);
 });
 
 function animateBreathing(element, initialScale, minScale, maxScale, step, pauseTime) {
