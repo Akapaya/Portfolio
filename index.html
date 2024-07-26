@@ -281,10 +281,12 @@
 
 
 <script type="text/javascript">
-    const path = location.search.substr(1);
-    if (path) {
-        history.replaceState(null, '', '/' + path);
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+            const path = location.pathname;
+            if (path !== '/' && !document.querySelector('link[rel="canonical"]')) {
+                window.location.href = '/404.html';
+            }
+        });
 
 	document.addEventListener('DOMContentLoaded', (event) => {
             var video = document.getElementById('mainVideo');
