@@ -51,10 +51,28 @@ function showDivs(n) {
 
   switch(slideIndex-1) {
     case 0:
-      updateContent("Hope", "Solo Dev", "Akapaya", "Test");
+      updateContent("Hope", "Solo Dev", "Akapaya", "Hope.html");
       break;
-    case 1:
-      updateContent("When are you coming?", "Solo Dev", "Akapaya", "Test");
+      case 1:
+      updateContent("Cybersteam Heroes", "Gameplay Mechanics and UI/UX Implementation", "Plundervolt", "Heroes.html");
+      break;
+      case 2:
+      updateContent("When are you coming?", "Solo Dev", "Akapaya", "WAYC.html");
+      break;
+      case 3:
+      updateContent("Tower Defense", "Solo Dev", "Akapaya", "Tower.html");
+      break;
+      case 4:
+      updateContent("Nak: O Resgate dos Animais", "Gameplay Mechanics, Game Design and Project Manager", "Etec A. F. Team", "NakRA.html");
+      break;
+      case 5:
+      updateContent("VR", "Solo Dev", "Akapaya", "VR.html");
+      break;
+      case 6:
+      updateContent("Cute Space Attack", "Gameplay Mechanics, Game Design and Project Manager", "Etec A. F. Team", "Cute.html");
+      break;
+    case 7:
+      updateContent("Corpse 4 Party", "Solo Dev", "Akapaya", "C4P.html");
       break;
   }
 
