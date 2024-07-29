@@ -175,11 +175,19 @@ html,body{
             justify-content: center;
             align-items: center;
             align-content: center;
-            height: 700px;
+            height: 800px;
     }
 
     @media screen and (max-width: 425px) {
-            height: 850px;
+            height: 900px;
+    }
+
+    @media screen and (max-width: 415px) {
+        height: 920px;
+    }
+
+    @media screen and (max-width: 360px) {
+        height: 920px;
     }
 }
 
