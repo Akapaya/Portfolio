@@ -32,9 +32,13 @@ class Carousel {
       {
         'id': '7',
         'text': 'Board game project for Sustainable Development Goals',
+      },
+      {
+        'id': '8',
+        'text': 'Games released on the Play Store with viable retention',
       }
     ];
-    this.carouselInView = [1, 2, 3, 4, 5, 6, 7];
+    this.carouselInView = [1, 2, 3, 4, 5, 6, 7, 8];
     this.carouselContainer;
     this.carouselPlayState;
   }
@@ -88,6 +92,7 @@ class Carousel {
       control.onclick = (event) => {
         event.preventDefault();
         this.controlManager(control.dataset.name);
+        this.resetTimer();
       };
     });
   }
@@ -124,10 +129,15 @@ class Carousel {
   }
 
   play() {
-    const startPlaying = () => this.next();
+    this.resetTimer(); // Começa com o timer resetado
+  }
 
-    this.next();
-    this.carouselPlayState = setInterval(startPlaying, 5000);
+  resetTimer() {
+    if (this.carouselPlayState) {
+      clearInterval(this.carouselPlayState);
+    }
+
+    this.carouselPlayState = setInterval(() => this.next(), 5000);
   }
 }
 

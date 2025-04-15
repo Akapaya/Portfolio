@@ -50,11 +50,11 @@
 			<img id="MiniGreg" src="imgs/Icone de perfil/Icone 800x800/GregAndNakTransparent.png">
 		</div>
 		<div id="ContainerAboutMe">
-			<p class="AboutMeTexts">I am a programmer and game developer, specialized in systems programming and gameplay. I work mainly with Unity and Godot and I also work as an influencer in the area of ​​game development and gameplay.</p>
+			<p class="AboutMeTexts">I am a programmer and game developer, specialized in systems programming and gameplay. I work mainly with Unity and Godot and I also work as an influencer in the area of game development and gameplay.</p>
 			<p style="font-size: xx-large; " class="AboutMeTexts">Gregory “Akapaya” Valentim</p>
 			<ul id="AboutMeList">
-				<li>Game Developer</li>
-				<li>Game Programmer</li>
+				<li>Game Developer Pleno</li>
+				<li>Game Programmer Pleno</li>
 				<li>UI/UX Implementer</li>
 				<li>Influencer</li>
 			</ul>
@@ -75,109 +75,153 @@
 		<h1 style="color: #FFE354;">Background</h1>
 		<div class="dashed-line-vertical"></div>
 		<div class="grid-container">
-			<div style="height: 20px; position: relative;"></div>
-			<div style="height: 20px;position: relative;margin: auto;right: 5px;"><img style="width: 20px; height: 20px;" src="imgs/Logo/Point.svg"></div>
-			<div style="height: 20px; position: relative;"></div>
+			<div class="HistoricDivs">
+				<div style="height: 20px;position: relative;margin: auto;left: -230px;top: 0px;"><img style="width: 20px; height: 20px;" src="imgs/Logo/Point.svg"></div>
+			</div>				
+
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">At the moment</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">				
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Youtube'), this)"></button>
+						<p id="Youtube" class="expanded">Generating content for Estudio Akapaya's YouTube channel, forming a community engaged with games, along with indie game events.
+						</p>
+					</div>	
+				</div>
+			</div>			
+
+			<div class="dashed-line-horizontal"></div>
+
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2024 - 2025</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Ocarina'), this)"></button>
+						<p id="Ocarina" class="collapsed">As a Unity game developer at Ocarina Studios from September to April 2025, in Canadian Game Studio, I developed scalable and robust pipeline systems, developed systems for trivia/merge/match games and their retention features, along with my main PopUps and Tutorial onboarding systems, implemented UI/UX visuals with care for device responsiveness, performed intense QA testing using emulators and Prod builds to ensure quality and absence of bugs, served as support for onboarding other Devs and for any questions regarding the systems, performed some PR reviews as needed, did research and documentation to assist other Devs, as well as reports on processes and game status.
+						</p>
+					</div>
+				</div>
+			</div>		
+
+			<div class="dashed-line-horizontal"></div>
+
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2024</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('SDG'), this)"></button>
+						<p id="SDG" class="expanded">I am developing SDG educational games that emerged from a course focused on SDGs, with the main board game “Mission 2030 Desafios das ODS”.
+						</p>
+					</div>
+					
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('SebraeText'), this)"></button>
+						<p id="SebraeText" class="expanded">Planning the studio and projects under development together with mentoring from Sebrae with ABStartups with “Crie Games”.
+						</p>
+					</div>	
+
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Re-released'), this)"></button>
+						<p id="Re-released" class="expanded">Re-released games from old gamejams with system improvements and optimization.
+						</p>
+					</div>
+				</div>
+			</div>	
 			
-			<div id="TitleItem" class="item">2024 - Today</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('SDG'), this)"></button>
-					<p id="SDG" class="expanded">I am developing SDG educational games that emerged from a course focused on SDGs, with the main board game “Mission 2030 Desafios das ODS”.
-					</p>
-				</div>	
-				
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Youtube'), this)"></button>
-					<p id="Youtube" class="expanded">Generating content for Estudio Akapaya's YouTube channel, forming a community engaged with games, along with indie game events.
-					</p>
-				</div>	
-				
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('SebraeText'), this)"></button>
-					<p id="SebraeText" class="expanded">Planning the studio and projects under development together with mentoring from Sebrae with ABStartups with “Crie Games”.
-					</p>
-				</div>	
+			<div class="dashed-line-horizontal"></div>
 
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Re-released'), this)"></button>
-					<p id="Re-released" class="expanded">Re-released games from old gamejams with system improvements and optimization.
-					</p>
-				</div>
-			</div>
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2023</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
 				
-			<div id="TitleItem" class="item">2023</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
-			
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Plundervolt'), this)"></button>
-					<p id="Plundervolt" class="collapsed">As a Unity game developer at Plundervolt from May 2023 to December 2023, I conducted systems analysis and gameplay improvements. I implemented front-end features in collaboration with artists and developed complex systems such as skill trees, Breadth First Search movement, and battle systems for a Turn-based RPG. Applying optimization practices like SOLID, I ensured gaming performance and scalability. Working in multidisciplinary teams, I resolved technical and creative challenges to deliver the final product.
-					</p>
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Plundervolt'), this)"></button>
+						<p id="Plundervolt" class="collapsed">As a Unity game developer at Plundervolt from May 2023 to December 2023, I conducted systems analysis and gameplay improvements. I implemented front-end features in collaboration with artists and developed complex systems such as skill trees, Breadth First Search movement, and battle systems for a Turn-based RPG. Applying optimization practices like SOLID, I ensured gaming performance and scalability. Working in multidisciplinary teams, I resolved technical and creative challenges to deliver the final product.
+						</p>
+					</div>
+				
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Graduated'), this)"></button>
+						<p id="Graduated" class="expanded">Graduated in Digital Games, I learned more about designing systems, implementing design patterns, applying AI concepts to games and integrating with external tools, such as API and database.
+						</p>
+					</div>	
 				</div>
-			
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Graduated'), this)"></button>
-					<p id="Graduated" class="expanded">Graduated in Digital Games, I learned more about designing systems, implementing design patterns, applying AI concepts to games and integrating with external tools, such as API and database.
-					</p>
-				</div>	
-			</div>
+			</div>	
 
-			<div id="TitleItem" class="item">2020 - 2022</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
+			<div class="dashed-line-horizontal"></div>
 				
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Zoyd'), this)"></button>
-					<p id="Zoyd" class="collapsed">As a software developer at Zoyd Software from September 2022 to January 2023, focusing on enhancing system functionalities and creating game projects. I developed virtual and augmented reality experiences, integrated NFTs via APIs into augmented reality apps, and designed collision systems for isometric combat games. Using APIs, databases, and Firebase Analytics, I optimized projects. I also prioritized documentation, code refactoring, and coding standards.
-					</p>
-				</div>
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2020 - 2022</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Zoyd'), this)"></button>
+						<p id="Zoyd" class="collapsed">As a software developer at Zoyd Software from September 2022 to January 2023, focusing on enhancing system functionalities and creating game projects. I developed virtual and augmented reality experiences, integrated NFTs via APIs into augmented reality apps, and designed collision systems for isometric combat games. Using APIs, databases, and Firebase Analytics, I optimized projects. I also prioritized documentation, code refactoring, and coding standards.
+						</p>
+					</div>
 
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('IDSingular'), this)"></button>
-					<p id="IDSingular" class="collapsed">As a web developer at IDSingular from September 2020 to January 2022, I focused on front-end implementation in collaboration with UX designers to create web interfaces for gamers. I developed and optimized games for web browsers, using JavaScript, Node.js, Socket.IO, and Firebase for API and database connections. I implemented data encryption for security, developed multiplayer systems with evaluators creating rooms, and designed ranking, evaluation, and trial systems. Additionally, I managed file uploads and database integration for exams, actively participating in testing and debugging for game quality assurance.
-					</p>
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRight" onclick="toggleContent(document.getElementById('IDSingular'), this)"></button>
+						<p id="IDSingular" class="collapsed">As a web developer at IDSingular from September 2020 to January 2022, I focused on front-end implementation in collaboration with UX designers to create web interfaces for gamers. I developed and optimized games for web browsers, using JavaScript, Node.js, Socket.IO, and Firebase for API and database connections. I implemented data encryption for security, developed multiplayer systems with evaluators creating rooms, and designed ranking, evaluation, and trial systems. Additionally, I managed file uploads and database integration for exams, actively participating in testing and debugging for game quality assurance.
+						</p>
+					</div>
+					
 				</div>
-				
-			</div>
-				
-			<div id="TitleItem" class="item">2020 - 2021</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
-				
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('WAYC'), this)"></button>
-					<p id="WAYC" class="expanded">I developed the game "When are you coming?" In a 14-day gamejam, I designed and developed the entire game alone, the idea was to represent a couple separated by the pandemic trying to keep their relationship alive.
-					</p>
-				</div>
+			</div>	
 
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Hope'), this)"></button>
-					<p id="Hope" class="expanded">I developed the game "Hope" in a 14-day gamejam "Game JAAJ 5", I designed and developed the entire game alone, this game was made at a time when I was depressed, so the idea was to represent the loop of a person who feels that things never get better.
-					</p>
-				</div>
-			</div>
+			<div class="dashed-line-horizontal"></div>
 
-			<div id="TitleItem" class="item">2019 - 2020</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Magic'), this)"></button>
-					<p id="Magic" class="collapsed">As an instructor at Magic Star - School from August 2019 to March 2020, I managed programming and game design courses for children and teenagers. I coordinated workshops, developed gamification for student assessment, and provided individualized support. Collaborating with the pedagogical team, I contributed to educational strategies and simplified the creation of gamification questionnaires for teachers.
-					</p>
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2020 - 2021</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('WAYC'), this)"></button>
+						<p id="WAYC" class="expanded">I developed the game "When are you coming?" In a 14-day gamejam, I designed and developed the entire game alone, the idea was to represent a couple separated by the pandemic trying to keep their relationship alive.
+						</p>
+					</div>
+
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Hope'), this)"></button>
+						<p id="Hope" class="expanded">I developed the game "Hope" in a 14-day gamejam "Game JAAJ 5", I designed and developed the entire game alone, this game was made at a time when I was depressed, so the idea was to represent the loop of a person who feels that things never get better.
+						</p>
+					</div>
 				</div>
-			</div>
+			</div>	
 				
-			<div id="TitleItem" class="item">2018</div>
-			<div class="dashed-line-vertical"></div>
-			<div class="item">
-				<div class="TextWithArrowExpand">
-					<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Etec'), this)"></button>
-					<p id="Etec" class="expanded">I completed a Technical Course in Digital Games Programming at ETECAF - Etec Aristóteles Ferreira in 2018. I specialized as a digital game developer and was recognized as a finalist for best TCCs (Final Course Projects) at the institute.
-					</p>
+			<div class="dashed-line-horizontal"></div>
+
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2019 - 2020</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRight" onclick="toggleContent(document.getElementById('Magic'), this)"></button>
+						<p id="Magic" class="collapsed">As an instructor at Magic Star - School from August 2019 to March 2020, I managed programming and game design courses for children and teenagers. I coordinated workshops, developed gamification for student assessment, and provided individualized support. Collaborating with the pedagogical team, I contributed to educational strategies and simplified the creation of gamification questionnaires for teachers.
+						</p>
+					</div>
 				</div>
-			</div>
+			</div>	
+
+			<div class="dashed-line-horizontal"></div>
+
+			<div class="HistoricDivs">
+				<div id="TitleItem" class="item">2018</div>
+				<div class="dashed-line-vertical"></div>
+				<div class="item">
+					<div class="TextWithArrowExpand">
+						<button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Etec'), this)"></button>
+						<p id="Etec" class="expanded">I completed a Technical Course in Digital Games Programming at ETECAF - Etec Aristóteles Ferreira in 2018. I specialized as a digital game developer and was recognized as a finalist for best TCCs (Final Course Projects) at the institute.
+						</p>
+					</div>
+				</div>
+			</div>	
 		</div>
 
 		<div id="Awards">
@@ -203,6 +247,9 @@
 		<div class="SlideItems" > <img src="imgs/Games/WAYC.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/TowerDefense.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/Nak.png" alt=""></div>
+		<div class="SlideItems" > <img src="imgs/Games/Battle.png" alt=""></div>
+		<div class="SlideItems" > <img src="imgs/Games/Restaurant.png" alt=""></div>
+		<div class="SlideItems" > <img src="imgs/Games/Museum.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/VR.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/Cute.png" alt=""></div>
 		<div class="SlideItems" > <img src="imgs/Games/C4P.png" alt=""></div>
@@ -272,12 +319,12 @@
 			</div>
 			
 			<div class="FooterItems">
-				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons" src="imgs/Logo/TwitchBlack.svg"></a>
+				<a href="https://akapaya.itch.io"><img class="FooterIcons" src="imgs/Logo/ItchBlack.svg"></a>
 				<p>Akapaya.itch.io</p>
 			</div>
 			
 			<div class="FooterItems">
-				<a href="https://akapaya.itch.io"><img class="FooterIcons" src="imgs/Logo/ItchBlack.svg"></a>
+				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons" src="imgs/Logo/TwitchBlack.svg"></a>
 				<p>Twitch.tv/akapaya</p>
 			</div>
 		</div>
