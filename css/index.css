@@ -64,10 +64,7 @@ html,body{
     width: 100vw;
     height: 100vh;
     position: relative;
-
-    @media screen and (max-width: 500px) {
-        background-position: top;
-    }
+    background-position: top;
 }
 
 #HeaderFirstPage {
@@ -118,15 +115,7 @@ html,body{
     padding: 0;
     top: -40px;
     position: relative;
-    font-size: xx-large;
-
-    @media screen and (max-width: 500px) {
-        font-size: x-large;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size:large;
-    }
+    font-size: x-large;
 }
 
 #SocialMedia{
@@ -143,14 +132,6 @@ html,body{
     transition: width 0.3s;
     margin-left: 10px;
     margin-right: 10px;
-
-    @media screen and (max-width: 415px) {
-        width: 50px;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 65px;
-    }
 }
 
 .SocialLogos:hover {
@@ -160,96 +141,50 @@ html,body{
 #secondPage {
     background-color: white;
     background-image: none;
-    height: 550px;
+    height: 120vh;
     width: 100vw;
     overflow: visible;
     position: relative;
-
-    @media screen and (max-width: 1024px) {
-            height: 700px;
-    }
-
-    @media screen and (max-width: 768px) {
-        display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            align-content: center;
-            height: 800px;
-    }
-
-    @media screen and (max-width: 425px) {
-            height: 900px;
-    }
-
-    @media screen and (max-width: 415px) {
-        height: 920px;
-    }
-
-    @media screen and (max-width: 360px) {
-        height: 920px;
-    }
+    flex-direction: column;
 }
 
 #ContainerGreg {
-    width: 50%;
+    width: 50vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: flex-end;
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
-    }
+    margin-top: 3vh;
 }
 
 #MiniGreg{
-    width: 500px;
-    height: 500px;
-    top: 6px;
-    left: 100px;
+    width: 300px;
+    height: 300px;
+    top: 0px;
+    left: 0px;
     position: relative;
     z-index: 1;
-
-    @media screen and (max-width: 768px) {
-        width: 300px;
-        height: 300px;
-        top: 0;
-        left: 0;
-    }
 }
 
 #ContainerAboutMe {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: flex-start;
-    padding-left: 90px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        padding-left: 0%;
+    align-items: center;
+    padding-left: 0%;
         padding-bottom: 0%;
-        margin: auto;
-        align-items: center;
-    }
+    box-sizing: border-box;
 }
 
 .AboutMeTexts{
     font-size: x-large;
-    width: 70%;
+    width: 80%;
     margin-bottom: 0px;
-
-    @media screen and (max-width: 768px) {
-        width: 80%;
-    }
 }
 
 #AboutMeList{
@@ -265,22 +200,13 @@ html,body{
 
 .dashed-line {
     border-top: 5px dashed #25231C;
-    width: 100px;
     position: absolute;
-    width: 100%;
+    width: 100vw;
     bottom: 0px;
     z-index: 2;
-
-    @media screen and (max-width: 395px) {
-        bottom: -15px;
-    }
-
-    @media screen and (max-width: 360px) {
-        bottom: -35px;
-    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
     #ContainerGreg {
         order: 2;
     }
@@ -290,38 +216,21 @@ html,body{
 }
 
 #thirdPage {
-    width: 100%;
-    height: 650px;
+    width: 100vw;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: white;
     background-image: none;
-    padding-top: 100px;
-
-    @media screen and (max-width: 1440px) {
-        height: 490px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: 400px;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 320px;
-    }
-
-    @media screen and (max-width: 425px) {
-        height: 320px;
-    }
 }
 
 #MainVideoContainer{
-    width: 50%;
-    height: 525px;
+    width: 80vw;
+    height: 32vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -329,26 +238,6 @@ html,body{
     justify-content: center;
     align-items: center;
     position: relative;
-
-    @media screen and (max-width: 1440px) {
-        width: 50%;
-        height: 410px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 50%;
-        height: 296px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 50%;
-        height: 220px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 80%;
-        height: 200px;
-    }
 }
 
 .PlayVideoIcon{
@@ -359,41 +248,13 @@ html,body{
 }
 
 #LovePetMainVideo{
-    width: 220px;
-    height: 240px;
-    position:absolute  ;
-    right: -200px;
-    bottom: -110px;
-    display: inline-flex;
-    transform-origin: bottom;
-
-    @media screen and (max-width: 1440px) {
-        width: 160px;
-        height: 180px;
-        right: -130px;
-        bottom: -60px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 160px;
-        height: 180px;
-        right: -130px;
-        bottom: -60px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 80px;
+    width: 80px;
     height: 100px;
+    position:absolute  ;
     right: -60px;
     bottom: -30px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 60px;
-    height: 80px;
-    right: -40px;
-    bottom: -10px;
-    }
+    display: inline-flex;
+    transform-origin: bottom;
 }
 
 #mainVideo{
@@ -415,32 +276,12 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 293vh;
     position: relative;
-
-    @media screen and (max-width: 1440px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 425px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
 }
 
 .dashed-line-vertical {
-    border-left: 5px dashed white;
+    border-left: 0.5vh dashed white;
     height: auto;
     width: 10px;
     display: flex;
@@ -454,7 +295,7 @@ html,body{
 
 .dashed-line-horizontal
 {
-    border-bottom: 2px dashed white;
+    border-bottom: 0.7vw dashed white;
     height: 5px;
     width: 100%;
     display: flex;
@@ -468,84 +309,40 @@ html,body{
 
 .HistoricDivs{
     display: flex;
+    width: 100%;
 }
 
 .grid-container {
     display: grid;
     /* grid-template-columns: 1fr 1fr 9fr; */
     gap: 10px;
-    width: 100%;
+    width: 90vw;
     align-content: center;
     justify-content: center;
     align-items: start;
     justify-items: center;
-
-    @media screen and (max-width: 1440px) {
-        margin-left: 0px;
-        margin-right: 100px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        margin-left: 0px;
-        margin-right: 150px;
-    }
-
-    @media screen and (max-width: 768px) {
-        margin-left: 0px;
-        margin-right: 150px;
-    }
-
-    @media screen and (max-width: 425px) {
-        margin-left: 0px;
-        margin-right: 150px;
-    }
 }
 
 #TitleItem {
-    font-size: x-large;
-    min-width: 200px;
+    font-size: 90%;
+    min-width: 20vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin: 0px 50px 0px 50px;
-
-    @media screen and (max-width: 425px) {
-        font-size: larger;
-        min-width: 50px !important;
-    }
 }
 
 .item {
     color: white;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
     text-align: center;
-    max-width: 750px;
-
-    @media screen and (max-width: 1024px) {
-        max-width: 450px;
-    }
-
-    @media screen and (max-width: 768px) {
-        max-width: 350px;
-    }
-
-    @media screen and (max-width: 425px) {
-        font-size: normal;
-        max-width: 240px;
-    }
-
-    @media screen and (max-width: 360px) {
-        max-width: 190px;
-    }
+    max-width: 70vw;
 }
 
 .item p{
-    margin-left: 10px;
+    font-size: 90%;
+    padding-left: 3vw;
     text-align: justify;
 }
 
@@ -557,105 +354,34 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
-
-    @media screen and (max-width: 415px) {
-        margin-top: 40px;
-    }
-
-    @media screen and (max-width: 360px) {
-        margin-top: 65px;
-    }
+    margin-top: 10vh;
 }
 
 #Awards h1{
-    font-weight: 100;
+    font-size: 150%;
     color: #FFE354;
-
-    
-    @media screen and (max-width: 425px) {
-        font-size: x-large;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: larger;
-    }
 }
 
 #IconNakHappy{
     position: absolute;
-    right: 650px;
-    bottom: 420px;
-
-    @media screen and (max-width: 1440px) {
-        right: 450px;
-        bottom: 350px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        right: 350px;
-        bottom: 270px;
-    }
-
-    @media screen and (max-width: 768px) {
-        right: 250px;
-        bottom: 270px;
-    }
-
-    @media screen and (max-width: 425px) {
-        right: 120px;
-        bottom: 230px;
-    }
+    height: 100px;
+    width: 100px;
+    right: 10%;
+    bottom: 7%;
 }
 
 #HappyNakCloud {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     position: absolute;
-
-    @media screen and (max-width: 768px) {
-        width: 160px;
-        height: 180px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 100px;
-        height: 120px;
-    }
 }
 
 #HappyNak {
-    width: 200px;
-    height: 200px;
-    position:absolute  ;
-    top: -100px;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: -50%;
     transform-origin: bottom;
-
-    @media screen and (max-width: 1440px) {
-        width: 160px;
-        height: 180px;
-        right: -180px;
-        top: -85px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 160px;
-        height: 180px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 120px;
-        height: 120px;
-        right: -140px;
-        top: -35px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 80px;
-        height: 80px;
-        right: -90px;
-        top: -20px;
-    }
 }
 
 #FooterFourthPage {
@@ -666,7 +392,7 @@ html,body{
 }
 
 #fivePage {
-    height: 90vh;
+    height: 40vh;
     position: relative;
     background-color: white;
     background-image: none;
@@ -676,23 +402,7 @@ html,body{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 100px;
-
-    @media screen and (max-width: 1440px) {
-        height: 120vh;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: 80vh;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 70vh;
-    }
-
-    @media screen and (max-width: 425px) {
-        height: 40vh;
-    }
+    margin-top: 10vh;
 }
 
 .SlideItems{
@@ -723,11 +433,11 @@ html,body{
     background-image: url(../imgs/Icons/Title.png);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 440px;
-    height: 210px;
+    width: 40vw;
+    height: 10vh;
     position: absolute;
-    top: 130px;
-    left: 175px;
+    top: 20px;
+    left: 40px;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -735,106 +445,28 @@ html,body{
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
-
-    @media screen and (max-width: 1440px) {
-        top: 50px;
-        left: 130px;
-    }
-
-    @media screen and (max-width:1024px) {
-        width: 285px;
-        height: 138px;
-        top: 55px;
-        left: 90px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 240px;
-        height: 115px;
-        top: 36px;
-        left: 65px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 140px;
-        height: 67px;
-        top: 20px;
-        left: 30px;
-    }
-
-    @media screen and (max-width: 415px) {
-        width: 140px;
-        height: 67px;
-        top: 10px;
-        left: 30px;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 140px;
-        height: 67px;
-        top: 10px;
-        left: 30px;
-    }
 }
 
 #TitleTitleBox {
-    font-size: 35px;
+    font-size: 90%;
     color: white;
-    margin: -20px 50px 0px 60px;
-
-    @media screen and (max-width:1024px) {
-        font-size: 25px;
-        margin: 0px 20px 0px 40px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 20px;
-        margin: -10px 20px 0px 40px;
-    }
-
-    @media screen and (max-width: 425px) {
-        font-size: 10px;
-        margin: 0px 20px 0px 25px;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 12px;
-        margin: 0px 20px 0px 25px;
-    }
+    margin: 0 0 1vh 5vw;
+    max-width: 147px;
 }
 
 #OccupationBox{
-    font-size: 18px;
+    font-size: 60%;
     color: white;
-    margin: 10px 85px 0px 60px;
-
-    @media screen and (max-width:1024px) {
-        font-size: 15px;
-        margin: 10px 20px 0px 40px;
-    }
-
-    @media screen and (max-width: 768px) {
-        font-size: 10px;
-        margin: 10px 20px 0px 40px;
-    }
-
-    @media screen and (max-width: 425px) {
-        font-size: 5px;
-        margin: 5px 20px 0px 25px;
-    }
-
-    @media screen and (max-width: 360px) {
-        font-size: 5px;
-        margin: 5px 20px 0px 25px;
-    }
+    margin: 0 0 1vh 5vw;
+    max-width: 147px;
 }
 
 #SliderShowCopyright{
-    font-size: 40px;
+    font-size: 90%;
     color: white;
     position: absolute;
-    left: 240px;
-    bottom: 80px;
+    left: 12vw;
+    bottom: 10vh;
     z-index: 5;
     text-shadow:
     2px 2px 0 black,
@@ -845,46 +477,12 @@ html,body{
     -3px 0px 0 black,
     0px 3px 0 black,
     0px -3px 0 black;
-
-    @media screen and (max-width: 1440px) {
-        left: 210px;
-        bottom: 270px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        left: 130px;
-        bottom: 150px;
-        font-size: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-        left: 100px;
-        bottom: 180px;
-        font-size: 15px;
-    }
-
-    @media screen and (max-width: 425px) {
-        left: 50px;
-        bottom: 160px;
-        font-size: 10px;
-    }
-
-    @media screen and (max-width: 415px) {
-        left: 45PX;
-        bottom: 160px;
-        font-size: 10px;
-    }
-
-    @media screen and (max-width: 360px) {
-        bottom: 180px;
-        left: 45px;
-        font-size: 9px;
-    }
 }
 
 #SeeMoreSliderShow{
     position: absolute;
-    bottom: 150px;
+    right: 15vw;
+    bottom: 12vh;
     z-index: 5;
     border-style: solid;
     border-color: white;
@@ -897,152 +495,38 @@ html,body{
     -3px 0px 0 black,
     0px 3px 0 black,
     0px -3px 0 black;
-
-
-    @media screen and (max-width: 1440px) {
-        bottom: 320px;
-    }
-
-    @media screen and (max-width:1024px) {
-        bottom: 190px;
-        font-size: 25px;
-        padding: 15px;
-    }
-
-    @media screen and (max-width: 768px) {
-        bottom: 210px;
-        font-size: 20px;
-        padding: 10px;
-    }
-
-    @media screen and (max-width: 425px) {
-        bottom: 160px;
-        font-size: 12px;
-        padding: 10px;
-    }
-
-    @media screen and (max-width: 415px) {
-        bottom: 160px;
-    }
-
-    @media screen and (max-width: 360px) {
-        bottom: 180px;
-    }
 }
 
 .SeeMoreButton{
     font-family: "Poetsen One", sans-serif;
     border-radius: 10px;
     color:white;
-    font-size: xx-large;
+    font-size: 150%;
     background-color: #25231C;
     opacity: 0.9;
-    padding: 20px;
+    padding: 2%;
     box-shadow: none;
     border: none;
     text-decoration: none;
+    margin-top: 7vh;
 }
 
 #ToLeftSliderShow{
     position: absolute;
-    left: 200px;
-    top: 370px;
+    left: 12vw;
+    top: 14vh;
     z-index: 5;
-
-    @media screen and (max-width: 1440px) {
-        position: absolute;
-        left: 160px;
-        top: 300px;
-        z-index: 5;
-        width: 85px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        position: absolute;
-        left: 110px;
-        top: 220px;
-        z-index: 5;
-        width: 60px;
-    }
-
-    @media screen and (max-width: 768px) {
-        position: absolute;
-        left: 85px;
-        top: 170px;
-        z-index: 5;
-        width: 50px;
-    }
-
-    @media screen and (max-width: 425px) {
-        position: absolute;
-        left: 45px;
-        top: 90px;
-        z-index: 5;
-        width: 45px;
-    }
-
-    @media screen and (max-width: 415px) {
-        width: 35px;
-        top: 85px;
-        left: 45px;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 30px;
-        top: 80px;
-        left: 40px;
-    }
+    width: 10vw;
+    height: 10vw;
 }
 
 #ToRightSliderShow{
     position: absolute;
-    right:  200px;
-    top: 370px;
+    right: 12vw;
+    top: 14vh;
     z-index: 5;
-
-    @media screen and (max-width: 1440px) {
-        position: absolute;
-        right: 160px;
-        top: 300px;
-        z-index: 5;
-        width: 85px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        position: absolute;
-        right: 110px;
-        top: 220px;
-        z-index: 5;
-        width: 60px;
-    }
-
-    @media screen and (max-width: 768px) {
-        position: absolute;
-        right: 85px;
-        top: 170px;
-        z-index: 5;
-        width: 50px;
-    }
-
-    @media screen and (max-width: 425px) {
-        position: absolute;
-        right: 45px;
-        top: 90px;
-        z-index: 5;
-        width: 45px;
-    }
-    
-    @media screen and (max-width: 415px) {
-        width: 35px;
-        top: 85px;
-        right: 45px;
-    }
-    
-    @media screen and (max-width: 360px) {
-        width: 30px;
-        top: 80px;
-        right: 40px;
-    }
+    width: 10vw;
+    height: 10vw;
 }
 
 #sixPage{
@@ -1053,28 +537,8 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: auto;
+    height: 125vh;
     position: relative;
-
-    @media screen and (max-width: 1440px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
-
-    @media screen and (max-width: 425px) {
-        height: auto;
-        padding-bottom: 50px;
-    }
 }
 
 #HeaderSixPage{
@@ -1085,33 +549,17 @@ html,body{
 
 .ContactMeContainer
 {
-    width: 30%;
-    height: 500px;
+    width: 90vw;
+    height: 75vh;
     background-color: #FEFFFD;
     border-radius: 20px;
-    margin-top: 100px;
+    margin-top: 10vh;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: flex-start;
     align-items: center;
-
-    @media screen and (max-width: 1440px) {
-        width: 70%;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 70%;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 70%;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 85%;
-    }
 }
 
 #ContactMeTitle{
@@ -1126,7 +574,7 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 input[type="text"],
@@ -1142,14 +590,6 @@ textarea {
     font-family: "Poetsen One", sans-serif;
     font-size: 20px;
     padding: 13px;
-
-    @media screen and (max-width: 415px) {
-        width: 80%;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 70%;
-    }
   }
   
   input[type="text"],
@@ -1177,10 +617,18 @@ input[type="email"],
     cursor: pointer;
     font-size: 22px;
     font-family: "Poetsen One", sans-serif;
+    margin: 6vh 0 0 0;
 }
 
 .SubmitButtom:hover {
   background-color: #D9D9D9;
+}
+
+#FooterSixthPage {
+    top: 12vh;
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
 }
 
 .ResultContact{
@@ -1201,217 +649,60 @@ input[type="email"],
 
 #IconNakHappyContact{
     position: absolute;
-    right: 650px;
-    bottom: 420px;
-
-    @media screen and (max-width: 1440px) {
-        right: 450px;
-        bottom: 350px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        right: 350px;
+    right: 250px;
         bottom: 270px;
-    }
-
-    @media screen and (max-width: 768px) {
-        right: 250px;
-        bottom: 270px;
-    }
-
-    @media screen and (max-width: 425px) {
-        right: 120px;
-        bottom: 230px;
-    }
 }
 
 #HappyNakCloudContact {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-
-    @media screen and (max-width: 768px) {
-        width: 160px;
+    width: 160px;
         height: 180px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 100px;
-        height: 120px;
-    }
+    position: absolute;
 }
 
 #HappyNakContact {
-    width: 200px;
-    height: 200px;
-    position:absolute  ;
-    top: -100px;
-    transform-origin: bottom;
-
-    @media screen and (max-width: 1440px) {
-        width: 160px;
-        height: 180px;
-        right: -180px;
-        top: -85px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 160px;
-        height: 180px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 120px;
+    width: 120px;
         height: 120px;
-        right: -140px;
+    position:absolute  ;
+    right: -140px;
         top: -35px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 80px;
-        height: 80px;
-        right: -90px;
-        top: -20px;
-    }
+    transform-origin: bottom;
 }
 
 #IconNakHappyBadContact{
     position: absolute;
-    right: 650px;
-    bottom: 420px;
-
-    @media screen and (max-width: 1440px) {
-        right: 450px;
-        bottom: 350px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        right: 350px;
+    right: 250px;
         bottom: 270px;
-    }
-
-    @media screen and (max-width: 768px) {
-        right: 250px;
-        bottom: 270px;
-    }
-
-    @media screen and (max-width: 425px) {
-        right: 120px;
-        bottom: 230px;
-    }
 }
 
 #SadNakCloudBadContact {
-    width: 200px;
-    height: 200px;
-    position: absolute;
-
-    @media screen and (max-width: 768px) {
-        width: 160px;
+    width: 160px;
         height: 180px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 100px;
-        height: 120px;
-    }
+    position: absolute;
 }
 
 #SadNakBadContact {
-    width: 200px;
-    height: 200px;
-    position:absolute  ;
-    top: -85px;
-    transform-origin: bottom;
-
-    @media screen and (max-width: 1440px) {
-        width: 160px;
-        height: 180px;
-        right: -180px;
-        top: -65px;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 160px;
-        height: 180px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 120px;
+    width: 120px;
         height: 120px;
-        right: -140px;
+    position:absolute  ;
+    right: -140px;
         top: -15px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 80px;
-        height: 80px;
-        right: -90px;
-        top: -10px;
-    }
+    transform-origin: bottom;
 }
 
 #sevenPage{
-    height: 28vh;
+    height: 70vh;
     position: relative;
     background-color: white;
     background-image: none;
     color: #25231C;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 0px;
-    padding-bottom: 20px;
-
-    @media screen and (max-width: 1440px) {
-        height: 33vh;
-    }
-
-    @media screen and (max-width: 1024px) {
-        height: 35vh;
-    position: relative;
-    background-color: white;
-    background-image: none;
-    color: #25231C;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-top: 0px;
-    padding-bottom: 20px;
-    }
-
-    @media screen and (max-width: 768px) {
-        height: 35vh;
-        position: relative;
-        background-color: white;
-        background-image: none;
-        color: #25231C;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: flex-start;
-        justify-content: flex-start;
-        align-items: flex-start;
-        margin-top: 0px;
-        padding-bottom: 20px;
-    }
-
-    @media screen and (max-width: 425px) {
-        height: 70vh;
         flex-direction: column;
         flex-wrap: nowrap;
         align-content: center;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         margin-top: 0px;
-        padding-bottom: 0px;
-    }
+        padding-bottom: 20px;
 }
 
 #FooterIcon{
@@ -1427,122 +718,34 @@ input[type="email"],
 }
 
 #LeftFooterDiv{
-    width: 470px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 22%;
+    align-items: center;
+}
 
-    @media screen and (max-width: 1440px) {
-        width: 470px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 15%;
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 470px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 10%;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 470px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 4%;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 380px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 340px;
-    }
+#LeftFooterDiv p{
+    max-width: 390px;
 }
 
 #RightFooterDiv{
-    width: 470px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-content: flex-start;
+    align-content: center;
     justify-content: center;
     align-items: flex-start;
-    margin-left: 280px;
-
-    @media screen and (max-width: 1440px) {
-    }
-
-    @media screen and (max-width: 1024px) {
-        width: 470px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 40px;
-    }
-
-    @media screen and (max-width: 768px) {
-        width: 470px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 0px;
-    }
-
-    @media screen and (max-width: 425px) {
-        width: 370px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 0;
-    }
-
-    @media screen and (max-width: 360px) {
-        width: 300px;
-    }
 }
 
 .FooterItems{
-    width: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-start;
     align-items: center;
+    margin: 0 0 0 17vw;
 }
 
 .FooterIcons{

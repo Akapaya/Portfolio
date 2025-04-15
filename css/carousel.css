@@ -6,13 +6,12 @@
 
 /* carousel styles */
 .carousel {
-  --carousel-height: 300px;
-  --carousel-width: 3000px;
-  --carousel-item-height: 114px;
-  --carousel-item-width: 320px;
-
-  width: 100%;
-}
+  --carousel-height: 50vh;
+    --carousel-width: 100vw;
+    --carousel-item-height: 20%;
+    --carousel-item-width: 50%;
+    width: 100%;
+  }
 
 .carousel-container {
   align-items: center;
