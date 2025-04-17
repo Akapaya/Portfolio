@@ -149,6 +149,11 @@ html,body{
     align-content: center;
     justify-content: start;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        flex-direction: row;
+        height: 70vh;
+    }
 }
 
 #ContainerGreg {
@@ -160,6 +165,7 @@ html,body{
     @media screen and (min-width: 768px) {
         width: 400px;
         height: 400px;
+        position: initial;
     }
 }
 
@@ -174,6 +180,11 @@ html,body{
         width: 400px;
         height: 400px;
     }
+
+    @media screen and (min-width: 1024px) {
+        position: initial;
+        margin-left: 10%;
+    }
 }
 
 #ContainerAboutMe {
@@ -187,6 +198,10 @@ html,body{
     padding-left: 0%;
         padding-bottom: 0%;
     box-sizing: border-box;
+
+    @media screen and (min-width: 1024px) {
+        width: 56%;
+    }
 }
 
 .AboutMeTexts{
@@ -214,14 +229,14 @@ html,body{
     z-index: 2;
 }
 
-@media screen and (min-width: 480px) {
-    #ContainerGreg {
+@media screen and (max-width: 1023px) {
+        #ContainerGreg {
         order: 2;
     }
     #ContainerAboutMe {
         order: 1;
     }
-}
+    }
 
 #thirdPage {
     width: 100vw;
@@ -234,6 +249,10 @@ html,body{
     align-items: center;
     background-color: white;
     background-image: none;
+
+    @media screen and (min-width: 1024px) {
+        height: 75vh;
+    }
 }
 
 #MainVideoContainer{
@@ -249,6 +268,10 @@ html,body{
 
     @media screen and (min-width: 768px) {
         height: 41vh;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 60vh;
     }
 }
 
@@ -432,6 +455,9 @@ html,body{
     @media screen and (min-width: 768px) {
         height: 55vh;
     }
+        @media screen and (min-width: 1024px) {
+        height: 75vh;
+    }
 }
 
 .SlideItems{
@@ -474,6 +500,13 @@ html,body{
     align-content: flex-start;
     justify-content: center;
     align-items: flex-start;
+
+    @media screen and (min-width: 1024px) {
+        width: 30vw;
+    height: 19vh;
+    left: 9%;
+    top: 15%;
+    }
 }
 
 #TitleTitleBox {
@@ -481,6 +514,10 @@ html,body{
     color: white;
     margin: 0 0 1vh 5vw;
     max-width: 147px;
+    @media screen and (min-width: 1024px) {
+        font-size: 130%;
+        max-width: 200px;
+    }
 }
 
 #OccupationBox{
@@ -488,6 +525,10 @@ html,body{
     color: white;
     margin: 0 0 1vh 5vw;
     max-width: 147px;
+    @media screen and (min-width: 1024px) {
+        font-size: 100%;
+        max-width: 200px;
+    }
 }
 
 #SliderShowCopyright{
@@ -510,7 +551,9 @@ html,body{
     @media screen and (min-width: 576px) {
         bottom: 10%;
     }
-    
+    @media screen and (min-width: 1024px) {
+        font-size: 140%;
+    }
 }
 
 #SeeMoreSliderShow{
@@ -534,6 +577,10 @@ html,body{
         right: 15%;
         bottom: 12%;
     }
+
+    @media screen and (min-width: 1024px) {
+         bottom: 15%;
+    }
 }
 
 .SeeMoreButton{
@@ -547,6 +594,11 @@ html,body{
     box-shadow: none;
     border: none;
     text-decoration: none;
+
+     @media screen and (min-width: 1024px) {
+        font-size: 120%;
+        padding: 1%;
+    }
 }
 
 #ToLeftSliderShow{
@@ -563,6 +615,11 @@ html,body{
         width: 50px;
         height: 50px;
     }
+
+    @media screen and (min-width: 1024px) {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 #ToRightSliderShow{
@@ -578,6 +635,11 @@ html,body{
         top: 40%;
         width: 50px;
         height: 50px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -612,6 +674,10 @@ html,body{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (min-width: 1024px) {
+        width: 55vw;
+    }
 }
 
 #ContactMeTitle{
