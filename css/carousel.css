@@ -37,6 +37,11 @@
   align-items: center;
   font-size: xx-large;
   text-align: center;
+  max-width: 400px;
+
+  @media screen and (min-width: 576px) {
+        max-width: 500px;
+    }
 }
 
 .carousel-item-2 {

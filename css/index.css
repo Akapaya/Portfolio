@@ -141,22 +141,22 @@ html,body{
 #secondPage {
     background-color: white;
     background-image: none;
-    height: 120vh;
+    height: 115vh;
     width: 100vw;
     overflow: visible;
     position: relative;
     flex-direction: column;
+    align-content: center;
+    justify-content: start;
+    align-items: center;
 }
 
 #ContainerGreg {
-    width: 50vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: 3vh;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 0;
+    right: 28%;
 }
 
 #MiniGreg{
@@ -278,6 +278,10 @@ html,body{
     width: 100vw;
     height: 293vh;
     position: relative;
+
+    @media screen and (min-width: 576px) {
+        height: 275vh;
+    }
 }
 
 .dashed-line-vertical {
@@ -342,8 +346,9 @@ html,body{
 
 .item p{
     font-size: 90%;
-    padding-left: 3vw;
+    padding-left: 3%;
     text-align: justify;
+    padding-right: 3%;
 }
 
 #Awards {
@@ -367,7 +372,11 @@ html,body{
     height: 100px;
     width: 100px;
     right: 10%;
-    bottom: 7%;
+    bottom: 10%;
+
+    @media screen and (min-width: 576px) {
+        bottom: 9%;
+    }
 }
 
 #HappyNakCloud {
@@ -385,9 +394,9 @@ html,body{
 }
 
 #FooterFourthPage {
-    top: 50px;
+    bottom: 0;
     width: 100%;
-    position: relative;
+    position: absolute;
     min-width: 1000px;
 }
 
@@ -400,9 +409,8 @@ html,body{
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-top: 10vh;
 }
 
 .SlideItems{
@@ -436,8 +444,8 @@ html,body{
     width: 40vw;
     height: 10vh;
     position: absolute;
-    top: 20px;
-    left: 40px;
+    top: 20%;
+    left: 8%;
     z-index: 5;
     display: flex;
     flex-direction: column;
@@ -465,8 +473,8 @@ html,body{
     font-size: 90%;
     color: white;
     position: absolute;
-    left: 12vw;
-    bottom: 10vh;
+    left: 12%;
+    bottom: 15%;
     z-index: 5;
     text-shadow:
     2px 2px 0 black,
@@ -477,12 +485,17 @@ html,body{
     -3px 0px 0 black,
     0px 3px 0 black,
     0px -3px 0 black;
+
+    @media screen and (min-width: 576px) {
+        bottom: 10%;
+    }
+    
 }
 
 #SeeMoreSliderShow{
     position: absolute;
-    right: 15vw;
-    bottom: 12vh;
+    right: 13%;
+    bottom: 20%;
     z-index: 5;
     border-style: solid;
     border-color: white;
@@ -495,6 +508,11 @@ html,body{
     -3px 0px 0 black,
     0px 3px 0 black,
     0px -3px 0 black;
+
+    @media screen and (min-width: 576px) {
+        right: 15%;
+        bottom: 12%;
+    }
 }
 
 .SeeMoreButton{
@@ -508,25 +526,38 @@ html,body{
     box-shadow: none;
     border: none;
     text-decoration: none;
-    margin-top: 7vh;
 }
 
 #ToLeftSliderShow{
     position: absolute;
-    left: 12vw;
-    top: 14vh;
+    left: 12%;
+    top: 42%;
     z-index: 5;
-    width: 10vw;
-    height: 10vw;
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: 576px) {
+        left: 12%;
+        top: 40%;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 #ToRightSliderShow{
     position: absolute;
-    right: 12vw;
-    top: 14vh;
+    right: 12%;
+    top: 42%;
     z-index: 5;
-    width: 10vw;
-    height: 10vw;
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: 576px) {
+        right: 12%;
+        top: 40%;
+        width: 50px;
+        height: 50px;
+    }
 }
 
 #sixPage{
