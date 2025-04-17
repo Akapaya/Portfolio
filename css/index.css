@@ -62,9 +62,17 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height: 220vw;
     position: relative;
     background-position: top;
+
+    @media screen and (min-width: 768px) {
+       height: 100vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 56vw;
+    }
 }
 
 #HeaderFirstPage {
@@ -93,11 +101,21 @@ html,body{
     height: 200px;
     position: relative;
     top: -100px;
+
+    @media screen and (min-width: 1920px) {
+        width: 400px;
+    height: 400px;
+    }
 }
 
 #NakLogo {
 	transform-origin: bottom;
 	transition: transform 0.3s ease-in-out;
+
+    @media screen and (min-width: 1920px) {
+        width: 400px;
+    height: 400px;
+    }
 }
 
 #AkapayaLogo {
@@ -116,6 +134,10 @@ html,body{
     top: -40px;
     position: relative;
     font-size: x-large;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 350%;
+    }
 }
 
 #SocialMedia{
@@ -128,10 +150,18 @@ html,body{
 }
 
 .SocialLogos {
-    width: 90px;
+    width: 50px;
     transition: width 0.3s;
     margin-left: 10px;
     margin-right: 10px;
+
+    @media screen and (min-width: 1280px) {
+        width: 80px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 140px;
+    }
 }
 
 .SocialLogos:hover {
@@ -141,7 +171,7 @@ html,body{
 #secondPage {
     background-color: white;
     background-image: none;
-    height: 115vh;
+    height: 200vw;
     width: 100vw;
     overflow: visible;
     position: relative;
@@ -150,36 +180,42 @@ html,body{
     justify-content: start;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 576px) {
+       height: 166vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 110vw;
+    }
+
+    @media screen and (min-width: 1280px) {
         flex-direction: row;
-        height: 70vh;
+        height: 44vw;
     }
 }
 
 #ContainerGreg {
-    width: 300px;
-    height: 300px;
+    width: 70vw;
+        height: 70vw;
     position: absolute;
     bottom: 0;
-    right: 28%;
     @media screen and (min-width: 768px) {
-        width: 400px;
-        height: 400px;
+        width: 45vw;
+        height: 45vw;
+    }
+
+    @media screen and (min-width: 1024px) {
         position: initial;
     }
 }
 
 #MiniGreg{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     top: 0px;
     left: 0px;
     position: relative;
     z-index: 1;
-    @media screen and (min-width: 768px) {
-        width: 400px;
-        height: 400px;
-    }
 
     @media screen and (min-width: 1024px) {
         position: initial;
@@ -204,17 +240,32 @@ html,body{
     }
 }
 
+#Name{
+    font-size: 133%;
+    @media screen and (min-width: 1920px) {
+        font-size: 220%;
+    }
+}
+
 .AboutMeTexts{
-    font-size: x-large;
+    font-size: 120%;
     width: 80%;
     margin-bottom: 0px;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 180%;
+    }
 }
 
 #AboutMeList{
     list-style-type: none;
     width: 80%;
-    font-size: x-large;
+    font-size: 120%;
     font-weight: 100;
+
+    @media screen and (min-width: 1920px) {
+        font-size: 180%;
+    }
 }
 
 #SeeMoreMe{
@@ -240,7 +291,7 @@ html,body{
 
 #thirdPage {
     width: 100vw;
-    height: 60vh;
+    height: 70vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -250,14 +301,14 @@ html,body{
     background-color: white;
     background-image: none;
 
-    @media screen and (min-width: 1024px) {
-        height: 75vh;
+    @media screen and (min-width: 1280px) {
+        height: 45vw;
     }
 }
 
 #MainVideoContainer{
     width: 80vw;
-    height: 32vh;
+    height: 50vw;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -267,11 +318,11 @@ html,body{
     position: relative;
 
     @media screen and (min-width: 768px) {
-        height: 41vh;
+        height: 41vw;
     }
 
-    @media screen and (min-width: 1024px) {
-        height: 60vh;
+    @media screen and (min-width: 1280px) {
+        height: 40vw;
     }
 }
 
@@ -311,16 +362,44 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 293vh;
+    height: 475vw;
     position: relative;
 
+    @media screen and (min-width: 375px) {
+        height: 430vw;
+    }
+
+    @media screen and (min-width: 390px) {
+        height: 440vw;
+    }
+
     @media screen and (min-width: 576px) {
-        height: 275vh;
+        height: 480vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 340vw;
+    }
+
+     @media screen and (min-width: 1024px) {
+        height: 240vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 200vw;
+    }
+
+    @media screen and (min-width: 1440px) {
+        height: 175vw;
+    }
+
+        @media screen and (min-width: 1920px) {
+        height: 200vw;
     }
 }
 
 .dashed-line-vertical {
-    border-left: 0.5vh dashed white;
+    border-left: 0.5vw dashed white;
     height: auto;
     width: 10px;
     display: flex;
@@ -330,6 +409,10 @@ html,body{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+    @media screen and (min-width: 1920px) {
+        border-left: 0.3vw dashed white;
+    }
 }
 
 .dashed-line-horizontal
@@ -344,6 +427,10 @@ html,body{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+
+    @media screen and (min-width: 1920px) {
+        border-bottom: 0.4vw dashed white;
+    }
 }
 
 .HistoricDivs{
@@ -371,6 +458,14 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 576px) {
+        font-size: 140%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 200%;
+    }
 }
 
 .item {
@@ -384,6 +479,13 @@ html,body{
     padding-left: 3%;
     text-align: justify;
     padding-right: 3%;
+    @media screen and (min-width: 576px) {
+        font-size: 120%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 200%;
+    }
 }
 
 #Awards {
@@ -394,12 +496,20 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 10vw;
 }
 
 #Awards h1{
     font-size: 150%;
     color: #FFE354;
+
+    @media screen and (min-width: 820px) {
+        font-size: 250%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 300%;
+    }
 }
 
 #IconNakHappy{
@@ -441,7 +551,7 @@ html,body{
 }
 
 #fivePage {
-    height: 40vh;
+    height: 70vw;
     position: relative;
     background-color: white;
     background-image: none;
@@ -453,10 +563,10 @@ html,body{
     align-items: center;
 
     @media screen and (min-width: 768px) {
-        height: 55vh;
+        height: 55vw;
     }
         @media screen and (min-width: 1024px) {
-        height: 75vh;
+        height: 75vw;
     }
 }
 
@@ -489,7 +599,7 @@ html,body{
     background-size: cover;
     background-repeat: no-repeat;
     width: 40vw;
-    height: 10vh;
+    height: 19vw;
     position: absolute;
     top: 20%;
     left: 8%;
@@ -501,33 +611,46 @@ html,body{
     justify-content: center;
     align-items: flex-start;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         width: 30vw;
-    height: 19vh;
+    height: 14vw;
     left: 9%;
     top: 15%;
+    }
+
+    @media screen and (min-width: 1024px) {
+    top: 24%;
     }
 }
 
 #TitleTitleBox {
     font-size: 90%;
     color: white;
-    margin: 0 0 1vh 5vw;
+    margin: 0 0 1vw 5vw;
     max-width: 147px;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         font-size: 130%;
         max-width: 200px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 240%;
+        max-width: 440px;
     }
 }
 
 #OccupationBox{
     font-size: 60%;
     color: white;
-    margin: 0 0 1vh 5vw;
+    margin: 0 0 1vw 5vw;
     max-width: 147px;
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 768px) {
         font-size: 100%;
         max-width: 200px;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 210%;
+        max-width: 440px;
     }
 }
 
@@ -549,10 +672,19 @@ html,body{
     0px -3px 0 black;
 
     @media screen and (min-width: 576px) {
-        bottom: 10%;
+        bottom: 16%;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 170%;
+        bottom: 11%;
     }
     @media screen and (min-width: 1024px) {
-        font-size: 140%;
+        font-size: 180%;
+        bottom: 20%;
+    }
+    @media screen and (min-width: 1920px) {
+        font-size: 280%;
     }
 }
 
@@ -574,12 +706,12 @@ html,body{
     0px -3px 0 black;
 
     @media screen and (min-width: 576px) {
-        right: 15%;
-        bottom: 12%;
+        right: 13%;
+        bottom: 20%;
     }
 
     @media screen and (min-width: 1024px) {
-         bottom: 15%;
+         bottom: 23%;
     }
 }
 
@@ -596,8 +728,17 @@ html,body{
     text-decoration: none;
 
      @media screen and (min-width: 1024px) {
-        font-size: 120%;
-        padding: 1%;
+        font-size: 150%;
+        padding: 2%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 150%;
+        padding: 2%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 280%;
     }
 }
 
@@ -651,8 +792,28 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 125vh;
+    height: 250vw;
     position: relative;
+
+    @media screen and (min-width: 576px) {
+        height: 187vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 130vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 101vw;
+    }
+
+        @media screen and (min-width: 1200px) {
+        height: 85vw;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 70vw;
+    }
 }
 
 #HeaderSixPage{
@@ -664,7 +825,7 @@ html,body{
 .ContactMeContainer
 {
     width: 90vw;
-    height: 75vh;
+    height: 160vw;
     background-color: #FEFFFD;
     border-radius: 20px;
     margin-top: 10vh;
@@ -675,8 +836,17 @@ html,body{
     justify-content: flex-start;
     align-items: center;
 
-    @media screen and (min-width: 1024px) {
-        width: 55vw;
+    @media screen and (min-width: 768px) {
+        height: 80vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 50vw;
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 35vw;
     }
 }
 
@@ -743,9 +913,9 @@ input[type="email"],
 }
 
 #FooterSixthPage {
-    top: 12vh;
     width: 100%;
-    position: relative;
+    position: absolute;
+    bottom: 0;
     min-width: 1000px;
 }
 
@@ -836,9 +1006,21 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
+        @media screen and (min-width: 375px) {
+        height: 90vh;
+    }
+
         @media screen and (min-width: 768px) {
             height: 45vh;
         flex-direction: row;
+    }
+
+    @media screen and (min-width: 820px) {
+            height: 30vh;
+    }
+
+    @media screen and (min-width: 1280px) {
+            height: 40vh;
     }
 }
 
@@ -855,7 +1037,7 @@ input[type="email"],
 }
 
 #LeftFooterDiv{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -865,14 +1047,23 @@ input[type="email"],
     @media screen and (min-width: 768px) {
         width: 50%;
     }
+
+        @media screen and (min-width: 1200px) {
+        width: 60%;
+    }
 }
 
 #LeftFooterDiv p{
     max-width: 390px;
+
+    @media screen and (min-width: 1920px) {
+        max-width: 800px;
+        font-size: 180%;
+    }
 }
 
 #RightFooterDiv{
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -884,11 +1075,16 @@ input[type="email"],
     }
 }
 
+#RightFooterDiv p{
+    @media screen and (min-width: 1920px) {
+        font-size: 160%;
+    }
+}
+
 .FooterItems{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 0 0 0 17vw;
 
     @media screen and (min-width: 768px) {
         margin: 0 0 0 1vw;
@@ -902,11 +1098,19 @@ input[type="email"],
 
 #NakLogoFooter{
     width: 50px;
+
+    @media screen and (min-width: 1920px) {
+        width: 100px;
+    }
 }
 
 #AkapayaLogoFooter{
     width: 200px;
     margin-left: -25px;
+
+    @media screen and (min-width: 1920px) {
+        width: 350px;
+    }
 }
 
 /*404 page*/
@@ -951,6 +1155,11 @@ input[type="email"],
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (min-width: 1920px) {
+        padding: 9px;
+        border-width: 0px 9px 9px 0px;
+    }
 }
 
 .ArrowToRight {
@@ -961,6 +1170,11 @@ input[type="email"],
   padding: 3px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+
+  @media screen and (min-width: 1920px) {
+        padding: 9px;
+        border-width: 0px 9px 9px 0px;
+    }
 }
 
 .ArrowToRightNoExpanded{
@@ -971,6 +1185,11 @@ input[type="email"],
   padding: 3px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+
+  @media screen and (min-width: 1920px) {
+        padding: 9px;
+        border-width: 0px 9px 9px 0px;
+    }
 }
 
 .ArrowToDown {
@@ -981,6 +1200,11 @@ input[type="email"],
   padding: 3px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+
+  @media screen and (min-width: 1920px) {
+        padding: 9px;
+        border-width: 0px 9px 9px 0px;
+    }
 }
 
 .collapsed {

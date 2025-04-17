@@ -42,6 +42,16 @@
   @media screen and (min-width: 576px) {
         max-width: 500px;
     }
+
+    @media screen and (min-width: 820px) {
+        max-width: 800px;
+        font-size: 250%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        font-size: 400%;
+        max-width: 1200px;
+    }
 }
 
 .carousel-item-2 {
