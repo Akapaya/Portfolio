@@ -157,6 +157,10 @@ html,body{
     position: absolute;
     bottom: 0;
     right: 28%;
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 #MiniGreg{
@@ -166,6 +170,10 @@ html,body{
     left: 0px;
     position: relative;
     z-index: 1;
+    @media screen and (min-width: 768px) {
+        width: 400px;
+        height: 400px;
+    }
 }
 
 #ContainerAboutMe {
@@ -238,6 +246,10 @@ html,body{
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (min-width: 768px) {
+        height: 41vh;
+    }
 }
 
 .PlayVideoIcon{
@@ -377,6 +389,11 @@ html,body{
     @media screen and (min-width: 576px) {
         bottom: 9%;
     }
+
+    @media screen and (min-width: 768px) {
+        height: 150px;
+        width: 150px;
+    }
 }
 
 #HappyNakCloud {
@@ -411,6 +428,10 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 768px) {
+        height: 55vh;
+    }
 }
 
 .SlideItems{
@@ -734,6 +755,11 @@ input[type="email"],
         align-items: center;
         margin-top: 0px;
         padding-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            height: 45vh;
+        flex-direction: row;
+    }
 }
 
 #FooterIcon{
@@ -756,6 +782,9 @@ input[type="email"],
     align-content: center;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
 }
 
 #LeftFooterDiv p{
@@ -770,6 +799,9 @@ input[type="email"],
     align-content: center;
     justify-content: center;
     align-items: flex-start;
+    @media screen and (min-width: 768px) {
+        width: 45%;
+    }
 }
 
 .FooterItems{
@@ -777,6 +809,10 @@ input[type="email"],
     flex-direction: row;
     align-items: center;
     margin: 0 0 0 17vw;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 1vw;
+    }
 }
 
 .FooterIcons{
