@@ -22,6 +22,18 @@ html,body{
 	overflow: hidden;
 }
 
+.Title{
+    font-size: 300%;
+}
+
+.P1{
+    font-size: 200%;
+}
+
+.P2{
+    font-size: 200%;
+}
+
 #firstPage {
     background-image: url(../imgs/Cloud/thumb.png);
     background-size: cover;
@@ -37,7 +49,7 @@ html,body{
     flex-wrap: nowrap;
 
     @media screen and (min-width: 768px) {
-           height: 240vw;
+           height: 200vw;
     }
 
     @media screen and (min-width: 1280px) {
@@ -75,7 +87,7 @@ html,body{
 }
 
 #MiniGreg{
-    width: 90%;
+    width: 60%;
     z-index: 1;
     border: 8px solid #25231C;
     border-radius: 20px;
@@ -93,13 +105,13 @@ html,body{
     width: 85px;
     position: absolute;
     left: 1%;
-    top: 25%;
+    top: 20%;
     z-index: 5;
 
     @media screen and (min-width: 768px) {
            width: 20%;
            left: 5%;
-    top: 22%;
+    top: 25%;
     }
 
     @media screen and (min-width: 1280px) {
@@ -169,6 +181,16 @@ html,body{
     }
 }
 
+#IUsedList{
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+           flex-direction: row;
+    }
+}
+
 #secondPage {
     background-color: white;
     background-image: none;
@@ -184,7 +206,7 @@ html,body{
     margin-top: -50px;
 
     @media screen and (min-width: 1440px) {
-           margin-top: -150px;
+           margin-top: 0px;
     }
 }
 
@@ -453,7 +475,9 @@ input[type="email"],
 }
 
 .ResultContact{
-    height: 85vh;
+    height: 100vw;
+    width: 80vw;
+    
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -467,6 +491,7 @@ input[type="email"],
     color: white;
     font-size: 135%;
     max-width: 400px;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
         font-size: 190%;
@@ -480,7 +505,7 @@ input[type="email"],
 
 #IconNakHappyContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
@@ -503,7 +528,7 @@ input[type="email"],
 
 #IconNakHappyBadContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
