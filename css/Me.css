@@ -22,6 +22,58 @@ html,body{
 	overflow: hidden;
 }
 
+.Title{
+    font-size: 150%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 250%;
+    }
+}
+
+.P1{
+    font-size: 100%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 200%;
+    }
+}
+
+.P2{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 160%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 160%;
+    }
+}
+
+.P3{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1366px) {
+           font-size: 120%;
+    }
+}
+
 #firstPage {
     background-image: url(../imgs/Cloud/thumb.png);
     background-size: cover;
@@ -37,11 +89,11 @@ html,body{
     flex-wrap: nowrap;
 
     @media screen and (min-width: 768px) {
-           height: 145vw;
+           height: 165vw;
     }
 
     @media screen and (min-width: 1280px) {
-        height: 60vw;
+        height: 58vw;
         flex-direction: row;
     }
 }
@@ -95,7 +147,7 @@ html,body{
     @media screen and (min-width: 768px) {
            width: 20%;
            left: 22%;
-    top: 42%;
+    top: 39%;
     }
 
     @media screen and (min-width: 1280px) {
@@ -117,54 +169,21 @@ html,body{
 }
 
 .AboutMeTexts{
-    font-size: 100%;
     margin-bottom: 0px;
     color: #FFE354;
-
-     @media screen and (min-width: 768px) {
-           font-size: 140%;
-    }
-
-    @media screen and (min-width: 1920px) {
-           font-size: 180%;
-    }
-
-    @media screen and (min-width: 2560px) {
-           font-size: 250%;
-    }
 }
 
 #Name{
-    font-size: 130%;
-    @media screen and (min-width: 768px) {
-           font-size: 170%;
-    }
-
-    @media screen and (min-width: 1920px) {
-           font-size: 200%;
-    }
-    @media screen and (min-width: 2560px) {
-           font-size: 270%;
-    }
 }
 
 #AboutMeList{
     list-style-type: none;
     width: 80%;
-    font-size: 100%;
     font-weight: 100;
     color: #FFE354;
     margin-left: -15px;
     @media screen and (min-width: 768px) {
-           font-size: 140%;
            width: 100%;
-    }
-
-    @media screen and (min-width: 1920px) {
-           font-size: 180%;
-    }
-    @media screen and (min-width: 2560px) {
-           font-size: 250%;
     }
 }
 
@@ -214,18 +233,9 @@ iframe{
 
 .StorysTexts{
     color: #25231C;
-    font-size: larger;
     width: 85%;
     text-align: justify;
     margin: 30px 0px 10px 0px;
-
-    @media screen and (min-width: 1920px) {
-           font-size: 180%;
-    }
-
-    @media screen and (min-width: 2560px) {
-           font-size: 240%;
-    }
 }
 
 .StoryImgs{
@@ -314,13 +324,12 @@ iframe{
     }
 
     @media screen and (min-width: 1920px) {
-        height: 35vw;
+        height: 30vw;
     }
 }
 
 #ContactMeTitle{
     color: #25231C;
-    font-size: xx-large;
 }
 
 #contactForm{
@@ -371,7 +380,6 @@ input[type="email"],
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 22px;
     font-family: "Poetsen One", sans-serif;
     margin: 6vh 0 0 0;
 }
@@ -388,7 +396,9 @@ input[type="email"],
 }
 
 .ResultContact{
-    height: 85vh;
+    height: 100vw;
+    width: 80vw;
+    
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -400,22 +410,20 @@ input[type="email"],
 
 .ResultContact p{
     color: white;
-    font-size: 135%;
     max-width: 400px;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
-        font-size: 190%;
         max-width: 700px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 220%;
     }
 }
 
 #IconNakHappyContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
@@ -438,7 +446,7 @@ input[type="email"],
 
 #IconNakHappyBadContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
@@ -499,9 +507,13 @@ input[type="email"],
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
     height: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+
+    @media screen and (min-width: 1280px) {
+        width: 80%;
+    }
 }
 
 #LeftFooterDiv{
@@ -511,23 +523,20 @@ input[type="email"],
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
     @media screen and (min-width: 768px) {
         width: 50%;
     }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
         width: 60%;
+        margin-left: 10%;
     }
 }
 
 #LeftFooterDiv p{
-    max-width: 390px;
-
-    @media screen and (min-width: 1920px) {
-        max-width: 800px;
-        font-size: 180%;
-    }
+    max-width: 80%;
 }
 
 #RightFooterDiv{
@@ -544,9 +553,6 @@ input[type="email"],
 }
 
 #RightFooterDiv p{
-    @media screen and (min-width: 1920px) {
-        font-size: 160%;
-    }
 }
 
 .FooterItems{
