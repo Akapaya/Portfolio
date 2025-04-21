@@ -23,15 +23,55 @@ html,body{
 }
 
 .Title{
-    font-size: 300%;
+    font-size: 250%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 350%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 300%;
+    }
 }
 
 .P1{
-    font-size: 200%;
+    font-size: 100%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 150%;
+    }
 }
 
 .P2{
-    font-size: 200%;
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 160%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 130%;
+    }
+}
+
+.P3{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1366px) {
+           font-size: 120%;
+    }
 }
 
 #firstPage {
@@ -44,7 +84,7 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 340vw;
+    height: 250vw;
     position: relative;
     flex-wrap: nowrap;
 
@@ -105,7 +145,7 @@ html,body{
     width: 85px;
     position: absolute;
     left: 1%;
-    top: 20%;
+    top: 28%;
     z-index: 5;
 
     @media screen and (min-width: 768px) {
@@ -137,58 +177,28 @@ html,body{
 }
 
 .AboutMeTexts{
-    font-size: 100%;
     margin-bottom: 0px;
     color: #FFE354;
-
-     @media screen and (min-width: 768px) {
-           font-size: 180%;
-    }
-
-    @media screen and (min-width: 1280px) {
-           font-size: 120%;
-    }
 }
 
 #Name{
-    font-size: 210%;
-    @media screen and (min-width: 768px) {
-           font-size: 300%;
-    }
-
-    @media screen and (min-width: 820px) {
-           font-size: 400%;
-    }
-
-    @media screen and (min-width: 1280px) {
-           font-size: 220%;
-    }
 }
 
 #AboutMeList{
     list-style-type: square;
     width: 100%;
-    font-size: 130%;
     font-weight: 100;
     color: #FFE354;
     margin-left: -15px;
     @media screen and (min-width: 768px) {
-           font-size: 180%;
            width: 100%;
-    }
-    @media screen and (min-width: 1280px) {
-           font-size: 120%;
     }
 }
 
 #IUsedList{
     display: flex;
-    flex-direction: column;
-
-    @media screen and (min-width: 768px) {
-        width: 100%;
+    width: 100%;
            flex-direction: row;
-    }
 }
 
 #secondPage {
@@ -240,30 +250,16 @@ iframe{
 }
 
 .StorysTitle{
-    font-size: 180%;
     text-align: justify;
     color: #25231C;
     margin: 5px 0px 10px 0px;
-
-    @media screen and (min-width: 768px) {
-           font-size: 300%;
-    }
-
-    @media screen and (min-width: 1440px) {
-           font-size: 400%;
-    }
 }
 
 .StorysTexts{
     color: #25231C;
-    font-size: larger;
     width: 85%;
     text-align: justify;
     margin: 30px 0px 10px 0px;
-
-    @media screen and (min-width: 1440px) {
-           font-size: 150%;
-    }
 }
 
 .StoryImgs{
@@ -283,15 +279,11 @@ iframe{
 
 .StoryList{
     @media screen and (min-width: 768px) {
-           font-size: 130%;
            width: 80%;
     }
 }
 
 .StoryListItem{
-    @media screen and (min-width: 768px) {
-           font-size: 90%;
-    }
 }
 
 .grid-container {
@@ -328,7 +320,6 @@ iframe{
 
     .grid-item p {
       margin: 0;
-      font-size: 16px;
       color: #333;
     }
 
@@ -407,7 +398,6 @@ iframe{
 
 #ContactMeTitle{
     color: #25231C;
-    font-size: xx-large;
 }
 
 #contactForm{
@@ -458,7 +448,6 @@ input[type="email"],
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 22px;
     font-family: "Poetsen One", sans-serif;
     margin: 6vh 0 0 0;
 }
@@ -489,17 +478,14 @@ input[type="email"],
 
 .ResultContact p{
     color: white;
-    font-size: 135%;
     max-width: 400px;
     text-align: center;
 
     @media screen and (min-width: 768px) {
-        font-size: 190%;
         max-width: 700px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 220%;
     }
 }
 
@@ -589,9 +575,13 @@ input[type="email"],
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
     height: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+
+    @media screen and (min-width: 1280px) {
+        width: 80%;
+    }
 }
 
 #LeftFooterDiv{
@@ -601,23 +591,20 @@ input[type="email"],
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
     @media screen and (min-width: 768px) {
         width: 50%;
     }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
         width: 60%;
+        margin-left: 10%;
     }
 }
 
 #LeftFooterDiv p{
-    max-width: 390px;
-
-    @media screen and (min-width: 1920px) {
-        max-width: 800px;
-        font-size: 180%;
-    }
+    max-width: 80%;
 }
 
 #RightFooterDiv{
@@ -634,9 +621,6 @@ input[type="email"],
 }
 
 #RightFooterDiv p{
-    @media screen and (min-width: 1920px) {
-        font-size: 160%;
-    }
 }
 
 .FooterItems{
