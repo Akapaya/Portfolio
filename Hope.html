@@ -54,46 +54,46 @@
         <p class="StorysTexts">As mentioned previously, I carried out this project completely alone, as there wasn`t much of a network interested in dedicating itself to a gamejam project at that time.</p>
         <p class="StorysTexts">I started developing the scenarios and models that were missing before actually starting development within unity, I took the weapons used from an old project, but everything else had to be done from scratch.</p>
         <p class="StorysTexts">I had a well-defined schedule planned, the gamejam would last 2 weeks, so the schedule was more or less like this. It took more or less 3 days to model and optimize the models due to the software I used.</p>
-        <ul>
-				<li>1 day to concept the idea and story.</li>
-				<li>5 days of development in general, inserting the models, programming the mechanics and behaviors, along with their animations.</li>
-				<li>2 days were spent creating the scenarios, the pre-arrangements of the enemies and their navigation mesh through the scenario.</li>
-				<li>3 days were spent correcting any details that were needed, but also trying to create the music and sound effects, which is the area I have the least knowledge of.</li>
+        <ul class="StoryList">
+				<li class="StoryListItem">1 day to concept the idea and story.</li>
+				<li class="StoryListItem">5 days of development in general, inserting the models, programming the mechanics and behaviors, along with their animations.</li>
+				<li class="StoryListItem">2 days were spent creating the scenarios, the pre-arrangements of the enemies and their navigation mesh through the scenario.</li>
+				<li class="StoryListItem">3 days were spent correcting any details that were needed, but also trying to create the music and sound effects, which is the area I have the least knowledge of.</li>
 			</ul>
-			<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Schedule.png">
+			<img class="StoryImgs" src="imgs/Hope/Schedule.png">
         <p class="StorysTexts">What was most complicated in this development was certainly coming up with the idea of the enemy models, and programming the entire system so that they could talk to each other without interfering with the perfomance and quality of the code, as I was still a novice, a lot about the quality of the code I still didn`t have full knowledge, which I gained as professional opportunities appeared to me.</p>
         <p class="StorysTexts">With little knowledge I ended up looking for a lot of content, but I reached a satisfactory result, I think there were some key points that I can point out here.</p>
-        <ul>
-				<li>knowledge of using Unity`s Nav-Mesh, how to use it in differents rooms of the game.</li>
-				<li>Instantiating scenes together, I made the main character stay in a main scene, keeping his information, just additively loading other scenes with the environment and enemies and unloadhing when necessary.</li>
-				<li>Basic AI for each enemy, each one has its own behavior.</li>
-				<li>Status upgrades depending on reward items for completing a floor.</li>
-				<li>Different movement ant types of shooting behaviors depending on the weapon used.</li>
+        <ul class="StoryList">
+				<li class="StoryListItem">knowledge of using Unity`s Nav-Mesh, how to use it in differents rooms of the game.</li>
+				<li class="StoryListItem">Instantiating scenes together, I made the main character stay in a main scene, keeping his information, just additively loading other scenes with the environment and enemies and unloadhing when necessary.</li>
+				<li class="StoryListItem">Basic AI for each enemy, each one has its own behavior.</li>
+				<li class="StoryListItem">Status upgrades depending on reward items for completing a floor.</li>
+				<li class="StoryListItem">Different movement ant types of shooting behaviors depending on the weapon used.</li>
 			</ul>
-			<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/ScriptsHope.png">
-			<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/GameManagerHope.png">
+			<img class="StoryImgs" src="imgs/Hope/ScriptsHope.png">
+			<img class="StoryImgs" src="imgs/Hope/GameManagerHope.png">
 			<p class="StorysTitle">The Graphics and Models</p>
         <p class="StorysTexts">The game`s graphics style follows monochrome to convey a melancholic feeling and match the theme of the story.</p>
         <p class="StorysTexts">Furthermore, it was inspired by the film "Schindler`s List" to highlight the color red for the most important items, so all items in red are part of the mystery and are important to unravel the story and how to stop the cycle of torture.</p>
         <p class="StorysTexts">The models were made using the Magica Voxel tool, it is a very good tool for making 3D models using cubes quickly, it makes the work easier if you don`t have time to model something from scratch.</p>
         <p class="StorysTexts">However, the problem with this tool at the time was that because of how the texture works on top of the model, the model came with many more polygons than necesary, and the texture was just a color table image, if you want to know more I can explain better later on this page.</p>
-        <img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Model.png">
+        <img class="StoryImgs" src="imgs/Hope/Model.png">
         <p class="StorysTexts">With the models I tried to balance enemies that are simple and walk around the map, with those that fly and shoot, and even those that have special behaviors, here are some of the enemies and their ideas.</p>
         <div class="grid-container">
 	    <div class="grid-item">
-	      <img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Bomb.png">
+	      <img class="StoryImgs" src="imgs/Hope/Bomb.png">
 	      <p>Bomb: Starting with my favorite, it`s a very cute little bomb that walks a little funny due to it`s size, it tries to get close to you to explode, but if you kill it, it will fall and explode too.</p>
 	    </div>
 	    <div class="grid-item">
-	      <img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Reaper.png">
+	      <img class="StoryImgs" src="imgs/Hope/Reaper.png">
 	      <p>Death: This is the classic death but without the legs, it flies and has a fast rate of fire that follws you, it ended up being a big problem for the demo due to its difficulty</p>
 	    </div>
 	    <div class="grid-item">
-	      <img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Under.png">
+	      <img class="StoryImgs" src="imgs/Hope/Under.png">
 	      <p>Under: As there were already many enemies on the screen I thought about creating enemies that would not be on the screen either, under is a creature that walks underneath the ground until it reaches you, and when it arrives it comes out of the ground to cause damage but then return.</p>
 	    </div>
 	    <div class="grid-item">
-	      <img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Invoke.png">
+	      <img  class="StoryImgs" src="imgs/Hope/Invoke.png">
 	      <p>Conju: This is a summoner, his idea is to always try to keep as mush distance as possible from the player, while spawning a bunch of his offspring that go towards the player can make movement difficult if you step in the wrong places.</p>
 	    </div>
 	  </div>
@@ -139,13 +139,13 @@
 		<p class="StorysTexts">The game represents the struggle and the attempt after attempt to end suffering, a feeling that you are in an eternal loop where nothing you do ends the cycle, but it is not true, and that is the idea of the game.</p>
 		<p class="StorysTexts">The game has a natural loop, where if you just follow the levels until the final boss the result will always be the same, but if you explore and understand what can be done differently, this loop will finally end and the player will find himself free from this cycle of suffering.</p>
 		<p class="StorysTexts">With the help of the voice in your head and the hidden secrets, you will be able to see beyond all the darkness and evil that consumes you.</p>
-		<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Story.png">
+		<img  class="StoryImgs" src="imgs/Hope/Story.png">
 
 		<p class="StorysTitle">The Problem with Models 3D</p>
 		<p class="StorysTexts">However, the problem with this tool at the time was that because of how the texture works on top of the model, the model came with many more polygons than necessary, and the texture was just a color table image, which made me need to run looking for a way to optimize the models and create textures in a way that I could edit without having to open Magica Voxel again.</p>
 		<p class="StorysTexts">With that I found a way to Bake a texture from one model to another model using Blender, but it was still a lot of work to do on each model, but unforunately there was no other tool for this at the time, while I was updating my portfolio I discovered who made a plugin for Blender that is two in one, in addition to optimizing the models, it also generates a new texture for it.</p>
-		<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Model1.png">
-		<img style="max-width: 400px;" class="StoryImgs" src="imgs/Hope/Model2.png">
+		<img  class="StoryImgs" src="imgs/Hope/Model1.png">
+		<img  class="StoryImgs" src="imgs/Hope/Model2.png">
 	</div>
 	
 	<div id="sixPage" class="pages">
