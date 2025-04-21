@@ -102,8 +102,7 @@ function updateContent(title, occupation, copyright, buttonUrl) {
   
   // Update the button onclick URL
   document.getElementById('SeeMoreSliderShow').onclick = function() {
-    alert("Page not found");
-    //window.location.href = buttonUrl;
+    document.getElementById('SeeMoreSliderShow').href = buttonUrl;
   };
 }
 
