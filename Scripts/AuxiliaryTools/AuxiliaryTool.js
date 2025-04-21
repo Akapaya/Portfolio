@@ -26,6 +26,16 @@ function replaceClassesIfNeeded() {
       element.classList.add('ArrowToRight');
     });
   }
+  else
+  {
+    document.querySelectorAll('.Circle').forEach(element => {
+      const arrow = element.querySelector('.ArrowToRightNoExpanded');
+    if (arrow) {
+      element.classList.remove('Circle');
+      arrow.onclick = null; // remove manipulador direto
+    }
+    });
+  }
 }
 
 replaceClassesIfNeeded();

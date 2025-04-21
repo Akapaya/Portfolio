@@ -53,6 +53,58 @@ html,body{
 	color: white;
 }
 
+.Title{
+    font-size: 250%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 350%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 300%;
+    }
+}
+
+.P1{
+    font-size: 100%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 150%;
+    }
+}
+
+.P2{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 160%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 130%;
+    }
+}
+
+.P3{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1366px) {
+           font-size: 120%;
+    }
+}
+
 #firstPage {
     background-image: url(../imgs/Cloud/thumb.png);
     background-size: cover;
@@ -386,7 +438,7 @@ html,body{
     }
 
     @media screen and (min-width: 1200px) {
-        height: 200vw;
+        height: 185vw;
     }
 
     @media screen and (min-width: 1440px) {
@@ -410,7 +462,7 @@ html,body{
     align-items: center;
     margin: 0 auto;
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1280px) {
         border-left: 0.3vw dashed white;
     }
 }
@@ -428,7 +480,7 @@ html,body{
     align-items: center;
     margin: 0 auto;
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1280px) {
         border-bottom: 0.4vw dashed white;
     }
 }
@@ -852,7 +904,6 @@ html,body{
 
 #ContactMeTitle{
     color: #25231C;
-    font-size: xx-large;
 }
 
 #contactForm{
@@ -903,7 +954,6 @@ input[type="email"],
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 22px;
     font-family: "Poetsen One", sans-serif;
     margin: 6vh 0 0 0;
 }
@@ -920,7 +970,9 @@ input[type="email"],
 }
 
 .ResultContact{
-    height: 85vh;
+    height: 100vw;
+    width: 80vw;
+    
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -932,22 +984,20 @@ input[type="email"],
 
 .ResultContact p{
     color: white;
-    font-size: 135%;
     max-width: 400px;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
-        font-size: 190%;
         max-width: 700px;
     }
 
     @media screen and (min-width: 1024px) {
-        font-size: 220%;
     }
 }
 
 #IconNakHappyContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
@@ -970,7 +1020,7 @@ input[type="email"],
 
 #IconNakHappyBadContact{
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 55vh;
 }
 
@@ -1006,7 +1056,7 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
-        @media screen and (min-width: 375px) {
+        @media screen and (min-width: 375px){
         height: 90vh;
     }
 
@@ -1031,9 +1081,13 @@ input[type="email"],
     align-content: center;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 100%;
     height: 60px;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
+
+    @media screen and (min-width: 1280px) {
+        width: 80%;
+    }
 }
 
 #LeftFooterDiv{
@@ -1043,23 +1097,20 @@ input[type="email"],
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
     @media screen and (min-width: 768px) {
         width: 50%;
     }
 
-        @media screen and (min-width: 1200px) {
+        @media screen and (min-width: 1280px) {
         width: 60%;
+        margin-left: 10%;
     }
 }
 
 #LeftFooterDiv p{
-    max-width: 390px;
-
-    @media screen and (min-width: 1920px) {
-        max-width: 800px;
-        font-size: 180%;
-    }
+    max-width: 80%;
 }
 
 #RightFooterDiv{
@@ -1076,9 +1127,6 @@ input[type="email"],
 }
 
 #RightFooterDiv p{
-    @media screen and (min-width: 1920px) {
-        font-size: 160%;
-    }
 }
 
 .FooterItems{
@@ -1162,48 +1210,62 @@ input[type="email"],
     }
 }
 
+.Circle{
+    border: solid #FFE354;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    @media screen and (min-width: 1280px) {
+        padding: 4px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding: 8px;
+    }
+}
+
 .ArrowToRight {
     background-color: transparent;
     border: solid #FFE354;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 
-  @media screen and (min-width: 1920px) {
-        padding: 9px;
-        border-width: 0px 9px 9px 0px;
+  @media screen and (min-width: 1280px) {
+        padding: 3px;
+        border-width: 0px 3px 3px 0px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding: 6px;
+        border-width: 0px 6px 6px 0px;
     }
 }
 
 .ArrowToRightNoExpanded{
-    background-color: transparent;
-    border: solid white;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 3px;
-  transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-
-  @media screen and (min-width: 1920px) {
-        padding: 9px;
-        border-width: 0px 9px 9px 0px;
-    }
 }
 
 .ArrowToDown {
     background-color: transparent;
     border: solid #FFE354;
-  border-width: 0 3px 3px 0;
+  border-width: 0 2px 2px 0;
   display: inline-block;
-  padding: 3px;
+  padding: 2px;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
 
-  @media screen and (min-width: 1920px) {
-        padding: 9px;
-        border-width: 0px 9px 9px 0px;
+  @media screen and (min-width: 1280px) {
+        padding: 3px;
+        border-width: 0px 3px 3px 0px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        padding: 6px;
+        border-width: 0px 6px 6px 0px;
     }
 }
 
