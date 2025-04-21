@@ -1,0 +1,729 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	box-sizing: content-box;
+	margin: 0px;
+	display: inline-block;
+    font-family: "Poetsen One", sans-serif;
+}
+
+@font-face {
+    font-family: platform_eight;
+    src: url(../fonts/platform_eight.ttf)
+  }
+
+.pages{
+	background-image: url(../imgs/Background/Background3840x2880.png);
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+#firstPage {
+    background-image: url(../imgs/Cloud/thumb.png);
+    background-size: cover;
+    background-position: top;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 340vw;
+    position: relative;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: 768px) {
+           height: 145vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 60vw;
+        flex-direction: row;
+    }
+}
+
+#HeaderFirstPage {
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    min-width: 1000px;
+}
+
+#ContainerGreg {
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin-top: 32vw;
+
+    @media screen and (min-width: 768px) {
+            margin-top: 15vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 70%;
+        margin-top: 0vw;
+    }
+}
+
+#MiniGreg{
+    width: 60%;
+    z-index: 1;
+    border: 8px solid #25231C;
+    border-radius: 20px;
+
+    @media screen and (min-width: 768px) {
+           width: 40%;
+    }
+}
+
+#SleepNakfirstPage{
+    width: 85px;
+    position: absolute;
+    left: 1%;
+    top: 25%;
+    z-index: 5;
+
+    @media screen and (min-width: 768px) {
+           width: 20%;
+           left: 22%;
+    top: 42%;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 10%;
+        left: 10%;
+        top: 67%;
+    }
+}
+
+#ContainerAboutMe {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.AboutMeTexts{
+    font-size: 100%;
+    margin-bottom: 0px;
+    color: #FFE354;
+
+     @media screen and (min-width: 768px) {
+           font-size: 140%;
+    }
+
+    @media screen and (min-width: 1920px) {
+           font-size: 180%;
+    }
+
+    @media screen and (min-width: 2560px) {
+           font-size: 250%;
+    }
+}
+
+#Name{
+    font-size: 210%;
+    @media screen and (min-width: 768px) {
+           font-size: 170%;
+    }
+
+    @media screen and (min-width: 1920px) {
+           font-size: 200%;
+    }
+    @media screen and (min-width: 2560px) {
+           font-size: 270%;
+    }
+}
+
+#AboutMeList{
+    list-style-type: square;
+    width: 100%;
+    font-size: 130%;
+    font-weight: 100;
+    color: #FFE354;
+    margin-left: -15px;
+    @media screen and (min-width: 768px) {
+           font-size: 140%;
+           width: 100%;
+    }
+
+    @media screen and (min-width: 1920px) {
+           font-size: 180%;
+    }
+    @media screen and (min-width: 2560px) {
+           font-size: 250%;
+    }
+}
+
+#secondPage {
+    background-color: white;
+    background-image: none;
+    height: auto;
+    width: 100vw;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -50px;
+}
+
+iframe{
+    @media screen and (min-width: 300px) {
+        max-height: 200px;
+    }
+
+     @media screen and (min-width: 768px) {
+        max-height: 400px;
+    }
+
+    @media screen and (min-width: 820px) {
+        max-height: 350px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-height: 400px;
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        max-height: 400px;
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 2560px) {
+        max-height: 1000px;
+        max-width: 1200px;
+    }
+}
+
+.StorysTitle{
+    font-size: 180%;
+    text-align: justify;
+    color: #25231C;
+    margin: 5px 0px 10px 0px;
+}
+
+.StorysTexts{
+    color: #25231C;
+    font-size: larger;
+    width: 85%;
+    text-align: justify;
+    margin: 30px 0px 10px 0px;
+
+    @media screen and (min-width: 1920px) {
+           font-size: 180%;
+    }
+
+    @media screen and (min-width: 2560px) {
+           font-size: 240%;
+    }
+}
+
+.StoryImgs{
+    width: 80%;
+    border: 8px solid #25231C;
+    border-radius: 20px;
+    margin: 30px 0px 10px 0px;
+
+     @media screen and (min-width: 1920px) {
+        max-height: 700px;
+        max-width: 1000px;
+    }
+
+    @media screen and (min-width: 2560px) {
+        max-height: 1000px;
+        max-width: 1200px;
+    }
+}
+
+.StoryAudios{
+    margin: 30px 0 10px 0;
+}
+
+.grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .grid-item {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .grid-item p {
+      margin: 0;
+      font-size: 16px;
+      color: #333;
+    }
+
+#FooterFourthPage {
+    top: 50px;
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+#sixPage{
+    background-size: cover;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 250vw;
+    position: relative;
+
+    @media screen and (min-width: 576px) {
+        height: 187vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 130vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 101vw;
+    }
+
+        @media screen and (min-width: 1200px) {
+        height: 85vw;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 70vw;
+    }
+}
+
+#HeaderSixPage{
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+.ContactMeContainer
+{
+    width: 90vw;
+    height: 160vw;
+    background-color: #FEFFFD;
+    border-radius: 20px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        height: 80vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 50vw;
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 35vw;
+    }
+}
+
+#ContactMeTitle{
+    color: #25231C;
+    font-size: xx-large;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #25231C;
+  border: none;
+    color: #FFE354;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
+    padding: 13px;
+  }
+  
+  input[type="text"],
+input[type="email"],
+  textarea::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  input::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+.SubmitButtom {
+    width: 125px;
+    height: 50px;
+    padding: 10px;
+    background-color: #25231C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    font-family: "Poetsen One", sans-serif;
+    margin: 6vh 0 0 0;
+}
+
+.SubmitButtom:hover {
+  background-color: #D9D9D9;
+}
+
+#FooterSixthPage {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    min-width: 1000px;
+}
+
+.ResultContact{
+    height: 85vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ResultContact p{
+    color: white;
+    font-size: 135%;
+    max-width: 400px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 190%;
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        font-size: 220%;
+    }
+}
+
+#IconNakHappyContact{
+    position: absolute;
+    right: 70vw;
+    bottom: 55vh;
+}
+
+#HappyNakCloudContact {
+    width: 200px;
+    height: 220px;
+    right: -42vw;
+    top: -2vh;
+    position: absolute;
+}
+
+#HappyNakContact {
+    width: 180px;
+    height: 180px;
+    position:absolute  ;
+    right: -40vw;
+    top: -9vh;
+    transform-origin: bottom;
+}
+
+#IconNakHappyBadContact{
+    position: absolute;
+    right: 70vw;
+    bottom: 55vh;
+}
+
+#SadNakCloudBadContact {
+    width: 200px;
+    height: 220px;
+    right: -42vw;
+    top: -2vh;
+    position: absolute;
+}
+
+#SadNakBadContact {
+    width: 180px;
+    height: 180px;
+    position:absolute  ;
+    right: -40vw;
+    top: -9vh;
+    transform-origin: bottom;
+}
+
+#sevenPage{
+    height: 70vh;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    color: #25231C;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: 375px){
+        height: 90vh;
+    }
+
+        @media screen and (min-width: 768px) {
+            height: 45vh;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 820px) {
+            height: 30vh;
+    }
+
+    @media screen and (min-width: 1280px) {
+            height: 40vh;
+    }
+}
+
+#FooterIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+#LeftFooterDiv{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+
+        @media screen and (min-width: 1200px) {
+        width: 60%;
+    }
+}
+
+#LeftFooterDiv p{
+    max-width: 390px;
+
+    @media screen and (min-width: 1920px) {
+        max-width: 800px;
+        font-size: 180%;
+    }
+}
+
+#RightFooterDiv{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    @media screen and (min-width: 768px) {
+        width: 45%;
+    }
+}
+
+#RightFooterDiv p{
+    @media screen and (min-width: 1920px) {
+        font-size: 160%;
+    }
+}
+
+.FooterItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 1vw;
+    }
+}
+
+.FooterIcons{
+    width: 35px;
+    margin-right: 20px;
+}
+
+#NakLogoFooter{
+    width: 50px;
+
+    @media screen and (min-width: 1920px) {
+        width: 100px;
+    }
+}
+
+#AkapayaLogoFooter{
+    width: 200px;
+    margin-left: -25px;
+
+    @media screen and (min-width: 1920px) {
+        width: 350px;
+    }
+}
+
+/*404 page*/
+
+#SadNak404Cloud{
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+}
+
+#SadNak404 {
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    top: -60px;
+    transform-origin: bottom;
+}
+
+#AkapayaLogo404{
+    width: 150%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+#ReturnButton{
+    width: 20%;
+    height: 45%;
+    cursor: pointer;
+    position: absolute;
+    top: 270px;
+    z-index: 4;
+}
+
+/*Miscs*/
+
+.TextWithArrowExpand {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ArrowToRight {
+    background-color: transparent;
+    border: solid #FFE354;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ArrowToRightNoExpanded{
+    background-color: transparent;
+    border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ArrowToDown {
+    background-color: transparent;
+    border: solid #FFE354;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.collapsed {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.expanded {
+    white-space: normal;
+}
+
+
+@keyframes pulse-border {
+    0% { border: 5px solid #FFE354; }
+    50% { border: 5px solid #25231C; }
+    100% { border: 5px solid #FFE354; }
+}
+
+@keyframes pulse-size {
+    0% { width: 100px; height: 100px; }
+    50% { width: 120px; height: 120px; }
+    100% { width: 100px; height: 100px; }
+}
+
+.animated-border {
+    animation: pulse-border 2s infinite;
+    border-radius: 20px;
+}
