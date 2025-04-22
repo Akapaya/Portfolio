@@ -1,0 +1,763 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	box-sizing: content-box;
+	margin: 0px;
+	display: inline-block;
+    font-family: "Poetsen One", sans-serif;
+}
+
+@font-face {
+    font-family: platform_eight;
+    src: url(../fonts/platform_eight.ttf)
+  }
+
+.pages{
+	background-image: url(../imgs/Background/Background3840x2880.png);
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/*position: relative;*/
+	overflow: hidden;
+}
+
+.Title{
+    font-size: 250%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 350%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 300%;
+    }
+}
+
+.P1{
+    font-size: 100%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 150%;
+    }
+}
+
+.P2{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 160%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 130%;
+    }
+}
+
+.P3{
+    font-size: 80%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 100%;
+    }
+
+    @media screen and (min-width: 1366px) {
+           font-size: 120%;
+    }
+}
+
+.highlight {
+  color: red; /* por exemplo, laranja queimado */
+  font-weight: 600; /* para manter um destaque leve */
+}
+
+#firstPage {
+    background-image: url(../imgs/Cloud/thumb.png);
+    background-size: cover;
+    background-position: top;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 290vw;
+    position: relative;
+    flex-wrap: nowrap;
+
+    @media screen and (min-width: 768px) {
+           height: 240vw;
+    }
+
+    @media screen and (min-width: 1280px) {
+           height: 75vw;
+           justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+    }
+}
+
+#HeaderFirstPage {
+    top: 0px;
+    width: 100%;
+    position: absolute;
+    min-width: 1000px;
+}
+
+#ContainerGreg {
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    box-sizing: border-box;
+    margin-top: 32vw;
+
+    @media screen and (min-width: 768px) {
+            margin-top: 15vw;
+    }
+    @media screen and (min-width: 1280px) {
+           width: 80%;
+    }
+}
+
+#MiniGreg{
+    width: 60%;
+    z-index: 1;
+    border: 8px solid #25231C;
+    border-radius: 20px;
+
+    @media screen and (min-width: 768px) {
+           width: 60%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           width: 85%;
+    }
+}
+
+#SleepNakfirstPage{
+    width: 85px;
+    position: absolute;
+    left: 1%;
+    top: 24%;
+    z-index: 5;
+
+    @media screen and (min-width: 768px) {
+           width: 20%;
+           left: 5%;
+    top: 21%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           width: 11%;
+        left: 1%;
+        top: 43%;
+    }
+}
+
+#ContainerAboutMe {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    @media screen and (min-width: 1280px) {
+           margin-top: 9vw;
+    }
+}
+
+.AboutMeTexts{
+    margin-bottom: 0px;
+    color: #FFE354;
+}
+
+#Name{
+}
+
+#AboutMeList{
+    list-style-type: square;
+    width: 100%;
+    font-weight: 100;
+    color: #FFE354;
+    margin-left: -15px;
+    @media screen and (min-width: 768px) {
+           width: 100%;
+    }
+}
+
+#IUsedList{
+    display: flex;
+    width: 100%;
+           flex-direction: row;
+}
+
+#secondPage {
+    background-color: white;
+    background-image: none;
+    height: auto;
+    width: 100vw;
+    overflow: visible;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: -50px;
+
+    @media screen and (min-width: 1440px) {
+           margin-top: 0px;
+    }
+}
+
+iframe{
+    @media screen and (min-width: 300px) {
+        max-height: 200px;
+    }
+
+     @media screen and (min-width: 768px) {
+        max-height: 400px;
+    }
+
+    @media screen and (min-width: 820px) {
+        max-height: 350px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-height: 400px;
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        max-height: 400px;
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 2560px) {
+        max-height: 1000px;
+        max-width: 1200px;
+    }
+}
+
+.StorysTitle{
+    text-align: justify;
+    color: #25231C;
+    margin: 5px 0px 10px 0px;
+}
+
+.StorysTexts{
+    color: #25231C;
+    width: 85%;
+    text-align: justify;
+    margin: 30px 0px 10px 0px;
+}
+
+.StoryImgs{
+    width: 80%;
+    border: 8px solid #25231C;
+    border-radius: 20px;
+    margin: 30px 0px 10px 0px;
+
+    @media screen and (min-width: 1920px) {
+        max-width: 1000px;
+    }
+}
+
+.StoryAudios{
+    margin: 30px 0 10px 0;
+}
+
+.StoryList{
+    @media screen and (min-width: 768px) {
+           width: 80%;
+    }
+}
+
+.StoryListItem{
+}
+
+.grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+
+      @media screen and (min-width: 1280px) {
+           grid-template-columns: 1fr 1fr;
+       }
+    }
+
+    .grid-item {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .grid-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .grid-item p {
+      margin: 0;
+      color: #333;
+    }
+
+#FooterFourthPage {
+    top: 50px;
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+#sixPage{
+    background-size: cover;
+    top: 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 250vw;
+    position: relative;
+
+    @media screen and (min-width: 576px) {
+        height: 187vw;
+    }
+
+    @media screen and (min-width: 768px) {
+        height: 130vw;
+    }
+
+    @media screen and (min-width: 1024px) {
+        height: 101vw;
+    }
+
+        @media screen and (min-width: 1200px) {
+        height: 85vw;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 70vw;
+    }
+}
+
+#HeaderSixPage{
+    width: 100%;
+    position: relative;
+    min-width: 1000px;
+}
+
+.ContactMeContainer
+{
+    width: 90vw;
+    height: 160vw;
+    background-color: #FEFFFD;
+    border-radius: 20px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        height: 80vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        height: 50vw;
+        max-width: 50%;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 35vw;
+    }
+}
+
+#ContactMeTitle{
+    color: #25231C;
+}
+
+#contactForm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  background-color: #25231C;
+  border: none;
+    color: #FFE354;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 20px;
+    padding: 13px;
+  }
+  
+  input[type="text"],
+input[type="email"],
+  textarea::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+  input::placeholder {
+    color: #FFE354;
+    font-weight: 200;
+    font-family: "Poetsen One", sans-serif;
+  }
+
+.SubmitButtom {
+    width: 125px;
+    height: 50px;
+    padding: 10px;
+    background-color: #25231C;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Poetsen One", sans-serif;
+    margin: 6vh 0 0 0;
+}
+
+.SubmitButtom:hover {
+  background-color: #D9D9D9;
+}
+
+#FooterSixthPage {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    min-width: 1000px;
+}
+
+.ResultContact{
+    height: 100vw;
+    width: 80vw;
+    
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.ResultContact p{
+    color: white;
+    max-width: 400px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        max-width: 700px;
+    }
+
+    @media screen and (min-width: 1024px) {
+    }
+}
+
+#IconNakHappyContact{
+    position: absolute;
+    right: 65vw;
+    bottom: 55vh;
+}
+
+#HappyNakCloudContact {
+    width: 200px;
+    height: 220px;
+    right: -42vw;
+    top: -2vh;
+    position: absolute;
+}
+
+#HappyNakContact {
+    width: 180px;
+    height: 180px;
+    position:absolute  ;
+    right: -40vw;
+    top: -9vh;
+    transform-origin: bottom;
+}
+
+#IconNakHappyBadContact{
+    position: absolute;
+    right: 65vw;
+    bottom: 55vh;
+}
+
+#SadNakCloudBadContact {
+    width: 200px;
+    height: 220px;
+    right: -42vw;
+    top: -2vh;
+    position: absolute;
+}
+
+#SadNakBadContact {
+    width: 180px;
+    height: 180px;
+    position:absolute  ;
+    right: -40vw;
+    top: -9vh;
+    transform-origin: bottom;
+}
+
+#sevenPage{
+    height: 70vh;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    color: #25231C;
+    display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: 375px){
+        height: 90vh;
+    }
+
+        @media screen and (min-width: 768px) {
+            height: 45vh;
+        flex-direction: row;
+    }
+
+    @media screen and (min-width: 820px) {
+            height: 30vh;
+    }
+
+    @media screen and (min-width: 1280px) {
+            height: 40vh;
+    }
+}
+
+#FooterIcon{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0px;
+
+    @media screen and (min-width: 1280px) {
+        width: 80%;
+    }
+}
+
+#LeftFooterDiv{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    
+    @media screen and (min-width: 768px) {
+        width: 50%;
+    }
+
+        @media screen and (min-width: 1280px) {
+        width: 60%;
+        margin-left: 10%;
+    }
+}
+
+#LeftFooterDiv p{
+    max-width: 80%;
+}
+
+#RightFooterDiv{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    @media screen and (min-width: 768px) {
+        width: 45%;
+    }
+}
+
+#RightFooterDiv p{
+}
+
+.FooterItems{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        margin: 0 0 0 1vw;
+    }
+}
+
+.FooterIcons{
+    width: 35px;
+    margin-right: 20px;
+}
+
+#NakLogoFooter{
+    width: 50px;
+
+    @media screen and (min-width: 1920px) {
+        width: 100px;
+    }
+}
+
+#AkapayaLogoFooter{
+    width: 200px;
+    margin-left: -25px;
+
+    @media screen and (min-width: 1920px) {
+        width: 350px;
+    }
+}
+
+/*404 page*/
+
+#SadNak404Cloud{
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+}
+
+#SadNak404 {
+    width: 250px;
+    position: absolute;
+    z-index: 2;
+    top: -60px;
+    transform-origin: bottom;
+}
+
+#AkapayaLogo404{
+    width: 150%;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+#ReturnButton{
+    width: 20%;
+    height: 45%;
+    cursor: pointer;
+    position: absolute;
+    top: 270px;
+    z-index: 4;
+}
+
+/*Miscs*/
+
+.TextWithArrowExpand {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ArrowToRight {
+    background-color: transparent;
+    border: solid #FFE354;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ArrowToRightNoExpanded{
+    background-color: transparent;
+    border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.ArrowToDown {
+    background-color: transparent;
+    border: solid #FFE354;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.collapsed {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.expanded {
+    white-space: normal;
+}
+
+
+@keyframes pulse-border {
+    0% { border: 5px solid #FFE354; }
+    50% { border: 5px solid #25231C; }
+    100% { border: 5px solid #FFE354; }
+}
+
+@keyframes pulse-size {
+    0% { width: 100px; height: 100px; }
+    50% { width: 120px; height: 120px; }
+    100% { width: 100px; height: 100px; }
+}
+
+.animated-border {
+    animation: pulse-border 2s infinite;
+    border-radius: 20px;
+}

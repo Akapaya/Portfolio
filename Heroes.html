@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Heroes.css">
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
+	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/carousel.css" />
+	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
+	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<title>Akapaya</title>
+
+</head>
+<body>
+	<div id="firstPage" class="pages">
+		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
+		<div id="ContainerGreg">
+			<img id="MiniGreg" src="imgs/Heroes/MenuBackground.png">
+            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.png">
+		</div>
+		<div id="ContainerAboutMe">
+			<p id="Name" class="AboutMeTexts Title">Cybersteam Heroes</p>
+			<p class="AboutMeTexts P1">Cybersteam Heroes is an explosive roguelite RPG featuring turn-based tactical combat, where superheroes navigate an original world that melds Steampunk and Cyberpunk elements. In a post-`Digital Steam` revolution era, you lead a team of heroes on a quest to pacify a world torn between technology and humanity. By collecting mystical stones known as'Starshards'players have the freedom to build unique skill combinations from dozens of superpowers, opening up a vast array of strategies to defeat supervillains and restore order.</p>	
+			<div id="IUsedList">
+				<ul id="AboutMeList">
+					<p class="P1">Knowledge I used:</p>
+					<li class="P2">Programming</li>
+					<li class="P2">Game Systems</li>
+					<li class="P2">Design Patterns</li>
+					<li class="P2">Scalable, Modular and Maintainable</li>
+					<li class="P2">Game development</li>
+				</ul>
+	            <ul id="AboutMeList">
+					<p class="P1">Tools and Languages:</p>
+					<li class="P2">Unity</li>
+					<li class="P2">C#</li>
+					<li class="P2">DoTween</li>
+					<li class="P2">Jira</li>
+					<li class="P2">Figma</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+
+	<div id="secondPage" class="pages">
+		<p class="StorysTitle Title">Copyright</p>
+		<p class="StorysTexts P1">All copyright and intellectual rights of this project belong to Plundervolt, with their authorization I am placing some information about this project in my portfolio.</p>
+		<p class="StorysTexts P1">This is a gameplay of the state the game was paused/stopped with no expected return, many things and adjustments were missing, but unfortunately it was not possible to continue, at least for now.</p>
+		<video class="StoryImgs" controls width="640" >
+		  <!-- MP4 costuma ser o formato mais compatível -->
+		  <source src="vids/7_RAaERskjg_576.mp4" type="video/mp4">
+		  <!-- Você pode adicionar versões em WebM ou Ogg se desejar -->
+		  <source src="vids/7_RAaERskjg_576.webm" type="video/webm">
+		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
+		</video>
+
+		<p class="StorysTitle Title">The Game Systems</p>
+        <p class="StorysTexts P1">
+		  I worked as the lead developer and was responsible for the architecture, implementing from scratch several essential subsystems: movement on a hexagonal map, talent trees, an upgrade system, and a complete combat module — with configurable buffs, debuffs, and abilities. All routines were built with a focus on <span class="highlight">scalability</span> (decoupled components, data-driven) and <span class="highlight">ease of maintenance</span>).
+		</p>
+
+		<p class="StorysTexts P1">
+		  I later led the integration of a second programmer, providing direct support in the implementation of enemy AI.
+		</p>
+        <img class="StoryImgs" src="imgs/Heroes/Battle.png">
+
+        <p class="StorysTexts P1">
+		  <span class="highlight">Talent trees</span> were made to allow for high scalability and content creation. They are decoupled and use Scriptable Objects that carry talent information, as well as powers and passives that have their own managers to handle the information as expected by the OS. Several trees can also be built with their conditions and locks for unlocking where the system itself organizes and renders on the screen without the need to mess with the UI.</p>
+        <img class="StoryImgs" src="imgs/Heroes/Tree.png">
+
+        <p class="StorysTexts P1">
+		  In addition to the talent tree, the system had <span class="highlight">Upgrades</span>, which changed the start of all runs, the necessary systems were readapted in real time to deal with the upgrades chosen as needed, such as more gold, better items, more impactful battles and much more.</p>
+        <img class="StoryImgs" src="imgs/Heroes/Upgrades.png">        
+
+		<p class="StorysTitle Title">The UI/UX</p>
+        <p class="StorysTexts P1">The <span class="highlight">UI/UX</span> was really fun to do, making the menus and interactions more natural and pleasant, the Design did a great job and it was very interesting to apply his ideas using DoTween and animations via script.</p>
+        <p class="StorysTexts P1">I was responsible for implementing the entire UI/UX of the game within Unity, ensuring responsiveness, fluidity and visual feedback in each interaction.
+I used the <span class="highlight">DoTween</span> library to animate transitions, pop-ups and microinteractions, reinforcing the <span class="highlight">sense of reward</span> with particles and visual effects.
+All screens were designed to balance clarity and visual appeal, with flexible and adaptable navigation logic for both beginners and experienced players.
+I also created modular UI systems with reusable scripts and parameterized animations, facilitating future changes without direct dependence on designers.</p>
+        <video class="StoryImgs" controls width="640" >
+		  <!-- MP4 costuma ser o formato mais compatível -->
+		  <source src="vids/SewEDWQoT5C_576.mp4" type="video/mp4">
+		  <!-- Você pode adicionar versões em WebM ou Ogg se desejar -->
+		  <source src="vids/SewEDWQoT5C_576.webm" type="video/webm">
+		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
+		</video>
+
+        <p class="StorysTitle Title">The Conclusions</p>
+		<p class="StorysTexts P1">The final result of the project was not achieved due to the project's pause, but it was satisfying to see this universe emerging and becoming enjoyable in the way we dreamed of, unfortunately some content was too much for us to maintain the project for longer, it was a learning experience for all parties involved, from planning to execution, it was becoming something we could talk about that was fun.</p>
+        
+		<p class="StorysTitle Title">The Final Result</p>
+		<p class="StorysTexts P1">It was an extraordinary experience to have participated in this project, to have challenged myself and learned a lot alongside very good and respectable professionals, our project leader Luis served from the beginning as a mentor for us, he was part of the development helping his collaborators, I am I am very grateful for all the learning I had during this time, and all the reflection I had on the process, moments when I think we could have acted or made different choices, this helps us grow and deal with future projects.</p>
+		
+		
+	</div>
+	
+	<div id="sixPage" class="pages">
+		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
+		<div id="ContactMeContainer" class="ContactMeContainer">
+			<h2 id="ContactMeTitle">Contact Me</h2>
+			<form id="contactForm">
+				<input type="hidden" name="accessKey" value="c29b7c2a-d29f-4b83-b86e-ccf7f7f12328">
+				<input type="text" id="name" name="name" placeholder="Name:" required>
+				<input type="email" id="email" name="email" placeholder="Email:" required>
+				<input type="text" id="subject" name="subject" placeholder="Subject:" required>
+				<textarea id="message" name="message" rows="5" placeholder="Message:" required></textarea>
+				<button class="SubmitButtom" type="submit">Submit</button>
+			</form>
+		</div>
+		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
+			<p class="P2">Thank you, your contact has been sent!</p>
+			<div id="IconNakHappyContact">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.png">
+			</div>
+		</div>
+		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
+			<p class="P2">Sorry! Something happened and your email was not sent.</p>
+			<div id="IconNakHappyBadContact">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.png">
+			</div>
+		</div>
+		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.png">
+	</div>
+
+	<div id="sevenPage" class="pages">
+		<div id="LeftFooterDiv">
+			<div id="FooterIcon">
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.png" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.png" >
+			</div>
+			<p class="P3">@ 2024 Akapaya. Todos os direitos reservados. 
+				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
+			</p>
+			<p class="P3">Arte desenvolvida por Thamires Dantas. <br>
+				Design do site desenvolvido por Gregory Valentim.<br>
+				Site desenvolvido por Gregory Valentim.
+			</p>
+		</div>
+
+		<div id="RightFooterDiv">
+			<div class="FooterItems" onclick="">
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.png.svg"></a>
+				<p class="P3">Gregory_valentim@hotmail.com</p>
+			</div>
+
+			<div class="FooterItems">
+				<a href="https://www.instagram.com/akapaya_studios/"><img class="FooterIcons P3" src="imgs/Logo/InstagramBlack.svg"></a>
+				<p class="P3">@Akapaya_Studios</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.youtube.com/@Akapaya"><img class="FooterIcons P3" src="imgs/Logo/YoutubeBlack.svg"></a>
+				<p class="P3">Youtube.com/@Akapaya</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://akapaya.itch.io"><img class="FooterIcons P3" src="imgs/Logo/ItchBlack.svg"></a>
+				<p class="P3">Akapaya.itch.io</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons P3" src="imgs/Logo/TwitchBlack.svg"></a>
+				<p class="P3">Twitch.tv/akapaya</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', (event) => {
+            var video = document.getElementById('mainVideo');
+            video.playbackRate = 1.5;
+        });
+</script>
+	
+</html>
