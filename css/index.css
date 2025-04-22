@@ -445,6 +445,10 @@ html,body{
         height: 175vw;
     }
 
+    @media screen and (min-width: 1864px) {
+        height: 135vw;
+    }
+
         @media screen and (min-width: 1920px) {
         height: 200vw;
     }
@@ -464,6 +468,11 @@ html,body{
 
     @media screen and (min-width: 1280px) {
         border-left: 0.3vw dashed white;
+        margin: 0 0;
+    }
+
+    @media screen and (min-width: 1864px) {
+        border-left: 0.2vw dashed white;
     }
 }
 
@@ -482,6 +491,10 @@ html,body{
 
     @media screen and (min-width: 1280px) {
         border-bottom: 0.4vw dashed white;
+    }
+
+    @media screen and (min-width: 1864px) {
+        border-bottom: 0.3vw dashed white;
     }
 }
 
