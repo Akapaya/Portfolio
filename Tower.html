@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Tower.css">
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
+	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/carousel.css" />
+	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
+	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<title>Akapaya</title>
+
+</head>
+<body>
+	<div id="firstPage" class="pages">
+		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
+		<div id="ContainerGreg">
+			<img id="MiniGreg" src="imgs/Tower/Tower.png">
+            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.png">
+		</div>
+		<div id="ContainerAboutMe">
+			<p id="Name" class="AboutMeTexts Title">Tower Defense</p>
+			<p class="AboutMeTexts P1">This game was made for a Game Developer Vacancy test in Unity, which was a tower defense with random towers but with different attributes and shots for each tower, in addition to customizing the stages and very attractive animations.</p>	
+			<div id="IUsedList">
+				<ul id="AboutMeList">
+					<p class="P1">Knowledge I used:</p>
+					<li class="P2">Project management</li>
+					<li class="P2">Game Systems</li>
+					<li class="P2">Scalable, Modular and Maintainable</li>
+					<li class="P2">Game development</li>
+				</ul>
+	            <ul id="AboutMeList">
+					<p class="P1">Tools and Languages:</p>
+					<li class="P2">Unity</li>
+					<li class="P2">C#</li>
+					<li class="P2">Tile Pallete</li>
+					<li class="P2">Way Points</li>
+					<li class="P2">Object Pool</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+
+	<div id="secondPage" class="pages">
+		<video class="StoryImgs" controls width="640" >
+		  <!-- MP4 costuma ser o formato mais compatível -->
+		  <source src="vids/Tower.mov" type="video/mp4">
+		  <!-- Você pode adicionar versões em WebM ou Ogg se desejar -->
+		  <source src="vids/Tower.webm" type="video/webm">
+		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
+		</video>
+
+		<p class="StorysTitle Title">The Idea</p>
+        <p class="StorysTexts P1">The idea behind the project was a grid-based tower defense game, where the middle path belongs to the enemies, and the sides are our towers.
+		</p>
+
+		<p class="StorysTexts P1">However, the towers are random, but with different attributes and shots that reach the entire map. The cost of adding a new troop increases over time, and with each enemy defeated you earn a troop point, a point that also appears periodically randomly around the map.
+		</p>
+
+        <img class="StoryImgs" src="imgs/Tower/Stage2.png">
+
+        <p class="StorysTitle Title">The Development</p>
+        <p class="StorysTexts P1">The development was done over a weekend, since I already had an idea for the game, I was able to start developing it straight away.</p>
+        <p class="StorysTexts P1">Overall, the development was very fast, there were already some ideas on how to develop the enemy and tower systems due to old projects, the grid was easy to assign, as well as the path of the towers.</p>
+        <p class="StorysTexts P1">The Tile Pallet was also used to make it easier to customize the levels.</p>
+        <img class="StoryImgs" src="imgs/Tower/Tile.png">
+        <p class="StorysTexts P1">The most time-consuming part, and the one I focused on the most, was the animations, from the beginning I had a solid idea of what I wanted, even if the project ended up not making me pass.</p>
+        <p class="StorysTexts P1">In the end, I got exactly the result I wanted, the idea was that since they are random towers and they are humans almost like farmers, I wanted them to come from off-screen on the indicated side to the point the player chose.</p>
+        <p class="StorysTexts P1">So if you select a slot on the left, the character is spawned off-screen and walks to their chosen position on the left side, the same happens if it is a slot on the right.</p>
+        <p class="StorysTexts P1">This animation gives the player a really good feeling, as if the farmers were really coming together to protect themselves from zombies.</p>
+        <img class="StoryImgs" src="imgs/Tower/Move.gif">
+        <p class="StorysTexts P1">In addition, the animation of the arms being disconnected from the body and aiming according to the current target of that tower. (The project requested only global aim and always on the first enemy, but the system has customization for the range of the tower's aiming and which enemy will prioritize, whether it is the first or the last)</p>
+        <img class="StoryImgs" src="imgs/Tower/Gun.gif">			
+
+	<p class="StorysTitle Title">The Game Systems</p>
+	<p class="StorysTexts P1">With more time, I would make changes mainly with Scriptable Objects and Scenes.</p>
+	<p class="StorysTexts P1">Currently, there is a scene for each phase. The ideal would be a manager that receives data from the OS and assembles the Grid and the scenario according to the data of that phase (something I have already done in other projects).</p>
+	<p class="StorysTexts P1">Currently, I would also pass the data from the Towers to OSs. Currently, they are in abstract classes, but I think that OSs would allow more flexibility between the data, mainly for balancing.</p>
+	<img class="StoryImgs" src="imgs/Tower/Diagram.png">
+	<p class="StorysTexts P1">This diagram represents the class structure of a Tower Defense game developed in Unity. At the center of the combat logic is the IWeapon interface, which defines the weapon contract, partially implemented by the abstract class WeaponAbstract and extended by concrete weapons such as W_Pistol. The management of these weapons and their attacks is done by classes such as WeaponManager and RangeAttackManager.</p>
+	<p class="StorysTexts P1">The system also consists of components responsible for the construction and control of towers (BuildManager, TowerController, TowerViewer), tower behavior (WalkToCell, CircleMovement), and wave control (HordeManager). The scenario organization is done by the GridManager, while the GameManager centralizes the general logic. The player interface is managed by CanvasInGame, ensuring a clear separation between logic, presentation, and game control.</p>
+
+	  <p class="StorysTitle Title">The Final Result</p>
+		<p class="StorysTexts P1">The final result of this two-day Tower Defense project was extremely satisfactory, in addition to being a system that allows scaling and even facilitates future improvements and implementation of new content, in addition to the animation to make the game as smooth and attractive as possible.</p>
+
+        <p class="StorysTitle Title">The Conclusions</p>
+		<p class="StorysTexts P1">Completing this project guaranteed me a place in the selection process I participated in, this gave me a good base to continue with some Tower Defense game in the future!</p>
+
+	
+	<div id="sixPage" class="pages">
+		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
+		<div id="ContactMeContainer" class="ContactMeContainer">
+			<h2 id="ContactMeTitle">Contact Me</h2>
+			<form id="contactForm">
+				<input type="hidden" name="accessKey" value="c29b7c2a-d29f-4b83-b86e-ccf7f7f12328">
+				<input type="text" id="name" name="name" placeholder="Name:" required>
+				<input type="email" id="email" name="email" placeholder="Email:" required>
+				<input type="text" id="subject" name="subject" placeholder="Subject:" required>
+				<textarea id="message" name="message" rows="5" placeholder="Message:" required></textarea>
+				<button class="SubmitButtom" type="submit">Submit</button>
+			</form>
+		</div>
+		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
+			<p class="P2">Thank you, your contact has been sent!</p>
+			<div id="IconNakHappyContact">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.png">
+			</div>
+		</div>
+		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
+			<p class="P2">Sorry! Something happened and your email was not sent.</p>
+			<div id="IconNakHappyBadContact">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.png">
+			</div>
+		</div>
+		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.png">
+	</div>
+
+	<div id="sevenPage" class="pages">
+		<div id="LeftFooterDiv">
+			<div id="FooterIcon">
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.png" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.png" >
+			</div>
+			<p class="P3">@ 2024 Akapaya. Todos os direitos reservados. 
+				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
+			</p>
+			<p class="P3">Arte desenvolvida por Thamires Dantas. <br>
+				Design do site desenvolvido por Gregory Valentim.<br>
+				Site desenvolvido por Gregory Valentim.
+			</p>
+		</div>
+
+		<div id="RightFooterDiv">
+			<div class="FooterItems" onclick="">
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.png.svg"></a>
+				<p class="P3">Gregory_valentim@hotmail.com</p>
+			</div>
+
+			<div class="FooterItems">
+				<a href="https://www.instagram.com/akapaya_studios/"><img class="FooterIcons P3" src="imgs/Logo/InstagramBlack.svg"></a>
+				<p class="P3">@Akapaya_Studios</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.youtube.com/@Akapaya"><img class="FooterIcons P3" src="imgs/Logo/YoutubeBlack.svg"></a>
+				<p class="P3">Youtube.com/@Akapaya</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://akapaya.itch.io"><img class="FooterIcons P3" src="imgs/Logo/ItchBlack.svg"></a>
+				<p class="P3">Akapaya.itch.io</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons P3" src="imgs/Logo/TwitchBlack.svg"></a>
+				<p class="P3">Twitch.tv/akapaya</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+<script type="text/javascript">
+	document.addEventListener('DOMContentLoaded', (event) => {
+            var video = document.getElementById('mainVideo');
+            video.playbackRate = 1.5;
+        });
+</script>
+	
+</html>
