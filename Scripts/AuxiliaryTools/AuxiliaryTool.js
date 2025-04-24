@@ -76,21 +76,18 @@ function showDivs(n) {
       updateContent("Nak: O Resgate dos Animais", "Gameplay Mechanics, Game Design and Project Manager", "Etec A. F. Team", "NakRA.html");
       break;
       case 5:
-      updateContent("Save Your Brain", "Gameplay Mechanics, Systems and UI/UX Implementation", "Ocarina Studios", "Battle.html");
+      updateContent("Ocarina Studios Games", "Gameplay Mechanics, Systems and UI/UX Implementation", "Ocarina Studios", "Ocarina.html");
       break;
       case 6:
-      updateContent("Mysterious Restaurant", "Gameplay Mechanics, Systems and UI/UX Implementation", "Ocarina Studios", "Restaurant.html");
+      updateContent("DreamWalker", "Solo Dev", "Akapaya", "Dream.html");
       break;
       case 7:
-      updateContent("Pocket Museum", "Gameplay Mechanics, Systems and UI/UX Implementation", "Ocarina Studios", "Pocket.html");
-      break;
-      case 8:
       updateContent("VR", "Solo Dev", "Akapaya", "VR.html");
       break;
-      case 9:
+      case 8:
       updateContent("Cute Space Attack", "Gameplay Mechanics, Game Design and Project Manager", "Etec A. F. Team", "Cute.html");
       break;
-    case 10:
+    case 9:
       updateContent("Corpse 4 Party", "Solo Dev", "Akapaya", "C4P.html");
       break;
   }
