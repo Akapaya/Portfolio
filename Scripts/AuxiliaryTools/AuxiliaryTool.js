@@ -132,3 +132,7 @@ $(document).ready(function() {
       });
   });
 });
+
+function toggleMenu() {
+  document.getElementById('sidebar').classList.toggle('open');
+}

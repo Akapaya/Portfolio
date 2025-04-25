@@ -17,6 +17,23 @@
 
 </head>
 <body>
+	<!-- Botão hamburguer -->
+<div id="hamburger" onclick="toggleMenu()">☰</div>
+	<nav id="sidebar">
+  <a href="#section1">Home</a>
+  <a href="#section2">Overview</a>
+  <a href="#section3">Idea</a>
+  <a href="#section4">Development</a>
+  <a href="#section5">Game Systems</a>
+  <a href="#section6">Result</a>
+  <a href="#section7">Conclusion</a>
+  <a href="#section8">Contact Me</a>
+
+  <hr>
+
+  <a href="index.html">Back To Home Page</a>
+</nav>
+<section id="section1"></section>
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContainerGreg">
@@ -46,6 +63,7 @@
 		</div>
 	</div>
 
+<section id="section2"></section>
 	<div id="secondPage" class="pages">
 		<video class="StoryImgs" controls width="640" >
 		  <!-- MP4 costuma ser o formato mais compatível -->
@@ -54,7 +72,7 @@
 		  <source src="vids/Tower.webm" type="video/webm">
 		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
 		</video>
-
+<section id="section3"></section>
 		<p class="StorysTitle Title">The Idea</p>
         <p class="StorysTexts P1">The idea behind the project was a grid-based tower defense game, where the middle path belongs to the enemies, and the sides are our towers.
 		</p>
@@ -63,7 +81,7 @@
 		</p>
 
         <img class="StoryImgs" src="imgs/Tower/Stage2.png">
-
+<section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">The development was done over a weekend, since I already had an idea for the game, I was able to start developing it straight away.</p>
         <p class="StorysTexts P1">Overall, the development was very fast, there were already some ideas on how to develop the enemy and tower systems due to old projects, the grid was easy to assign, as well as the path of the towers.</p>
@@ -76,7 +94,7 @@
         <img class="StoryImgs" src="imgs/Tower/Move.gif">
         <p class="StorysTexts P1">In addition, the animation of the arms being disconnected from the body and aiming according to the current target of that tower. (The project requested only global aim and always on the first enemy, but the system has customization for the range of the tower's aiming and which enemy will prioritize, whether it is the first or the last)</p>
         <img class="StoryImgs" src="imgs/Tower/Gun.gif">			
-
+<section id="section5"></section>
 	<p class="StorysTitle Title">The Game Systems</p>
 	<p class="StorysTexts P1">With more time, I would make changes mainly with Scriptable Objects and Scenes.</p>
 	<p class="StorysTexts P1">Currently, there is a scene for each phase. The ideal would be a manager that receives data from the OS and assembles the Grid and the scenario according to the data of that phase (something I have already done in other projects).</p>
@@ -84,14 +102,14 @@
 	<img class="StoryImgs" src="imgs/Tower/Diagram.png">
 	<p class="StorysTexts P1">This diagram represents the class structure of a Tower Defense game developed in Unity. At the center of the combat logic is the IWeapon interface, which defines the weapon contract, partially implemented by the abstract class WeaponAbstract and extended by concrete weapons such as W_Pistol. The management of these weapons and their attacks is done by classes such as WeaponManager and RangeAttackManager.</p>
 	<p class="StorysTexts P1">The system also consists of components responsible for the construction and control of towers (BuildManager, TowerController, TowerViewer), tower behavior (WalkToCell, CircleMovement), and wave control (HordeManager). The scenario organization is done by the GridManager, while the GameManager centralizes the general logic. The player interface is managed by CanvasInGame, ensuring a clear separation between logic, presentation, and game control.</p>
-
+<section id="section6"></section>
 	  <p class="StorysTitle Title">The Final Result</p>
 		<p class="StorysTexts P1">The final result of this two-day Tower Defense project was extremely satisfactory, in addition to being a system that allows scaling and even facilitates future improvements and implementation of new content, in addition to the animation to make the game as smooth and attractive as possible.</p>
-
+<section id="section7"></section>
         <p class="StorysTitle Title">The Conclusions</p>
 		<p class="StorysTexts P1">Completing this project guaranteed me a place in the selection process I participated in, this gave me a good base to continue with some Tower Defense game in the future!</p>
 
-	
+	<section id="section8"></section>
 	<div id="sixPage" class="pages">
 		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContactMeContainer" class="ContactMeContainer">

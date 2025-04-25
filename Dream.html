@@ -17,6 +17,24 @@
 
 </head>
 <body>
+	<!-- Botão hamburguer -->
+<div id="hamburger" onclick="toggleMenu()">☰</div>
+	<nav id="sidebar">
+  <a href="#section1">Home</a>
+  <a href="#section2">Overview</a>
+  <a href="#section3">Idea</a>
+  <a href="#section4">Development</a>
+  <a href="#section5">Result</a>
+  <a href="#section6">Conclusion</a>
+  <a href="#section7">Story</a>
+  <a href="#section8">Storytelling</a>
+  <a href="#section9">Contact Me</a>
+
+  <hr>
+
+  <a href="index.html">Back To Home Page</a>
+</nav>
+<section id="section1"></section>
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContainerGreg">
@@ -24,7 +42,9 @@
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.png">
 		</div>
 		<div id="ContainerAboutMe">
-			<p id="Name" class="AboutMeTexts Title">Dreamwalker's Loop</p>
+			<p id="Name" class="AboutMeTexts Title">Dreamwalker's Loop <a style="max-width: 35px" href="https://gamejolt.com/games/DreamwalkerLoop/891972" target="_blank">
+  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.png" alt="Dreamwalker Loop">
+</a></p>
 			<p class="AboutMeTexts P1">The project is a personal challenge to create an extensible and easily maintainable game, inspired by the sucess of anomaly games. The narrative delves into the genre, exploring the idea of loops and anomalies through personal experiences with lucid dreams and sleep paralysis. The progagonist experience dream loops, repeatedly waking up in their room, which serves as the basis for the game mechanics and the explanation of the anomalies.</p>	
 			<div id="IUsedList">
 				<ul id="AboutMeList">
@@ -46,6 +66,7 @@
 	</div>
 
 	<div id="secondPage" class="pages">
+		<section id="section2"></section>
 		<p class="StorysTitle Title">This is a Pipeline project</p>
 		<video class="StoryImgs" controls width="640" >
 		  <!-- MP4 costuma ser o formato mais compatível -->
@@ -55,6 +76,7 @@
 		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
 		</video>
 
+<section id="section3"></section>
 		<p class="StorysTitle Title">The Idea</p>
         <p class="StorysTexts P1">
 		  The idea for this project came from challenging myself and practicing developing a system that is extensible and easy to maintain. I took advantage of the success of anomaly games to develop a game with a more professional system.
@@ -70,6 +92,7 @@
 		</p>
         <img class="StoryImgs" src="imgs/Dream/Dream1.png">
 
+<section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">I used a lot of free assets since the idea was a simple project, but even so I was careful to make the level design appropriate for the idea of being a scene that gives a strange feeling of not thinking it's in the right place.</p>
         <p class="StorysTexts P1">Some systems like the pages and the effect of closing your eyes I reused some codes from old projects like "When are you coming?" and "Hope", but just to complement, these systems are old and a lot can be improved to also become something more professional, as I said in another portfolio I'm still redoing some of these systems, like the messaging/pages system, which already It has improved, but it can get even better with the use of JSON to obtain text information in different languages.</p>
@@ -90,21 +113,25 @@
 		  <p class="StorysTexts P1">Basically I create an object with the name of the anomaly, in it I place the AnomalyManager component, and the action components of that anomaly, if I want it to activate or deactivate objects, play sounds, increase in size, among others, automatically because it is in the same object of the main component, it already takes them all and puts them in its list, so activating them already activates all the behaviors.</p>
         <p class="StorysTexts P1">And to add it to the game's list of anomalies, we can go to AnomalySystem, and add another anomaly to the list.</p>
 
+<section id="section5"></section>
 	  <p class="StorysTitle Title">The Final Result</p>
 		<p class="StorysTexts P1">The end result was extremely satisfying to see that the system works and to be able to complete my challenge, the game itself was very simple, it doesn't have many difficult anomalies, or an Oscar-worthy story, but it is consistent with the whole idea for a project that I can in the future if I want to add new content and delve deeper into the story, I'm excited to see players' reactions to this demo.</p>
 
+<section id="section6"></section>
         <p class="StorysTitle Title">The Conclusions</p>
 		<p class="StorysTexts P1">I believe that in this way, a very scalable and easy-to-maintain system has been created following the SOLID principles. It is great to see my codes and systems improving from the beginning, there is still a lot more I can do and study to improve each time, but this system simple will show that I am ready for any challenge that lies ahead.</p>
 
+<section id="section7"></section>
 <p class="StorysTitle Title">The Story</p>
 		<p class="StorysTexts P1">As the idea was to focus mainly on the practical development of the system, I didn't go too deep into the history, or the player's progress, but as I said in the idea, the game does have a story, and it is about a boy who realizes that he has become trapped, and tries to walk around the house trying to find a way to wake up, this part is told through the letters that sometimes appear amid the anomalies, the protagonist is afraid of never waking up again, and fears that he is in a coma since he is conscious, but only within the dream.</p>
 
+<section id="section8"></section>
 <p class="StorysTitle Title">The StoryTelling</p>
 		<p class="StorysTexts P1">The game starts with the player in the room, at first glance there will never be an anomaly or letter, this is to show the player what the original scenario is like, then he walks and as there is no anomaly he chooses one of the side doors to leave the house, however, before he knows it he is back in his room, and the loop begins, each time some anomaly or letter may appear randomly, and if the player finds an anomaly instead of leaving through the door he just needs to close the doors. eyes that will automatically return to the bed.</p>
 		<p class="StorysTexts P1">The game has two endings, one if he manages to get all 5 pages without missing an anomaly, or if he doesn't have all the cards.</p>
         
 	</div>
-	
+	<section id="section9"></section>
 	<div id="sixPage" class="pages">
 		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContactMeContainer" class="ContactMeContainer">

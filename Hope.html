@@ -16,7 +16,29 @@
 	<title>Akapaya</title>
 
 </head>
+
+
 <body>
+		<!-- Botão hamburguer -->
+<div id="hamburger" onclick="toggleMenu()">☰</div>
+	<nav id="sidebar">
+  <a href="#section1">Home</a>
+  <a href="#section2">Idea</a>
+  <a href="#section3">Development</a>
+  <a href="#section4">Graphics and Models</a>
+  <a href="#section5">Animations</a>
+  <a href="#section6">Sounds</a>
+  <a href="#section7">Result</a>
+  <a href="#section8">Conclusion</a>
+  <a href="#section9">Story</a>
+  <a href="#section10">Problem</a>
+  <a href="#section11">Contact Me</a>
+
+  <hr>
+
+  <a href="index.html">Back To Home Page</a>
+</nav>
+	<section id="section1"></section>
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContainerGreg">
@@ -24,7 +46,9 @@
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.png">
 		</div>
 		<div id="ContainerAboutMe">
-			<p id="Name" class="AboutMeTexts Title">Hope</p>
+			<p id="Name" class="AboutMeTexts Title">Hope <a style="max-width: 35px" href="https://gamejolt.com/games/Hope/574426" target="_blank">
+  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.png" alt="Dreamwalker Loop">
+</a></p>
 			<p class="AboutMeTexts P1">This is a GameJam project <br> <br> This project was carried out in a GameJam held in 2021, I made it all as Solo Dev in 2 weeks, the idea of the game is to be an Arena Shooter with roguelite elementes that takes place inside a tower with several floors.</p>	
 			<div id="IUsedList">
 				<ul id="AboutMeList">
@@ -46,12 +70,14 @@
 		</div>
 	</div>
 
+<section id="section2"></section>
 	<div id="secondPage" class="pages">
 		<p class="StorysTitle Title">The Idea</p>
 		<p class="StorysTexts P1">It was a time when I wasn`t feeling very well mentally, many things happened along with the pandemic which caused me depression among other problems, but I really wanted to participate in this Gamejam, when the theme was revealed I couldn`t be very creative, so to I started and finished this project I decided to make a style of game that I was already interested in, but using the Tower elements as a setting, this idea came mainly because of a game that I really like called "Spooky House Mansion of Jumpscares", where there are 1000 randomly generated rooms and every 100 rooms something happens.</p>
 		<p class="StorysTexts P1">However, in my game to be simpler it would be 10 floors, and on the tenth floor the final boss, the style of game I already wanted to do was the arena shooter inspired by "Doom" and "Quake", but I am a developer who likes of a more cute and cartoonish look, rather than realistic and detailed, so with that in mind I decided to make a game with the cutest look, even if the story behind it is macabre, just like many games I like do.</p>
 		<p class="StorysTexts P1">I just love this contrast between the Cute and the Macabre.</p>
 		<iframe class="StoryImgs" width="1280" height="680" width="560" height="315" src="https://www.youtube.com/embed/Yn6Xfkh70dc?si=TBByB3gpRCGHySTL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<section id="section3"></section>
 		<p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">As mentioned previously, I carried out this project completely alone, as there wasn`t much of a network interested in dedicating itself to a gamejam project at that time.</p>
         <p class="StorysTexts P1">I started developing the scenarios and models that were missing before actually starting development within unity, I took the weapons used from an old project, but everything else had to be done from scratch.</p>
@@ -74,6 +100,7 @@
 			</ul>
 			<img class="StoryImgs" src="imgs/Hope/ScriptsHope.png">
 			<img class="StoryImgs" src="imgs/Hope/GameManagerHope.png">
+			<section id="section4"></section>
 			<p class="StorysTitle Title">The Graphics and Models</p>
         <p class="StorysTexts P1">The game`s graphics style follows monochrome to convey a melancholic feeling and match the theme of the story.</p>
         <p class="StorysTexts P1">Furthermore, it was inspired by the film "Schindler`s List" to highlight the color red for the most important items, so all items in red are part of the mystery and are important to unravel the story and how to stop the cycle of torture.</p>
@@ -99,11 +126,13 @@
 	      <p class="P2">Conju: This is a summoner, his idea is to always try to keep as mush distance as possible from the player, while spawning a bunch of his offspring that go towards the player can make movement difficult if you step in the wrong places.</p>
 	    </div>
 	  </div>
+	  <section id="section5"></section>
 	  <p class="StorysTitle Title">The Animations</p>
         <p class="StorysTexts P1">Here are some enemies animations (Bomb's remains my favorite), to make the animations I used a mix of animations with independent parts and "Sprites" of the 3d Models.</p>
         <p class="StorysTexts P1">An example of independent Parts is Bomb, where his body is separated from his feet, which makes it easier to generate this more unique animation.</p>
         <p class="StorysTexts P1">For the Sprite model, the example is Conju's puppy, it has two models that were made to save a little time, one model has the leg further out, and the other further in, thus giving the impression of momentum in your animation.</p>
         <iframe class="StoryImgs" width="1280" height="680" src="https://www.youtube.com/embed/nVdAJSJeA1M?si=c_gMx641VoLqpwzB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <section id="section6"></section>
         <p class="StorysTitle Title">The Sounds</p>
         <p class="StorysTexts P1">Unfortunately the music is my most complicated part, I`m terrible at knowing whether a set of notes are pleasant or not, but I tried my best to make the music and the effects.</p>
         <p class="StorysTexts P1">(At the moment I don`t remember which software I used to create them, if I find it I`will update it here)</p>
@@ -128,13 +157,16 @@
 		  <source src="Audio/Hope/Effect4.mp4" type="audio/mpeg">
 		  Seu navegador não suporta o elemento de áudio.
 		</audio>
+		<section id="section7"></section>
 		<p class="StorysTitle Title">The Final Result</p>
 		<p class="StorysTexts P1">The final result for GameJam wasn`t the most satisfactory, but I already knew it would happen as the topic wasn`t very well explored, but as I had, I wanted to do a project and I wanted to participate, so I created excitement at the time to win the depression and build the game.</p>
 		<p class="StorysTexts P1">I really liked it and I`m proud of this project, it was a little of my feelings and my effort in the whole project, it is one of the few games that I take to events here in Santos-SP, and many like it and praise it, so in the future when I have possible investments to make in this project, it will be one of the ones that I will complete with a team this time.</p>
 		
+		<section id="section8"></section>
 		<p class="StorysTitle Title">The Conclusions</p>
 		<p class="StorysTexts P1">It was a sensational experience creating this game in just 2 weeks, I learned and challenged myself a lot to complete it and have a beginning, middle and end, I take this project as inpiration that even in darkest moments I can rise again and work dedicatedly and overcome any challenge.</p>
 
+<section id="section9"></section>
 		<p class="StorysTitle Title">The Story</p>
 		<p class="StorysTexts P1">The story was very much based on my negative feelings, so it ended up being a bit macabre, the game was made almost as an outburst of everything I felt, just like psychologists ask you to write poetry to help with your emotions (Yes, I also write poetry)</p>
 		<p class="StorysTexts P1">The story elements are not very clear in this prologue due to time, but elements of them are still found within it.</p>
@@ -143,6 +175,7 @@
 		<p class="StorysTexts P1">With the help of the voice in your head and the hidden secrets, you will be able to see beyond all the darkness and evil that consumes you.</p>
 		<img  class="StoryImgs" src="imgs/Hope/Story.png">
 
+<section id="section10"></section>
 		<p class="StorysTitle Title">The Problem with Models 3D</p>
 		<p class="StorysTexts P1">However, the problem with this tool at the time was that because of how the texture works on top of the model, the model came with many more polygons than necessary, and the texture was just a color table image, which made me need to run looking for a way to optimize the models and create textures in a way that I could edit without having to open Magica Voxel again.</p>
 		<p class="StorysTexts P1">With that I found a way to Bake a texture from one model to another model using Blender, but it was still a lot of work to do on each model, but unforunately there was no other tool for this at the time, while I was updating my portfolio I discovered who made a plugin for Blender that is two in one, in addition to optimizing the models, it also generates a new texture for it.</p>
@@ -153,6 +186,7 @@
 	<div id="sixPage" class="pages">
 		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
 		<div id="ContactMeContainer" class="ContactMeContainer">
+			<section id="section11"></section>
 			<h2 id="ContactMeTitle">Contact Me</h2>
 			<form id="contactForm">
 				<input type="hidden" name="accessKey" value="c29b7c2a-d29f-4b83-b86e-ccf7f7f12328">
