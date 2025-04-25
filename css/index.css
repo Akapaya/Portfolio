@@ -698,7 +698,7 @@ html,body{
         max-width: 200px;
     }
 
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1850px) {
         font-size: 240%;
         max-width: 440px;
     }
@@ -713,7 +713,7 @@ html,body{
         font-size: 100%;
         max-width: 200px;
     }
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 1850px) {
         font-size: 210%;
         max-width: 440px;
     }

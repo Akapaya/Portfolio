@@ -79,7 +79,7 @@ function showDivs(n) {
       updateContent("Ocarina Studios Games", "Gameplay Mechanics, Systems and UI/UX Implementation", "Ocarina Studios", "Ocarina.html");
       break;
       case 6:
-      updateContent("DreamWalker", "Solo Dev", "Akapaya", "Dream.html");
+      updateContent("Dreamwalker’s Loop", "Solo Dev", "Akapaya", "Dream.html");
       break;
       case 7:
       updateContent("VR", "Solo Dev", "Akapaya", "VR.html");
