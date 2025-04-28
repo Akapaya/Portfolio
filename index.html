@@ -42,9 +42,9 @@
 			<h2 id="SubTitleLogo">Never give up on your dreams.</h2>
 			<div id="SocialMedia">
 				<a href="https://github.com/Akapaya"><img class="SocialLogos" src="imgs/Logo/github-mark-white.svg"></a>
-				<a href="https://www.instagram.com/akapaya_studios/"><img class="SocialLogos" src="imgs/Logo/Instagram.svg"></a>
+				<a style="display: none;" href="https://www.instagram.com/akapaya_studios/"><img class="SocialLogos" src="imgs/Logo/Instagram.svg"></a>
 				<a href="https://www.youtube.com/@Akapaya"><img class="SocialLogos" src="imgs/Logo/Youtube.svg"></a>
-				<a href="https://www.twitch.tv/akapaya"><img class="SocialLogos" src="imgs/Logo/Twitch.svg"></a>
+				<a style="display: none;" href="https://www.twitch.tv/akapaya"><img class="SocialLogos" src="imgs/Logo/Twitch.svg"></a>
 				<a href="https://akapaya.itch.io"><img class="SocialLogos" src="imgs/Logo/Itch.svg"></a>
 			</div>
 		</div>
@@ -73,8 +73,14 @@
 <section id="section3"></section>
 	<div id="thirdPage" class="pages">
 		
-		<div id="MainVideoContainer">			
-			<iframe id="mainVideo" class="animated-border" width="1280" height="680" src="https://www.youtube.com/embed/DYqHxuf7y20?si=zx6ww5SbF3TdxYWn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<div id="MainVideoContainer">		
+		<video id="mainVideo" class="animated-border" controls width="1180" height="680" >
+		  <!-- MP4 costuma ser o formato mais compatível -->
+		  <source src="vids/Portfolio.mp4" type="video/mp4">
+		  <!-- Você pode adicionar versões em WebM ou Ogg se desejar -->
+		  <source src="vids/Portfolio.webm" type="video/webm">
+		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
+		</video>	
 			<img id="LovePetMainVideo" src="imgs/Mascote/Emotes(twitch instagram whatsapp)/Amor/whatsapp instagram/amor whatsapp completo.png">
 		</div>
 	</div>
@@ -96,7 +102,7 @@
 					<div class="TextWithArrowExpand">
 						<div class="Circle"><button class="ArrowToRightNoExpanded" onclick="toggleContent(document.getElementById('Youtube'), this)"></button></div>
 						
-						<p id="Youtube" class="expanded">Generating content for Estudio Akapaya's YouTube channel, forming a community engaged with games, along with indie game events.
+						<p id="Youtube" class="expanded">Generating content for Akapaya's YouTube channel, forming a community engaged with games, along with indie game events.
 						</p>
 					</div>	
 				</div>
@@ -343,12 +349,12 @@
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 
-			<div class="FooterItems">
+			<div style="display: none;" class="FooterItems">
 				<a href="https://www.instagram.com/akapaya_studios/"><img class="FooterIcons P3" src="imgs/Logo/InstagramBlack.svg"></a>
 				<p class="P3">@Akapaya_Studios</p>
 			</div>
 			
-			<div class="FooterItems">
+			<div style="display: none;" class="FooterItems">
 				<a href="https://www.youtube.com/@Akapaya"><img class="FooterIcons P3" src="imgs/Logo/YoutubeBlack.svg"></a>
 				<p class="P3">Youtube.com/@Akapaya</p>
 			</div>
@@ -358,7 +364,7 @@
 				<p class="P3">Akapaya.itch.io</p>
 			</div>
 			
-			<div class="FooterItems">
+			<div style="display: none;" class="FooterItems">
 				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons P3" src="imgs/Logo/TwitchBlack.svg"></a>
 				<p class="P3">Twitch.tv/akapaya</p>
 			</div>

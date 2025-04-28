@@ -225,7 +225,7 @@ html,body{
     }
 }
 
-iframe{
+iframe .StoryVids{
     @media screen and (min-width: 300px) {
         max-height: 200px;
     }
