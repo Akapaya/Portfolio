@@ -65,6 +65,22 @@ html,body{
     }
 }
 
+.P05{
+    font-size: 150%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 250%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 200%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 250%;
+    }
+}
+
 .P1{
     font-size: 100%;
 
@@ -220,6 +236,74 @@ html,body{
     width: 110px;
 }
 
+#NewsTitle{
+}
+
+#newsPage {
+    height: 95vw;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10vh;
+
+    @media screen and (min-width: 768px) {
+      height: 35vw;
+      margin-top: -3vh;
+    }
+        @media screen and (min-width: 1024px) {
+        height: 18vw;
+    }
+}
+
+#news{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+}
+
+.newDiv{
+    margin: 10px 0 10px 0;
+    text-align: center;  
+    min-width: 200px;
+    max-width: 200px;
+
+    @media screen and (min-width: 768px) {
+        margin: 10px 20px 10px 20px;
+        max-width: 200px;
+    } 
+
+     @media screen and (min-width: 1440px) {
+      margin: 10px 60px;
+      min-width: 300px;
+      max-width: 300px;
+    }
+}
+
+.newDiv a{
+     @media screen and (min-width: 1440px) {
+      font-size: 150%;
+    }
+}
+
+.newDiv p{
+     @media screen and (min-width: 1440px) {
+      font-size: 110%;
+    }
+}
+
 #secondPage {
     background-color: white;
     background-image: none;
@@ -231,6 +315,7 @@ html,body{
     align-content: center;
     justify-content: start;
     align-items: center;
+    margin-top: 5vw;
 
     @media screen and (min-width: 576px) {
        height: 166vw;

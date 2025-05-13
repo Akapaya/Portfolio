@@ -131,8 +131,55 @@ $(document).ready(function() {
         }
       });
   });
+  calcularDiasPassados('18/4/2025', 'NewsCount1');
+  calcularDiasPassados('24/4/2025', 'NewsCount2');
+  calcularDiasPassados('24/4/2025', 'NewsCount3');
 });
 
 function toggleMenu() {
   document.getElementById('sidebar').classList.toggle('open');
 }
+
+function calcularDiasPassados(dataStr, elementoId) {
+  // Espera que a data venha no formato dd/mm/yyyy
+  const [diaStr, mesStr, anoStr] = dataStr.split('/');
+  const dia = parseInt(diaStr, 10);
+  const mes = parseInt(mesStr, 10);
+  const ano = parseInt(anoStr, 10);
+
+  // Validação simples da data
+  if (isNaN(dia) || isNaN(mes) || isNaN(ano) || dia < 1 || dia > 31 || mes < 1 || mes > 12) {
+    console.warn(`Invalid date format: "${dataStr}"`);
+    const el = document.getElementById(elementoId);
+    if (el) el.textContent = 'Invalid date format.';
+    return;
+  }
+
+  // Cria a data em UTC, com base no formato dd/mm/yyyy
+  const dataInformada = new Date(Date.UTC(ano, mes - 1, dia));
+
+  // Pega a data de hoje em UTC também
+  const hoje = new Date();
+  const hojeUTC = new Date(Date.UTC(hoje.getFullYear(), hoje.getMonth(), hoje.getDate()));
+
+  const diffMs = hojeUTC - dataInformada;
+  const diffDias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  let resultado = '';
+  if (diffDias === 0) {
+    resultado = 'It\'s today!';
+  } else if (diffDias > 0) {
+    resultado = `${diffDias} day${diffDias > 1 ? 's' : ''} ago`;
+  } else {
+    resultado = `${Math.abs(diffDias)} day${Math.abs(diffDias) > 1 ? 's' : ''} left`;
+  }
+
+  const elemento = document.getElementById(elementoId);
+  if (elemento) {
+    elemento.textContent = resultado;
+  } else {
+    console.warn(`Element with ID "${elementoId}" not found.`);
+  }
+}
+
+
