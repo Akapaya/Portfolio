@@ -65,6 +65,22 @@ html,body{
     }
 }
 
+.P005{
+    font-size: 200%;
+
+    @media screen and (min-width: 768px) {
+           font-size: 450%;
+    }
+
+    @media screen and (min-width: 1280px) {
+           font-size: 400%;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 450%;
+    }
+}
+
 .P05{
     font-size: 150%;
 
@@ -134,12 +150,17 @@ html,body{
     position: relative;
     background-position: top;
 
+
     @media screen and (min-width: 768px) {
        height: 100vw;
     }
 
     @media screen and (min-width: 1280px) {
         height: 56vw;
+    }
+
+    @media screen and (min-width: 1920px) {
+        height: 50vw;
     }
 }
 
@@ -170,28 +191,44 @@ html,body{
     position: relative;
     top: -100px;
 
+    @media screen and (min-width: 300px) {
+        width: 200px;
+    height: 200px;
+    }
+
     @media screen and (min-width: 1920px) {
-        width: 400px;
-    height: 400px;
+        width: 250px;
+    height: 250px;
     }
 }
 
 #NakLogo {
 	transform-origin: bottom;
 	transition: transform 0.3s ease-in-out;
+    width: 200px;
+    height: 200px;
+
+    @media screen and (min-width: 300px) {
+        width: initial;
+    height: initial;
+    }
 
     @media screen and (min-width: 1920px) {
-        width: 400px;
-    height: 400px;
+        width: 250px;
+    height: 250px;
     }
 }
 
 #AkapayaLogo {
-    width: 150%;
+    width: 130%;
     position: absolute;
     top: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (min-width: 300px) {
+        width: 150%;
+    }
 }
 
 #SubTitleLogo {
@@ -199,12 +236,17 @@ html,body{
     color: #FFE354;
     margin: 0;
     padding: 0;
-    top: -40px;
+    top: -70px;
     position: relative;
-    font-size: x-large;
+    font-size: medium;
+
+    @media screen and (min-width: 300px) {
+        top: -40px;
+        font-size: x-large;
+    }
 
     @media screen and (min-width: 1920px) {
-        font-size: 350%;
+        font-size: 200%;
     }
 }
 
@@ -215,6 +257,11 @@ html,body{
     align-content: center;
     justify-content: center;
     align-items: center;
+    top: -50px;
+    position: relative;
+    @media screen and (min-width: 300px) {
+        top: initial;
+    }
 }
 
 .SocialLogos {
@@ -228,7 +275,7 @@ html,body{
     }
 
     @media screen and (min-width: 1920px) {
-        width: 140px;
+        width: 90px;
     }
 }
 
@@ -236,11 +283,9 @@ html,body{
     width: 110px;
 }
 
-#NewsTitle{
-}
-
-#newsPage {
-    height: 95vw;
+#featuredPage{
+    height: auto;
+    width: 95%;
     position: relative;
     background-color: white;
     background-image: none;
@@ -251,6 +296,88 @@ html,body{
     justify-content: center;
     align-items: center;
     margin-top: -10vh;
+
+    @media screen and (min-width: 300px) {
+            width: 100%;
+    }
+    @media screen and (min-width: 768px) {
+      margin-top: -3vh;
+    }
+    @media screen and (min-width: 1920px) {
+        margin-top: 3vh;
+    }
+}
+
+#featureds {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px; /* opcional: define espaço entre os itens */
+    width: 100%;
+}
+
+/* Responsivo para colunas empilhadas em telas menores */
+@media screen and (max-width: 767px) {
+    #featureds {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.featurediv {
+    margin: 10px 0;
+    text-align: center;  
+    padding-bottom: 50px;
+    width: 100%;
+    max-width: 300px;
+
+    @media screen and (min-width: 768px) {
+        width: 45%; /* para caber 2 em linha */
+        max-width: 400px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 50%; /* 3 por linha, se quiser */
+        max-width: 500px;
+    }
+
+    @media screen and (min-width: 1920px) {
+        width: 50%; /* 3 por linha, se quiser */
+        max-width: 800px;
+    }
+}
+
+.featuredGif{
+    max-width: 235px;
+    max-height: 345px;
+    border: 10px solid #25231c;
+    border-radius: 30px;
+
+    @media screen and (min-width: 300px) {
+        max-width: 300px
+    }
+}
+
+#SeeMoreFeatured{
+position: relative;
+    top: 10px;
+}
+
+#NewsTitle{
+}
+
+#newsPage {
+    height: auto;
+    position: relative;
+    background-color: white;
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
       height: 35vw;
@@ -307,7 +434,7 @@ html,body{
 #secondPage {
     background-color: white;
     background-image: none;
-    height: 200vw;
+    height: auto;
     width: 100vw;
     overflow: visible;
     position: relative;
@@ -317,25 +444,15 @@ html,body{
     align-items: center;
     margin-top: 5vw;
 
-    @media screen and (min-width: 576px) {
-       height: 166vw;
-    }
-
-    @media screen and (min-width: 768px) {
-        height: 110vw;
-    }
-
     @media screen and (min-width: 1280px) {
         flex-direction: row;
-        height: 44vw;
     }
 }
 
 #ContainerGreg {
     width: 70vw;
         height: 70vw;
-    position: absolute;
-    bottom: 0;
+        margin-top: 5vw;
     @media screen and (min-width: 768px) {
         width: 45vw;
         height: 45vw;
@@ -474,10 +591,17 @@ html,body{
     width: 80px;
     height: 100px;
     position:absolute  ;
-    right: -60px;
-    bottom: -30px;
+    right: -3vw;
+    bottom: -10vh;
+    overflow: visible;
+    z-index: 10;
     display: inline-flex;
     transform-origin: bottom;
+
+    @media screen and (min-width: 300px) {
+        right: -3vw;
+    bottom: -3vh;
+    }
 }
 
 #mainVideo{
@@ -499,43 +623,12 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 475vw;
+    height: auto;
     position: relative;
+    padding-bottom: 135px;
 
-    @media screen and (min-width: 375px) {
-        height: 430vw;
-    }
-
-    @media screen and (min-width: 390px) {
-        height: 440vw;
-    }
-
-    @media screen and (min-width: 576px) {
-        height: 480vw;
-    }
-
-    @media screen and (min-width: 768px) {
-        height: 340vw;
-    }
-
-     @media screen and (min-width: 1024px) {
-        height: 240vw;
-    }
-
-    @media screen and (min-width: 1200px) {
-        height: 185vw;
-    }
-
-    @media screen and (min-width: 1440px) {
-        height: 175vw;
-    }
-
-    @media screen and (min-width: 1864px) {
-        height: 135vw;
-    }
-
-        @media screen and (min-width: 1920px) {
-        height: 200vw;
+    @media screen and (min-width: 1920px) {
+        padding-bottom: 190px;
     }
 }
 
@@ -650,8 +743,12 @@ html,body{
 }
 
 #Awards h1{
-    font-size: 150%;
+    font-size: medium;
     color: #FFE354;
+
+    @media screen and (min-width: 300px) {
+        font-size: 150%;
+    }
 
     @media screen and (min-width: 820px) {
         font-size: 250%;
@@ -664,18 +761,15 @@ html,body{
 
 #IconNakHappy{
     position: absolute;
-    height: 100px;
+    height: 80px;
+    width: 80px;
+    right: 5vw;
+    bottom: 12vh;
+
+    @media screen and (min-width: 300px) {
+        height: 100px;
     width: 100px;
-    right: 10%;
-    bottom: 10%;
-
-    @media screen and (min-width: 576px) {
-        bottom: 9%;
-    }
-
-    @media screen and (min-width: 768px) {
-        height: 150px;
-        width: 150px;
+    right: 10vw;
     }
 }
 
@@ -942,8 +1036,16 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 250vw;
+    height: 285vw;
     position: relative;
+
+    @media screen and (min-width: 300px) {
+        height: 235vw;
+    }
+
+    @media screen and (min-width: 400px) {
+        height: 210vw;
+    }
 
     @media screen and (min-width: 576px) {
         height: 187vw;
@@ -975,7 +1077,7 @@ html,body{
 .ContactMeContainer
 {
     width: 90vw;
-    height: 160vw;
+    height: 145vw;
     background-color: #FEFFFD;
     border-radius: 20px;
     margin-top: 10vh;
@@ -985,6 +1087,10 @@ html,body{
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (min-width: 400px) {
+        height: 130vw;
+    }
 
     @media screen and (min-width: 768px) {
         height: 80vw;
@@ -1140,7 +1246,7 @@ input[type="email"],
 }
 
 #sevenPage{
-    height: 70vh;
+    height: 60vh;
     position: relative;
     background-color: white;
     background-image: none;
@@ -1154,8 +1260,20 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
-        @media screen and (min-width: 375px){
-        height: 90vh;
+        @media screen and (min-width: 300px) {
+        height: 45vh;
+    }
+
+        @media screen and (min-width: 350px) {
+            height: 55vh;
+    }
+
+        @media screen and (min-width: 390px) {
+            height: 50vh;
+    }
+
+    @media screen and (min-width: 400px) {
+            height: 50vh;
     }
 
         @media screen and (min-width: 768px) {

@@ -6,11 +6,14 @@
 
 /* carousel styles */
 .carousel {
-  --carousel-height: 50vh;
+  --carousel-height: 28vh;
     --carousel-width: 100vw;
     --carousel-item-height: 20%;
     --carousel-item-width: 50%;
-    width: 100%;
+    width: 95%;
+    @media screen and (min-width: 300px) {
+        width: 100%;
+    }
   }
 
 .carousel-container {
@@ -35,9 +38,13 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  font-size: xx-large;
+  font-size: medium;
   text-align: center;
   max-width: 400px;
+
+  @media screen and (min-width: 300px) {
+        font-size: xx-large;
+    }
 
   @media screen and (min-width: 576px) {
         max-width: 500px;
@@ -57,13 +64,20 @@
 .carousel-item-2 {
   left: 15%;
   opacity: 0.4;
-  font-size: large;
+  font-size: medium;
+
+  @media screen and (min-width: 300px) {
+        font-size: large;
+    }
 
   @media screen and (max-width: 1024px) {
     font-size: normal;
     max-width: 150px;
     opacity: 0.2;
   }
+  @media screen and (min-width: 1280px){
+    max-width: 400px;
+}
 }
 
 .carousel-item-3 {
@@ -72,23 +86,34 @@
   left: 50%;
   width: calc(var(--carousel-item-width) * 2);
   z-index: 2;
+   font-size: medium;
 
-  @media screen and (max-width: 425px) {
+  @media screen and (min-width: 300px){
     font-size: 30px;
     max-width: 270px;
+}
+@media screen and (min-width: 1280px){
+    max-width: 400px;
 }
 }
 
 .carousel-item-4 {
   left: 85%;
   opacity: 0.4;
-  font-size: large;
+  font-size: medium;
+
+  @media screen and (min-width: 300px) {
+        font-size: large;
+    }
   
   @media screen and (max-width: 1024px) {
     font-size: normal;
     max-width: 150px;
     opacity: 0.2;
   }
+  @media screen and (min-width: 1280px){
+    max-width: 400px;
+}
 }
 
 .carousel-controls {
