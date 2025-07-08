@@ -35,10 +35,10 @@
 </nav>
 <section id="section1"></section>
 	<div id="firstPage" class="pages">
-		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.WEBP">
+		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Tower/Tower.WEBP">
-            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.WEBP">
+			<img id="MiniGreg" src="imgs/Tower/Tower.webp">
+            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
 			<p id="Name" class="AboutMeTexts Title">Tower Defense</p>
@@ -80,26 +80,26 @@
 		<p class="StorysTexts P1">However, the towers are random, but with different attributes and shots that reach the entire map. The cost of adding a new troop increases over time, and with each enemy defeated you earn a troop point, a point that also appears periodically randomly around the map.
 		</p>
 
-        <img class="StoryImgs" src="imgs/Tower/Stage2.WEBP">
+        <img class="StoryImgs" src="imgs/Tower/Stage2.webp">
 <section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">The development was done over a weekend, since I already had an idea for the game, I was able to start developing it straight away.</p>
         <p class="StorysTexts P1">Overall, the development was very fast, there were already some ideas on how to develop the enemy and tower systems due to old projects, the grid was easy to assign, as well as the path of the towers.</p>
         <p class="StorysTexts P1">The Tile Pallet was also used to make it easier to customize the levels.</p>
-        <img class="StoryImgs" src="imgs/Tower/Tile.WEBP">
+        <img class="StoryImgs" src="imgs/Tower/Tile.webp">
         <p class="StorysTexts P1">The most time-consuming part, and the one I focused on the most, was the animations, from the beginning I had a solid idea of what I wanted, even if the project ended up not making me pass.</p>
         <p class="StorysTexts P1">In the end, I got exactly the result I wanted, the idea was that since they are random towers and they are humans almost like farmers, I wanted them to come from off-screen on the indicated side to the point the player chose.</p>
         <p class="StorysTexts P1">So if you select a slot on the left, the character is spawned off-screen and walks to their chosen position on the left side, the same happens if it is a slot on the right.</p>
         <p class="StorysTexts P1">This animation gives the player a really good feeling, as if the farmers were really coming together to protect themselves from zombies.</p>
-        <img class="StoryImgs" src="imgs/Tower/Move.WEBP">
+        <img class="StoryImgs" src="imgs/Tower/Move.webp">
         <p class="StorysTexts P1">In addition, the animation of the arms being disconnected from the body and aiming according to the current target of that tower. (The project requested only global aim and always on the first enemy, but the system has customization for the range of the tower's aiming and which enemy will prioritize, whether it is the first or the last)</p>
-        <img class="StoryImgs" src="imgs/Tower/Gun.WEBP">			
+        <img class="StoryImgs" src="imgs/Tower/Gun.webp">			
 <section id="section5"></section>
 	<p class="StorysTitle Title">The Game Systems</p>
 	<p class="StorysTexts P1">With more time, I would make changes mainly with Scriptable Objects and Scenes.</p>
 	<p class="StorysTexts P1">Currently, there is a scene for each phase. The ideal would be a manager that receives data from the OS and assembles the Grid and the scenario according to the data of that phase (something I have already done in other projects).</p>
 	<p class="StorysTexts P1">Currently, I would also pass the data from the Towers to OSs. Currently, they are in abstract classes, but I think that OSs would allow more flexibility between the data, mainly for balancing.</p>
-	<img class="StoryImgs" src="imgs/Tower/Diagram.WEBP">
+	<img class="StoryImgs" src="imgs/Tower/Diagram.webp">
 	<p class="StorysTexts P1">This diagram represents the class structure of a Tower Defense game developed in Unity. At the center of the combat logic is the IWeapon interface, which defines the weapon contract, partially implemented by the abstract class WeaponAbstract and extended by concrete weapons such as W_Pistol. The management of these weapons and their attacks is done by classes such as WeaponManager and RangeAttackManager.</p>
 	<p class="StorysTexts P1">The system also consists of components responsible for the construction and control of towers (BuildManager, TowerController, TowerViewer), tower behavior (WalkToCell, CircleMovement), and wave control (HordeManager). The scenario organization is done by the GridManager, while the GameManager centralizes the general logic. The player interface is managed by CanvasInGame, ensuring a clear separation between logic, presentation, and game control.</p>
 <section id="section6"></section>
@@ -111,7 +111,7 @@
 
 	<section id="section8"></section>
 	<div id="sixPage" class="pages">
-		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.WEBP">
+		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContactMeContainer" class="ContactMeContainer">
 			<h2 id="ContactMeTitle">Contact Me</h2>
 			<form id="contactForm">
@@ -126,25 +126,25 @@
 		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
 			<p class="P2">Thank you, your contact has been sent!</p>
 			<div id="IconNakHappyContact">
-				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.WEBP">
-				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.WEBP">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.webp">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.webp">
 			</div>
 		</div>
 		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
 			<p class="P2">Sorry! Something happened and your email was not sent.</p>
 			<div id="IconNakHappyBadContact">
-				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.WEBP">
-				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.WEBP">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.webp">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.webp">
 			</div>
 		</div>
-		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.WEBP">
+		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.webp">
 	</div>
 
 	<div id="sevenPage" class="pages">
 		<div id="LeftFooterDiv">
 			<div id="FooterIcon">
-				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.WEBP" >
-				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.WEBP" >
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.webp" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.webp" >
 			</div>
 			<p class="P3">@ 2024 Akapaya. Todos os direitos reservados. 
 				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
@@ -162,7 +162,7 @@
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.WEBP.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.webp.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 

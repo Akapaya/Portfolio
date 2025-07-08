@@ -13,7 +13,7 @@ html,body{
   }
 
 .pages{
-	background-image: url(../imgs/Background/Background3840x2880.WEBP);
+	background-image: url(../imgs/Background/Background3840x2880.webp);
 	background-size: contain;
 	width: 100%;
 	height: 100%;
@@ -75,7 +75,7 @@ html,body{
 }
 
 #firstPage {
-    background-image: url(../imgs/Cloud/thumb.WEBP);
+    background-image: url(../imgs/Cloud/thumb.webp);
     background-size: cover;
     background-position: top;
     top: 0px;
