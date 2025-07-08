@@ -183,22 +183,23 @@ function calcularDiasPassados(dataStr, elementoId) {
 }
 
 const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        const gifSrc = img.getAttribute('data-gif');
-        if (gifSrc) {
-          const gif = new Image();
-          gif.src = gifSrc;
-          gif.onload = () => {
-            img.src = gifSrc;
-          };
-          obs.unobserve(img);
-        }
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const img = entry.target;
+      const src = img.getAttribute('data-src');
+      if (src) {
+        const newImg = new Image();
+        newImg.src = src;
+        newImg.onload = () => {
+          img.src = src;
+        };
+        obs.unobserve(img);
       }
-    });
+    }
   });
+});
 
-  document.querySelectorAll('.lazy-gif').forEach(img => {
-    observer.observe(img);
-  });
+document.querySelectorAll('.lazy-gif').forEach(img => {
+  observer.observe(img);
+});
+

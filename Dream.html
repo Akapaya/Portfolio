@@ -36,14 +36,14 @@
 </nav>
 <section id="section1"></section>
 	<div id="firstPage" class="pages">
-		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.png">
+		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.WEBP">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Dream/Dream2.png">
-            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.png">
+			<img id="MiniGreg" src="imgs/Dream/Dream2.WEBP">
+            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.WEBP">
 		</div>
 		<div id="ContainerAboutMe">
 			<p id="Name" class="AboutMeTexts Title">Dreamwalker's Loop <a style="max-width: 35px" href="https://gamejolt.com/games/DreamwalkerLoop/891972" target="_blank">
-  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.png" alt="Dreamwalker Loop">
+  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.WEBP" alt="Dreamwalker Loop">
 </a></p>
 			<p class="AboutMeTexts P1">The project is a personal challenge to create an extensible and easily maintainable game, inspired by the sucess of anomaly games. The narrative delves into the genre, exploring the idea of loops and anomalies through personal experiences with lucid dreams and sleep paralysis. The progagonist experience dream loops, repeatedly waking up in their room, which serves as the basis for the game mechanics and the explanation of the anomalies.</p>	
 			<div id="IUsedList">
@@ -90,14 +90,14 @@
 
 		<p class="StorysTexts P1">I don't know if this has a specific name, but it is an event that fits very well with this idea, and explains the loop and anomalies that the brain tries to reproduce as if they were real.
 		</p>
-        <img class="StoryImgs" src="imgs/Dream/Dream1.png">
+        <img class="StoryImgs" src="imgs/Dream/Dream1.WEBP">
 
 <section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">I used a lot of free assets since the idea was a simple project, but even so I was careful to make the level design appropriate for the idea of being a scene that gives a strange feeling of not thinking it's in the right place.</p>
         <p class="StorysTexts P1">Some systems like the pages and the effect of closing your eyes I reused some codes from old projects like "When are you coming?" and "Hope", but just to complement, these systems are old and a lot can be improved to also become something more professional, as I said in another portfolio I'm still redoing some of these systems, like the messaging/pages system, which already It has improved, but it can get even better with the use of JSON to obtain text information in different languages.</p>
         <p class="StorysTexts P1">The main system, which is one of the anomalies, I even felt confident in developing it, I ended up thinking a lot with total focus on extensibility and maintenance, and I think the format in which I decided to deal with the system turned out very well, it was easy to add or remove new elements in anomalies, and it is also easy to add new anomalies.</p>
-        <img class="StoryImgs" src="imgs/Dream/Flow.png">
+        <img class="StoryImgs" src="imgs/Dream/Flow.WEBP">
         <p class="StorysTexts P1">The focus was on making an abstraction so that each anomaly could be called in the same way, but each anomaly would have its own peculiarities and behaviors, since one anomaly could just make objects disappear, while another could make objects appear and rotate them, and so Here it goes.</p>
         <p class="StorysTexts P1">So for this I used the lAnomaly interface to create the methods for activating and deactivating behaviors, and from this I created several behavior scripts that implemented this interface, so in the script for activating objects, in the activation method it runs a loop in the list of selected objects in the inspector and activates all of them in the scene, and deactivation does the opposite to return to the normal scene.</p>
         <p class="StorysTexts P1">However, as previously stated, an anomaly can perform one or more behaviors, so to take care of this management I created Anomaly Manager, it has a list of lAnomaly interfaces, at the start of the game it searches among the object's components which scripts have this interface and stores them all in its list, so when the anomaly is activated it activates all the interfaces it has in the list, whether they are activating or deactivating objects in the scene, rotating objects, or any behavior created.</p>
@@ -133,7 +133,7 @@
 	</div>
 	<section id="section9"></section>
 	<div id="sixPage" class="pages">
-		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.png">
+		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.WEBP">
 		<div id="ContactMeContainer" class="ContactMeContainer">
 			<h2 id="ContactMeTitle">Contact Me</h2>
 			<form id="contactForm">
@@ -148,25 +148,25 @@
 		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
 			<p class="P2">Thank you, your contact has been sent!</p>
 			<div id="IconNakHappyContact">
-				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
-				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.png">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.WEBP">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.WEBP">
 			</div>
 		</div>
 		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
 			<p class="P2">Sorry! Something happened and your email was not sent.</p>
 			<div id="IconNakHappyBadContact">
-				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.png">
-				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.png">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.WEBP">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.WEBP">
 			</div>
 		</div>
-		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.png">
+		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.WEBP">
 	</div>
 
 	<div id="sevenPage" class="pages">
 		<div id="LeftFooterDiv">
 			<div id="FooterIcon">
-				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.png" >
-				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.png" >
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.WEBP" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.WEBP" >
 			</div>
 			<p class="P3">@ 2024 Akapaya. Todos os direitos reservados. 
 				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
@@ -184,7 +184,7 @@
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.png.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.WEBP.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 

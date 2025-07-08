@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
     animateBreathing('#HappyNak', 1, 0.9, 1, 0.002, 10);
     animateBreathing('#HappyNakContact', 1, 0.9, 1, 0.002, 10);
     animateBreathing('#SadNakBadContact', 1, 0.9, 1, 0.002, 10);
-    animateBreathing('#SadNak404', 1, 0.9, 1, 0.002, 10);
 });
 
 function animateBreathing(element, initialScale, minScale, maxScale, step, pauseTime) {
