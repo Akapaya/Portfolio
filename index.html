@@ -16,8 +16,19 @@
 <title>Akapaya</title>
 
 	<style>
+		#bgImageFirstPage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
 		#firstPage {
-    background-image: url(imgs/Cloud/thumb.webp);
+			background-image: none;
     background-size: cover;
     top: 0px;
     display: flex;
@@ -181,6 +192,19 @@
 
 	<div id="firstPage" class="pages">
 		<section id="section1"></section>
+		<img
+    id="bgImageFirstPage"
+    src="imgs/Cloud/thumb-768.webp"
+    srcset="
+      imgs/Cloud/thumb-768.webp 330w,
+      imgs/Cloud/thumb-1024.webp 640w,
+      imgs/Cloud/thumb-1920.webp 1920w
+    "
+    sizes="100vw"
+    alt=""
+    loading="eager"
+    decoding="async"
+  />
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="firstPageLogoEnter">
 			<div id="LogoPanel">
