@@ -12,7 +12,8 @@
 	<link rel="preload" as="style" href="css/carousel.css" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="css/carousel.css"></noscript>
 	
-	<title>Akapaya</title>
+	<link rel="preload" as="image" href="imgs/Games/Misterious.webp">
+<title>Akapaya</title>
 
 	<style>
 		#firstPage {
@@ -209,7 +210,7 @@
   data-src="vids/Mobile.webp"
   alt="Mobile Project"
   loading="lazy"
-/>
+/ data-loaded="false">
 			  <p class="P05" style="color: #25231C;">Ocarina Games</p>
 			  <p class="P2">Unity - Casual - Mobile</p>
 			  <p class="P3">As part of my work at Ocarina Studios</p>
@@ -217,12 +218,12 @@
 			  <a href="Ocarina.html" id="SeeMoreFeatured" class="SeeMoreButton">See More</a>
 			</div>
 			<div class="featurediv">
-			  <img
+			  <img loading="lazy"
 			    class="featuredGif lazy-gif"
 			    src="imgs/Games/Heroes.webp"
 			    data-src="vids/Heroes.webp"
 			    alt="PlunderVolt Games"
-			  >
+			   data-loaded="false">
 			  <p class="P05" style="color: #25231C;">PlunderVolt Games</p>
 			  <p class="P2">Unity - RPG - Turn-Based</p>
 			  <p class="P3">As part of my work at PlunderVolt Studios</p>
@@ -230,12 +231,12 @@
 			  <a href="Heroes.html" id="SeeMoreFeatured" class="SeeMoreButton">See More</a>
 			</div>
 			<div class="featurediv">
-			  <img
+			  <img loading="lazy"
 			    class="featuredGif lazy-gif"
 			    src="imgs/Games/Hope.webp"
 			    data-src="vids/Hope.webp"
 			    alt="Mobile Project"
-			  >
+			   data-loaded="false">
 			  <p class="P05" style="color: #25231C;">Hope</p>
 			  <p class="P2">Unity - Boomer-Shooter - Roguelite</p>
 			  <p class="P3">As part of my personal works as Solo Dev</p>
@@ -243,12 +244,12 @@
 			  <a href="Hope.html" id="SeeMoreFeatured" class="SeeMoreButton">See More</a>
 			</div>
 			<div class="featurediv">
-			  <img
+			  <img loading="lazy"
 			    class="featuredGif lazy-gif"
 			    src="imgs/Games/VR.webp"
 			    data-src="vids/Vr.webp"
 			    alt="Mobile Project"
-			  >
+			   data-loaded="false">
 			  <p class="P05" style="color: #25231C;">VR Experience</p>
 			  <p class="P2">Unity - VR - Terror</p>
 			  <p class="P3">As part of my personal works as Solo Dev</p>
@@ -595,6 +596,25 @@
 	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
 	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
 	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+
+<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.dataset.src;
+        if (src && img.dataset.loaded !== "true") {
+          img.src = src;
+          img.dataset.loaded = "true";
+          obs.unobserve(img);
+        }
+      }
+    });
+  });
+  document.querySelectorAll('.lazy-gif').forEach(img => observer.observe(img));
+});
+</script>
 </body>
 
 
