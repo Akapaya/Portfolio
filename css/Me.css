@@ -13,7 +13,7 @@ html,body{
   }
 
 .pages{
-	background-image: url(../imgs/Background/Background3840x2880.webp);
+	background-image: url(../imgs/Background/Fundo_infinito_1280x960.webp);
 	background-size: contain;
 	width: 100%;
 	height: 100%;
@@ -84,13 +84,10 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 260vw;
+    height: auto;
     position: relative;
     flex-wrap: nowrap;
-
-    @media screen and (min-width: 768px) {
-           height: 165vw;
-    }
+    padding-bottom: 33vh;
 
     @media screen and (min-width: 1280px) {
         height: 58vw;
@@ -140,20 +137,44 @@ html,body{
 #SleepNakfirstPage{
     width: 100px;
     position: absolute;
-    left: 10%;
-    top: 42%;
+        left: 5vw;
+    top: 44vh;
+
     z-index: 5;
 
-    @media screen and (min-width: 768px) {
-           width: 20%;
-           left: 22%;
-    top: 39%;
+    @media screen and (min-width: 300px) {
+           left: 5vw;
+    top: 49vh;
+    }
+
+    @media screen and (min-width: 370px) {
+           left: 5vw;
+    top: 59vh;
+    }
+
+    @media screen and (min-width: 380px) {
+           left: 5vw;
+    top: 49vh;
+    }
+
+    @media screen and (min-width: 700px) {
+           left: 25vw;
+    top: 49vh;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 10%;
-        left: 10%;
-        top: 67%;
+           left: 25vw;
+    top: 69vh;
+    }
+
+    @media screen and (min-width: 1440px) {
+           left: 25vw;
+    top: 66vh;
+    }
+
+    @media screen and (min-width: 1920px) {
+           left: 28vw;
+    top: 74vh;
     }
 }
 
@@ -502,7 +523,7 @@ input[type="email"],
 }
 
 #sevenPage{
-    height: 70vh;
+    height: 60vh;
     position: relative;
     background-color: white;
     background-image: none;
@@ -516,8 +537,20 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
-        @media screen and (min-width: 375px){
-        height: 90vh;
+        @media screen and (min-width: 300px) {
+        height: 45vh;
+    }
+
+        @media screen and (min-width: 350px) {
+            height: 55vh;
+    }
+
+        @media screen and (min-width: 390px) {
+            height: 50vh;
+    }
+
+    @media screen and (min-width: 400px) {
+            height: 50vh;
     }
 
         @media screen and (min-width: 768px) {

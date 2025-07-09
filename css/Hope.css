@@ -84,13 +84,10 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 250vw;
+    height: auto;
     position: relative;
     flex-wrap: nowrap;
-
-    @media screen and (min-width: 768px) {
-           height: 200vw;
-    }
+    padding-bottom: 33vh;
 
     @media screen and (min-width: 1280px) {
            height: 60vw;
@@ -142,22 +139,47 @@ html,body{
 }
 
 #SleepNakfirstPage{
-    width: 85px;
+    width: 50px;
     position: absolute;
-    left: 1%;
-    top: 28%;
+        left: 3vw;
+    top: 33vh;
+
     z-index: 5;
 
-    @media screen and (min-width: 768px) {
-           width: 20%;
-           left: 5%;
-    top: 25%;
+    @media screen and (min-width: 300px) {
+        width: 100px;
+           left: 3vw;
+    top: 33vh;
+    }
+
+    @media screen and (min-width: 370px) {
+           left: 3vw;
+    top: 40vh;
+    }
+
+    @media screen and (min-width: 380px) {
+           left: 3vw;
+    top: 35vh;
+    }
+
+    @media screen and (min-width: 700px) {
+           left: 3vw;
+    top: 40vh;
     }
 
     @media screen and (min-width: 1280px) {
-           width: 11%;
-        left: 1%;
-        top: 56%;
+           left: 3vw;
+    top: 60vh;
+    }
+
+    @media screen and (min-width: 1440px) {
+           left: 3vw;
+    top: 55vh;
+    }
+
+    @media screen and (min-width: 1920px) {
+           left: 3vw;
+    top: 61vh;
     }
 }
 
@@ -376,8 +398,12 @@ iframe{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 250vw;
+    height: 300vw;
     position: relative;
+
+    @media screen and (min-width: 300px) {
+        height: 250vw;
+    }
 
     @media screen and (min-width: 576px) {
         height: 187vw;
@@ -574,7 +600,7 @@ input[type="email"],
 }
 
 #sevenPage{
-    height: 70vh;
+    height: 60vh;
     position: relative;
     background-color: white;
     background-image: none;
@@ -588,8 +614,20 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
-        @media screen and (min-width: 375px){
-        height: 90vh;
+        @media screen and (min-width: 300px) {
+        height: 45vh;
+    }
+
+        @media screen and (min-width: 350px) {
+            height: 55vh;
+    }
+
+        @media screen and (min-width: 390px) {
+            height: 50vh;
+    }
+
+    @media screen and (min-width: 400px) {
+            height: 50vh;
     }
 
         @media screen and (min-width: 768px) {

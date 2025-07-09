@@ -4,15 +4,11 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/Me.css">
-	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
-	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></noscript>
 	<link rel="stylesheet" href="css/carousel.css" />
-	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
-	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
-	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 	<title>Akapaya</title>
 
 </head>
@@ -32,7 +28,7 @@
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Me/Me.jpg">
+			<img id="MiniGreg" src="imgs/Me/Me.webp">
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
@@ -51,7 +47,11 @@
 <section id="section2"></section>
 	<div id="secondPage" class="pages">
 		<p class="StorysTexts P1">I've been interested in games since I was little, but my first ambition was to be a 3D Animator, inspired by the Kingdom Hearts 2 entrance cutscene.</p>
-        <img class="StoryImgs" src="imgs/Me/Kingdom.webp">
+		<img class="StoryImgs" src="imgs/Me/Kingdom-768.webp" srcset="
+        imgs/Me/Kingdom-768.webp 2000w,
+        imgs/Me/Kingdom-1280.webp 3000w,
+        imgs/Me/Kingdom-1920.webp 5000w
+    " alt="">
         <p class="StorysTexts P1">So when I was 12 years old I was already making 3D animations using Minecraft models, and I started training in 3D modeling as well.</p>
         <video class="StoryVids" controls width="1180" height="680" >
 		  <!-- MP4 costuma ser o formato mais compatível -->
@@ -73,7 +73,7 @@
         <p class="StorysTexts P1">When the pandemic started, the school ended up closing, so I got my second job, which was developing gamification on the WEB for a training company for other companies, where I stayed for about two years.</p>
         <p class="StorysTexts P1">After that, I had a short period in an internship where I used a lot of different technologies like Firebase, VR, AR, Addresables, among many others, but I ended up staying for a short time to focus on college.</p>
         <p class="StorysTexts P1">In my last year of college, I managed to get a job as a developer at Plundervolt, I had a great time there, it's a shame that our main project didn't go ahead (at least not yet). It was the best place I've worked so far, where my boss became a mentor to me.</p>
-        <img style="max-width: 400px;" class="StoryImgs" src="imgs/Me/Formatura.jpg">
+        <img style="max-width: 400px;" class="StoryImgs" src="imgs/Me/Formatura.webp">
         <p class="StorysTexts P1">Also my two main games are “When are you coming?” and “Hope”, which were two games that I made entirely alone at different times with a strong meaning, “When are you coming?” was made during the pandemic, where I wanted to represent how much love overcomes social isolation, while “Hope” was made after the pandemic at a time when I was suffering from depression and burnout, so I put a lot of my feelings into making these two games alone in difficult times.</p>
         <video class="StoryVids" controls width="1180" height="680" >
 		  <!-- MP4 costuma ser o formato mais compatível -->
@@ -90,11 +90,15 @@
 		  <a href="midia/meu-video.mp4">Clique aqui para baixar o arquivo.</a>
 		</video>
         <p class="StorysTexts P1">In addition to currently having a project running together with other people for the SDG, which is a digital board game, which teaches through questions and consequences all 17 points of the SDG, in addition to sharing the importance of the 2030 mission.</p>
-        <img style="max-width: 800px;" class="StoryImgs" src="imgs/Me/ODS.jpg">
+        <img style="max-width: 800px;" class="StoryImgs" src="imgs/Me/ODS-768.webp" srcset="
+        imgs/Me/ODS-768.webp 2000w,
+        imgs/Me/ODS-1280.webp 3000w,
+        imgs/Me/ODS-1920.webp 5000w
+    " alt="">
         <p class="StorysTexts P1">I'm very happy that this year has been full of mentoring sessions. My former boss at Plundervolt has helped me a lot to evolve, giving me tips and helping me.</p>
         <p class="StorysTexts P1">In addition, I'm in a mentoring project with ABStartups called "Create Games" by Sebrae, where they provide a lot of mentoring sessions on how to start a gaming company.</p>
         <p class="StorysTexts P1">At Gamescom Latam 2024, I had the pleasure of meeting people from Unity who analyzed my portfolio and gave me a lot of feedback on how to improve.</p>
-        <img style="max-width: 400px;" class="StoryImgs" src="imgs/Me/gamescom.jpg">
+        <img style="max-width: 400px;" class="StoryImgs" src="imgs/Me/gamescom.webp">
 		<p class="StorysTexts P1">I've always been interested in having a YouTube channel. I tried a few times when I was younger, but I wasn't mature enough to understand and treat it as a business. Now that I'm more mature, I know exactly what goals I want to achieve with the channel.</p>
 		<p class="StorysTexts P1">Doing it for fun is the main thing, but I want the community of players and developers to be more united for the good of games, to teach and pass on knowledge to other developers, while at the same time giving curious players the chance to see what it's like to develop a game.</p>
 		<p class="StorysTexts P1">I also like playing some games and discussing with the public what improvements or paths a game could take to be better received. This also encourages players to give more constructive criticism.</p>
@@ -110,7 +114,11 @@
 		<p class="StorysTexts P1">From September 2024 to April 2025, I was able to work at a great studio invited by the CEO (who I had worked for at Plundervolt), Ocarina Studios. It was an incredible experience!</p>
 		<p class="StorysTexts P1">It was my first experience with a medium/large team, so I was excited, but it exceeded my expectations to be able to count on them for what I needed. I learned a lot from all of them, improving my development of systems architecture, data handling and scalability, in addition to the development pipeline for games.</p>
 		<p class="StorysTexts P1">Now I feel more confident about my skills and knowledge, and I know I can handle the work that is given to me! Dream Team!</p>
-		<img class="StoryImgs" src="imgs/Me/Ocarina.webp">
+		<img class="StoryImgs" src="imgs/Me/Ocarina-768.webp" srcset="
+        imgs/Me/Ocarina-768.webp 2000w,
+        imgs/Me/Ocarina-1280.webp 3000w,
+        imgs/Me/Ocarina-1920.webp 5000w
+    " alt="">
 	</div>
 	
 	<section id="section3"></section>
@@ -166,7 +174,7 @@
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.webp.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 
@@ -191,14 +199,9 @@
 			</div>
 		</div>
 	</div>
+
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 </body>
-
-
-<script type="text/javascript">
-	document.addEventListener('DOMContentLoaded', (event) => {
-            var video = document.getElementById('mainVideo');
-            video.playbackRate = 1.5;
-        });
-</script>
 	
 </html>
