@@ -13,7 +13,7 @@ html,body{
   }
 
 .pages{
-	background-image: url(../imgs/Background/Background3840x2880.webp);
+	background-image: url(../imgs/Background/Fundo_infinito_1280x960.webp);
 	background-size: contain;
 	width: 100%;
 	height: 100%;
@@ -89,16 +89,13 @@ html,body{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 290vw;
+    height: auto;
     position: relative;
     flex-wrap: nowrap;
-
-    @media screen and (min-width: 768px) {
-           height: 240vw;
-    }
+    padding-bottom: 33vh;
 
     @media screen and (min-width: 1280px) {
-           height: 75vw;
+           height: 60vw;
            justify-content: flex-start;
     align-items: flex-start;
     flex-direction: row;
@@ -147,22 +144,47 @@ html,body{
 }
 
 #SleepNakfirstPage{
-    width: 85px;
+    width: 50px;
     position: absolute;
-    left: 1%;
-    top: 24%;
+        left: 3vw;
+    top: 33vh;
+
     z-index: 5;
 
-    @media screen and (min-width: 768px) {
-           width: 20%;
-           left: 5%;
-    top: 21%;
+    @media screen and (min-width: 300px) {
+        width: 100px;
+           left: 3vw;
+    top: 33vh;
+    }
+
+    @media screen and (min-width: 370px) {
+           left: 3vw;
+    top: 40vh;
+    }
+
+    @media screen and (min-width: 380px) {
+           left: 3vw;
+    top: 31vh;
+    }
+
+    @media screen and (min-width: 700px) {
+           left: 3vw;
+    top: 40vh;
     }
 
     @media screen and (min-width: 1280px) {
-           width: 11%;
-        left: 1%;
-        top: 43%;
+           left: 3vw;
+    top: 60vh;
+    }
+
+    @media screen and (min-width: 1440px) {
+           left: 3vw;
+    top: 55vh;
+    }
+
+    @media screen and (min-width: 1920px) {
+           left: 3vw;
+    top: 61vh;
     }
 }
 
@@ -545,7 +567,7 @@ input[type="email"],
 }
 
 #sevenPage{
-    height: 70vh;
+    height: 60vh;
     position: relative;
     background-color: white;
     background-image: none;
@@ -559,8 +581,20 @@ input[type="email"],
         margin-top: 0px;
         padding-bottom: 20px;
 
-        @media screen and (min-width: 375px){
-        height: 90vh;
+        @media screen and (min-width: 300px) {
+        height: 45vh;
+    }
+
+        @media screen and (min-width: 350px) {
+            height: 55vh;
+    }
+
+        @media screen and (min-width: 390px) {
+            height: 50vh;
+    }
+
+    @media screen and (min-width: 400px) {
+            height: 50vh;
     }
 
         @media screen and (min-width: 768px) {
@@ -764,4 +798,75 @@ input[type="email"],
 .animated-border {
     animation: pulse-border 2s infinite;
     border-radius: 20px;
+}
+
+#hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 1001;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  color: #FFE354;
+  background-color: #25231C;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+#hamburger:hover {
+  background-color: #f0f0f0;
+  border-color: #666;
+}
+
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: -35%;
+  width: 25%;
+  height: 100%;
+  background: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 60px 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 30%;
+
+  @media screen and (min-width: 1280px) {
+        padding-top: 0%;
+        width: 15%;
+        right: -20%;
+    }
+
+    @media screen and (min-width: 1920px) {
+    }
+}
+
+#sidebar a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+#sidebar hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #555;
+  margin: 20px 0;
+}
+
+#sidebar.open {
+  right: 0;
+}
+
+.content {
+  padding: 60px 20px;
+}
+
+section {
 }

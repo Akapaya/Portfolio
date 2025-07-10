@@ -4,15 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/Heroes.css">
-	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
-	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/carousel.css" />
-	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
-	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
-	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></noscript>
 	<title>Akapaya</title>
 
 </head>
@@ -36,7 +31,10 @@
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Heroes/MenuBackground.webp">
+			<img id="MiniGreg" src="imgs/Heroes/MenuBackground-768.webp" srcset="
+        imgs/Heroes/MenuBackground-768.webp 2000w,
+        imgs/Heroes/MenuBackground-1920.webp 5000w
+    " alt="">
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
@@ -85,15 +83,24 @@
 		<p class="StorysTexts P1">
 		  I later led the integration of a second programmer, providing direct support in the implementation of enemy AI.
 		</p>
-        <img class="StoryImgs" src="imgs/Heroes/Battle.webp">
+        <img class="StoryImgs" src="imgs/Heroes/Battle-768.webp" srcset="
+        imgs/Heroes/Battle-768.webp 2000w,
+        imgs/Heroes/Battle-1280.webp 3000w
+    " alt="">
 
         <p class="StorysTexts P1">
 		  <span class="highlight">Talent trees</span> were made to allow for high scalability and content creation. They are decoupled and use Scriptable Objects that carry talent information, as well as powers and passives that have their own managers to handle the information as expected by the OS. Several trees can also be built with their conditions and locks for unlocking where the system itself organizes and renders on the screen without the need to mess with the UI.</p>
-        <img class="StoryImgs" src="imgs/Heroes/Tree.webp">
+        <img class="StoryImgs" src="imgs/Heroes/Tree-768.webp" srcset="
+        imgs/Heroes/Tree-768.webp 2000w,
+        imgs/Heroes/Tree-1280.webp 3000w
+    " alt="">
 
         <p class="StorysTexts P1">
-		  In addition to the talent tree, the system had <span class="highlight">Upgrades</span>, which changed the start of all runs, the necessary systems were readapted in real time to deal with the upgrades chosen as needed, such as more gold, better items, more impactful battles and much more.</p>
-        <img class="StoryImgs" src="imgs/Heroes/Upgrades.webp">        
+		  In addition to the talent tree, the system had <span class="highlight">Upgrades</span>, which changed the start of all runs, the necessary systems were readapted in real time to deal with the upgrades chosen as needed, such as more gold, better items, more impactful battles and much more.</p> 
+        <img class="StoryImgs" src="imgs/Heroes/Upgrades-768.webp" srcset="
+        imgs/Heroes/Upgrades-768.webp 2000w,
+        imgs/Heroes/Upgrades-1920.webp 5000w
+    " alt="">   
 
 <section id="section4"></section>
 		<p class="StorysTitle Title">The UI/UX</p>
@@ -174,7 +181,7 @@ I also created modular UI systems with reusable scripts and parameterized animat
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.webp.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 
@@ -199,14 +206,8 @@ I also created modular UI systems with reusable scripts and parameterized animat
 			</div>
 		</div>
 	</div>
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 </body>
-
-
-<script type="text/javascript">
-	document.addEventListener('DOMContentLoaded', (event) => {
-            var video = document.getElementById('mainVideo');
-            video.playbackRate = 1.5;
-        });
-</script>
 	
 </html>

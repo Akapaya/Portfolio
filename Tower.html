@@ -4,15 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/Tower.css">
-	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
-	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/carousel.css" />
-	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
-	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
-	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></noscript>
 	<title>Akapaya</title>
 
 </head>
@@ -37,7 +32,10 @@
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Tower/Tower.webp">
+			<img id="MiniGreg" src="imgs/Tower/Tower-768.webp" srcset="
+        imgs/Tower/Tower-768.webp 2000w,
+        imgs/Tower/Tower-1280.webp 3000w,
+    " alt="">
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
@@ -80,13 +78,19 @@
 		<p class="StorysTexts P1">However, the towers are random, but with different attributes and shots that reach the entire map. The cost of adding a new troop increases over time, and with each enemy defeated you earn a troop point, a point that also appears periodically randomly around the map.
 		</p>
 
-        <img class="StoryImgs" src="imgs/Tower/Stage2.webp">
+        <img class="StoryImgs" src="imgs/Tower/Stage2-768.webp" srcset="
+        imgs/Tower/Stage2-768.webp 2000w,
+        imgs/Tower/Stage2-1280.webp 3000w,
+    " alt="">
 <section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">The development was done over a weekend, since I already had an idea for the game, I was able to start developing it straight away.</p>
         <p class="StorysTexts P1">Overall, the development was very fast, there were already some ideas on how to develop the enemy and tower systems due to old projects, the grid was easy to assign, as well as the path of the towers.</p>
         <p class="StorysTexts P1">The Tile Pallet was also used to make it easier to customize the levels.</p>
-        <img class="StoryImgs" src="imgs/Tower/Tile.webp">
+        <img class="StoryImgs" src="imgs/Tower/Tile-768.webp" srcset="
+        imgs/Tower/Tile-768.webp 2000w,
+        imgs/Tower/Tile-1280.webp 3000w,
+    " alt="">
         <p class="StorysTexts P1">The most time-consuming part, and the one I focused on the most, was the animations, from the beginning I had a solid idea of what I wanted, even if the project ended up not making me pass.</p>
         <p class="StorysTexts P1">In the end, I got exactly the result I wanted, the idea was that since they are random towers and they are humans almost like farmers, I wanted them to come from off-screen on the indicated side to the point the player chose.</p>
         <p class="StorysTexts P1">So if you select a slot on the left, the character is spawned off-screen and walks to their chosen position on the left side, the same happens if it is a slot on the right.</p>
@@ -162,7 +166,7 @@
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.webp.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 
@@ -187,14 +191,8 @@
 			</div>
 		</div>
 	</div>
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 </body>
-
-
-<script type="text/javascript">
-	document.addEventListener('DOMContentLoaded', (event) => {
-            var video = document.getElementById('mainVideo');
-            video.playbackRate = 1.5;
-        });
-</script>
 	
 </html>

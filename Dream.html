@@ -4,15 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/Dream.css">
-	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript"></script>
-	<script src="jquery-3.6.0/jquery-1.11.3.min.js" type="text/javascript"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/carousel.css" />
-	<script src="Scripts/AuxiliaryTools/carousel.js" defer></script>
-	<script src="Scripts/Animations/HeightAnimation.js" defer></script>
-	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></noscript>
 	<title>Akapaya</title>
 
 </head>
@@ -38,7 +33,10 @@
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/Dream/Dream2.webp">
+			<img id="MiniGreg" src="imgs/Dream/Dream2-768.webp" srcset="
+        imgs/Dream/Dream2-768.webp 2000w,
+        imgs/Dream/Dream2-1280.webp 3000w,
+    " alt="">
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
@@ -90,14 +88,20 @@
 
 		<p class="StorysTexts P1">I don't know if this has a specific name, but it is an event that fits very well with this idea, and explains the loop and anomalies that the brain tries to reproduce as if they were real.
 		</p>
-        <img class="StoryImgs" src="imgs/Dream/Dream1.webp">
+        <img class="StoryImgs" src="imgs/Dream/Dream1-768.webp" srcset="
+        imgs/Dream/Dream1-768.webp 2000w,
+        imgs/Dream/Dream1-1280.webp 3000w,
+    " alt="">
 
 <section id="section4"></section>
         <p class="StorysTitle Title">The Development</p>
         <p class="StorysTexts P1">I used a lot of free assets since the idea was a simple project, but even so I was careful to make the level design appropriate for the idea of being a scene that gives a strange feeling of not thinking it's in the right place.</p>
         <p class="StorysTexts P1">Some systems like the pages and the effect of closing your eyes I reused some codes from old projects like "When are you coming?" and "Hope", but just to complement, these systems are old and a lot can be improved to also become something more professional, as I said in another portfolio I'm still redoing some of these systems, like the messaging/pages system, which already It has improved, but it can get even better with the use of JSON to obtain text information in different languages.</p>
         <p class="StorysTexts P1">The main system, which is one of the anomalies, I even felt confident in developing it, I ended up thinking a lot with total focus on extensibility and maintenance, and I think the format in which I decided to deal with the system turned out very well, it was easy to add or remove new elements in anomalies, and it is also easy to add new anomalies.</p>
-        <img class="StoryImgs" src="imgs/Dream/Flow.webp">
+        <img class="StoryImgs" src="imgs/Dream/Flow-768.webp" srcset="
+        imgs/Dream/Flow-768.webp 2000w,
+        imgs/Dream/Flow-1280.webp 3000w,
+    " alt="">
         <p class="StorysTexts P1">The focus was on making an abstraction so that each anomaly could be called in the same way, but each anomaly would have its own peculiarities and behaviors, since one anomaly could just make objects disappear, while another could make objects appear and rotate them, and so Here it goes.</p>
         <p class="StorysTexts P1">So for this I used the lAnomaly interface to create the methods for activating and deactivating behaviors, and from this I created several behavior scripts that implemented this interface, so in the script for activating objects, in the activation method it runs a loop in the list of selected objects in the inspector and activates all of them in the scene, and deactivation does the opposite to return to the normal scene.</p>
         <p class="StorysTexts P1">However, as previously stated, an anomaly can perform one or more behaviors, so to take care of this management I created Anomaly Manager, it has a list of lAnomaly interfaces, at the start of the game it searches among the object's components which scripts have this interface and stores them all in its list, so when the anomaly is activated it activates all the interfaces it has in the list, whether they are activating or deactivating objects in the scene, rotating objects, or any behavior created.</p>
@@ -184,7 +188,7 @@
 			</div>
 			
 			<div class="FooterItems" onclick="">
-				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.webp.svg"></a>
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.svg"></a>
 				<p class="P3">Gregory_valentim@hotmail.com</p>
 			</div>
 
@@ -209,14 +213,8 @@
 			</div>
 		</div>
 	</div>
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
 </body>
-
-
-<script type="text/javascript">
-	document.addEventListener('DOMContentLoaded', (event) => {
-            var video = document.getElementById('mainVideo');
-            video.playbackRate = 1.5;
-        });
-</script>
 	
 </html>
