@@ -37,7 +37,13 @@
 	<div id="firstPage" class="pages">
 		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
 		<div id="ContainerGreg">
-			<img id="MiniGreg" src="imgs/WAYC/wayc.webp">
+			<img id="MiniGreg"
+  class="lazy-gif"
+  src="imgs/Games/WAYC-768.webp"
+  data-src="vids/WAYC.webp"
+  alt="Game"
+  loading="lazy"
+/ data-loaded="false">
             <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
 		</div>
 		<div id="ContainerAboutMe">
@@ -363,6 +369,23 @@ It was a sensational experience creating this game in just 2 weeks, I'm proud of
 	</div>
 	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
 	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
-</body>
+	<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.dataset.src;
+        if (src && img.dataset.loaded !== "true") {
+          img.src = src;
+          img.dataset.loaded = "true";
+          obs.unobserve(img);
+        }
+      }
+    });
+  });
+  document.querySelectorAll('.lazy-gif').forEach(img => observer.observe(img));
+});
+</script>
 	
 </html>
