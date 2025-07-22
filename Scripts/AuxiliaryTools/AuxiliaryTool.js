@@ -131,9 +131,9 @@ $(document).ready(function() {
         }
       });
   });
-  calcularDiasPassados('18/4/2025', 'NewsCount1');
+  calcularDiasPassados('22/7/2025', 'NewsCount1');
   calcularDiasPassados('24/4/2025', 'NewsCount2');
-  calcularDiasPassados('24/4/2025', 'NewsCount3');
+  calcularDiasPassados('18/4/2025', 'NewsCount3');
 });
 
 function toggleMenu() {

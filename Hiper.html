@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/Hope.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet"></noscript>
+	<title>Akapaya</title>
+
+</head>
+
+
+<body>
+		<!-- Botão hamburguer -->
+<div id="hamburger" onclick="toggleMenu()">☰</div>
+	<nav id="sidebar">
+  <a href="#section1">Home</a>
+  <a href="#section2">Development</a>
+  <a href="#section8">Conclusion</a>
+  <a href="#section11">Contact Me</a>
+
+  <hr>
+
+  <a href="index.html">Back To Home Page</a>
+</nav>
+	<section id="section1"></section>
+	<div id="firstPage" class="pages">
+		<img id="HeaderFirstPage" src="imgs/Cloud/CloudReverse.webp">
+		<div id="ContainerGreg">
+			<img id="MiniGreg"
+  class="lazy-gif"
+  src="imgs/Hiper/Hiper.png"
+  data-src="vids/Hiper/Mobile.gif"
+  alt="Game"
+  loading="lazy"
+/ data-loaded="false">
+            <img id="SleepNakfirstPage" src="imgs/Mascote/MascoteNuvem.webp">
+		</div>
+		<div id="ContainerAboutMe">
+			<p id="Name" class="AboutMeTexts Title">Hiper Casual<a style="max-width: 35px" href="https://github.com/Akapaya/HiperCasualMobile" target="_blank">
+  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.webp" alt="Dreamwalker Loop">
+</a></p>
+			<p class="AboutMeTexts P1">This is test project <br> <br> This project was carried out as a vacancy test for Unity Mobile Dev in 2025, everything was done in 48 hours, divided into 5 days, Hyper Casual mobile game with stacking, ragdoll and optimized for performance on mobiles.</p>	
+			<div id="IUsedList">
+				<ul id="AboutMeList">
+					<p class="P1">Knowledge I used:</p>
+					<li class="P2">Sistem Development</li>
+					<li class="P2">Mobile Optimization</li>
+					<li class="P2">Project management</li>
+					<li class="P2">Game development</li>
+					<li class="P2">Animation Layers / RagDoll</li>
+				</ul>
+	            <ul id="AboutMeList">
+					<p class="P1">Tools and Languages:</p>
+					<li class="P2">Unity</li>
+					<li class="P2">C#</li>
+					<li class="P2">Canva</li>
+				</ul>
+			</div>		
+		</div>
+	</div>
+
+<section id="section2"></section>
+	<div id="secondPage" class="pages">
+		<p class="StorysTitle Title">The Result</p>
+		<p class="StorysTexts P1">This was the result of 5 days working on this project, this game was made aiming at optimization for mobile and old devices, its gameplay is simple like that of hyper casual games, analog movement, stacking of items and upgrades.</p>
+		<img class="lazy-gif StoryVids"
+  src="imgs/Hiper/Hiper.png"
+  data-src="vids/Hiper/Mobile.gif"
+  alt="Game"
+  loading="lazy"
+/ data-loaded="false">
+		<section id="section3"></section>
+		<p class="StorysTitle Title">The Development</p>
+        <p class="StorysTexts P1">For this project, a mind map was created explaining many of the development planning processes aimed at optimization and the final result of the product.</p>
+        <img class="StoryVids"
+  src="imgs/Hiper/Map.jpg"
+  alt="Game"
+  loading="lazy"
+/ data-loaded="false">
+        <a style="max-width: 35px" href="https://www.canva.com/design/DAGtQRsAjzc/RNddxxxn8TRllhWSCMR07g/edit?utm_content=DAGtQRsAjzc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+  <img style="max-width: 35px" src="imgs/Icons/link-quebrado.webp" alt="Dreamwalker Loop">
+</a>
+        <p class="StorysTexts P1">The project planning was basically done with goals per day, each day systems were chosen to be completed in a BASE format, to be a growing progress during the 5 days.</p>
+        <img class="StoryVids"
+  src="imgs/Hiper/Trello.png"
+  alt="Game"
+  loading="lazy"
+/ data-loaded="false">
+
+        <p class="StorysTexts P1">Master Managers centralize certain functions and allow for better architecture of independent and optimized systems.</p>
+        <img class="StoryImgs" src="imgs/Hiper/Managers.png">
+
+        <p class="StorysTitle Title">Area Manager</p>
+        <p class="StorysTexts P1">Area Manager will serve to centralize the possible areas of the game (Sell, Upgrade), being able to create new areas using the IArea interface, it also makes it possible to register observers (observers in case something happens in the area, for example an item was sold) for a certain area using the Enum AreaType</p>
+        <p class="StorysTexts P1">This way the system expands to several new areas, and each area has its responsibilities with the objective for which it was created. The sales area only sells items, the upgrade area only upgrades the character.</p>
+			<img class="StoryImgs" src="vids/Hiper/Sell.gif">
+			<img class="StoryImgs" src="vids/Hiper/Upgrade.gif">
+
+	<p class="StorysTitle Title">Horde Manager</p>
+	<p class="StorysTexts P1">Horde Manager will serve to control the population that will be generated for the player to slaughter, it uses a Scriptable object that contains easily accessible configuration data to change the time interval between generated characters, the maximum number of characters that can be on screen at the same time and an array of IDs that will be used to know which characters can be generated in this phase.</p>
+        <p class="StorysTexts P1">This makes it easy to balance and gives greater control over the device's performance, since on weaker devices you can have a configuration for the maximum number of characters on screen at the same time.</p>
+
+    <img class="StoryImgs" src="imgs/Hiper/Horde.png">
+
+    <p class="StorysTitle Title">Object Pool Manager</p>
+	<p class="StorysTexts P1">Object Pool Manager will serve as a distributor of objects already generated in the scene, and will reuse them to avoid creating new objects whenever necessary. It creates families (Set of objects) with at least 5 objects. If it is necessary to have more of that object, it will generate new ones. However, if there are still objects from that family that are not being used, it will use them until the initial quantity of 5 is exhausted.</p>
+        <p class="StorysTexts P1">This will serve to avoid performance consumption in object generation during the game, reuse is better performance, it was inserted as addressables in case in the future it was necessary to pull objects that do not yet have their families created, for example a new type of character that appears after level 2, or a specific unlocked outfit.</p>
+
+    <p class="StorysTitle Title">Update Manager</p>
+	<p class="StorysTexts P1">Update Manager centralizes all update calls, this avoids multiple Update calls made by Unity C++ itself, which increases performance if the project requires using Update, in addition to having more control between Update calls and being able to have more visual how dependent your project is on Update.</p>
+        <p class="StorysTexts P1">For scripts that need to use Update, one of the following interfaces can be used (IUpdater, ILateUpdater, IFixedUpdater). With this interface, it can register in one of the Update Manager lists that will start to be called to update.</p>
+
+    <img class="StoryImgs" src="imgs/Hiper/Update.png">
+
+    <p class="StorysTitle Title">WayPoints Manager</p>
+	<p class="StorysTexts P1">With the use of many RigidBodies for the requested ragdoll effect, I thought of ways to avoid more processing consumption, especially with physics, for this the NPCs move ONLY using transform.position which is something much less heavy than if I used the RigidBody itself for movement.</p>
+        <p class="StorysTexts P1">But to avoid characters walking through walls and still give an air of intelligent NPCs, the WayPointManager was created, which deals with several WayPoints positioned around the map, it generates random paths for each NPC to move.</p>
+        <p class="StorysTexts P1">WayPoints are displayed during editing to show the possible paths considered by the Manager, thus generating random paths, in addition to considering the closest point to where the NPC is generated.</p>
+
+    <img class="StoryImgs" src="vids/Hiper/WayPoints.gif">
+
+    <p class="StorysTitle Title">Player Stack</p>
+	<p class="StorysTexts P1">The player was divided into MC (Model and Controller) where the controller manages all the player's inputs on the virtual joystick, and the Model is the movement logic, stats, triggers...</p>
+        <p class="StorysTexts P1">It also has a specific script for stacking items, where it has the logic for movement using inertia and rotation with locks if necessary.</p>
+
+    <img class="StoryImgs" src="vids/Hiper/Stack.gif">
+
+    <p class="StorysTitle Title">Ragdoll + Animation Layer</p>
+	<p class="StorysTexts P1">For characters that needed to use ragdoll, a script was made just to activate the ragdoll, it activates collisions and Kinematic, and deactivates animation.</p>
+        <img class="StoryImgs" src="vids/Hiper/Ragdoll.gif">
+
+        <p class="StorysTexts P1">Parameters were used in the animation to switch between walking and running animations depending on how stretched the virtual joystick was.</p>
+        <p class="StorysTexts P1">Layers were used to create a separate animation for the upper body, independent of the rest of the body, allowing for animation that makes it appear as if he's pushing NPCs while the running/walking animation is in the legs.</p>
+        <img class="StoryImgs" src="vids/Hiper/AnimationPush.gif">
+		
+		<section id="section8"></section>
+		<p class="StorysTitle Title">The Conclusions</p>
+		<p class="StorysTexts P1">It was interesting to relearn ragdoll, which is something I don't normally use much in my games, in addition to putting into practice more optimization concepts that I've been learning over time, I liked that it worked on my old tablet that I use as a basis for performance on old devices.</p>
+	</div>
+	
+	<div id="sixPage" class="pages">
+		<img id="HeaderSixPage" src="imgs/Cloud/CloudReverse.webp">
+		<div id="ContactMeContainer" class="ContactMeContainer">
+			<section id="section11"></section>
+			<h2 id="ContactMeTitle">Contact Me</h2>
+			<form id="contactForm">
+				<input type="hidden" name="accessKey" value="c29b7c2a-d29f-4b83-b86e-ccf7f7f12328">
+				<input type="text" id="name" name="name" placeholder="Name:" required>
+				<input type="email" id="email" name="email" placeholder="Email:" required>
+				<input type="text" id="subject" name="subject" placeholder="Subject:" required>
+				<textarea id="message" name="message" rows="5" placeholder="Message:" required></textarea>
+				<button class="SubmitButtom" type="submit">Submit</button>
+			</form>
+		</div>
+		<div style="display: none;" id="PositiveResultContact" class="ResultContact">
+			<p class="P2">Thank you, your contact has been sent!</p>
+			<div id="IconNakHappyContact">
+				<img id="HappyNakCloudContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.webp">
+				<img id="HappyNakContact" src="imgs/Mascote/Fundo transparente/mascote felicidade sem confete.webp">
+			</div>
+		</div>
+		<div style="display: none;" id="NegativeResultContact" class="ResultContact">
+			<p class="P2">Sorry! Something happened and your email was not sent.</p>
+			<div id="IconNakHappyBadContact">
+				<img id="SadNakCloudBadContact" src="imgs/Ilustrações/Elementos a vulso para uso/nuvem.webp">
+				<img id="SadNakBadContact" src="imgs/Mascote/Fundo transparente/Mascote triste.webp">
+			</div>
+		</div>
+		  <img id="FooterSixthPage" src="imgs/Cloud/CloudNormal.webp">
+	</div>
+
+	<div id="sevenPage" class="pages">
+		<div id="LeftFooterDiv">
+			<div id="FooterIcon">
+				<img id="NakLogoFooter" src="imgs/Mascote/MascoteNuvem.webp" >
+				<img id="AkapayaLogoFooter" src="imgs/Ilustrações/Tipografia/akapaya_tipografia.webp" >
+			</div>
+			<p class="P3">@ 2024 Akapaya. Todos os direitos reservados. 
+				Akapaya, logotipo da Akapaya são marcas registradas de Akapaya
+			</p>
+			<p class="P3">Arte desenvolvida por Thamires Dantas. <br>
+				Design do site desenvolvido por Gregory Valentim.<br>
+				Site desenvolvido por Gregory Valentim.
+			</p>
+		</div>
+
+		<div id="RightFooterDiv">
+			<div class="FooterItems" onclick="">
+				<a href="https://github.com/Akapaya"><img class="FooterIcons P3" src="imgs/Logo/github-mark.svg"></a>
+				<p class="P3">github.com/Akapaya</p>
+			</div>
+			
+			<div class="FooterItems" onclick="">
+				<a href="mailto:gregory_valentim@hotmail.com"><img class="FooterIcons P3" src="imgs/Logo/EmailBlack.svg"></a>
+				<p class="P3">Gregory_valentim@hotmail.com</p>
+			</div>
+
+			<div style="display: none;" class="FooterItems">
+				<a href="https://www.instagram.com/akapaya_studios/"><img class="FooterIcons P3" src="imgs/Logo/InstagramBlack.svg"></a>
+				<p class="P3">@Akapaya_Studios</p>
+			</div>
+			
+			<div style="display: none;" class="FooterItems">
+				<a href="https://www.youtube.com/@Akapaya"><img class="FooterIcons P3" src="imgs/Logo/YoutubeBlack.svg"></a>
+				<p class="P3">Youtube.com/@Akapaya</p>
+			</div>
+			
+			<div class="FooterItems">
+				<a href="https://akapaya.itch.io"><img class="FooterIcons P3" src="imgs/Logo/ItchBlack.svg"></a>
+				<p class="P3">Akapaya.itch.io</p>
+			</div>
+			
+			<div style="display: none;" class="FooterItems">
+				<a href="https://www.twitch.tv/akapaya"><img class="FooterIcons P3" src="imgs/Logo/TwitchBlack.svg"></a>
+				<p class="P3">Twitch.tv/akapaya</p>
+			</div>
+		</div>
+	</div>
+	<script src="jquery-3.6.0/jquery-3.6.0.js" type="text/javascript" defer></script>
+	<script src="Scripts/AuxiliaryTools/AuxiliaryTool.js" defer></script>
+	<script defer>
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        const src = img.dataset.src;
+        if (src && img.dataset.loaded !== "true") {
+          img.src = src;
+          img.dataset.loaded = "true";
+          obs.unobserve(img);
+        }
+      }
+    });
+  });
+  document.querySelectorAll('.lazy-gif').forEach(img => observer.observe(img));
+});
+</script>
+</body>
+	
+</html>
